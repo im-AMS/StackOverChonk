@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "ergogen:build": "ergogen --clean -o ergogen/output ergogen",
-    "ergogen:watch": "nodemon --ext .js,.yaml --watch ergogen/footprints --watch ergogen/config.yaml --exec npm run ergogen:build",
+    "ergogen:old_watch": "nodemon --ext .js,.yaml --watch ergogen/footprints --watch ergogen/config.yaml --exec npm run ergogen:build",
+    "ergogen:watch": "nodemon --ext .js,.yaml --watch ergogen/footprints --watch ergogen/config.yaml --exec npm run ergogen:build --verbose",
     "zmk:update": "docker compose -f zmk/docker-compose.yml run --rm firmware-env zmk-update",
     "zmk:build": "docker compose -f zmk/docker-compose.yml run --rm firmware-env zmk-build",
     "zmk:down": "docker compose -f zmk/docker-compose.yml down"
@@ -14,6 +15,6 @@
     "ergogen": "^4.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.21"
+    "nodemon": "^3.1.7"
   }
 }
