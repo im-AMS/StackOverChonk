@@ -13,6 +13,9 @@ units:
   px: kx + padd_val
   py: ky + padd_val
   thumb_spread: 1.15kx
+  led_pos_x: 0 # Led X position relative to the switch center
+  led_pos_y: -4.7 # Led Y position relative to the switch center
+  led_rotation: 0 # Led rotation
 
 points:
   zones:
@@ -20,51 +23,131 @@ points:
       key:
         padding: ky
         spread: kx
+      anchor:
+        shift: [100, -100] # Fix KiCad placement
 
       rows:
         down:
-          row_net: P5
+          row_net: P18
         home:
-          row_net: P4
+          row_net: P19
         up:
-          row_net: P0
+          row_net: P20
         num:
-          row_net: P1
+          row_net: P21
 
       columns:
         outer:
           key:
-            col_net: P20
+            col_net: P1
+          rows:
+            num.key:
+              led_prev: LED_26
+              led_next: LED_27
+            up.key:
+              led_prev: LED_15
+              led_next: LED_16
+            home.key:
+              led_prev: LED_14
+              led_next: LED_15
+            down.key:
+              led_prev: LED_3
+              led_next: LED_4
 
         pinky:
           key:
-            col_net: P19
+            col_net: P0
             stagger: 0.2 ky
             origin: [0,-ky/2]
+          rows:
+            num.key:
+              led_prev: LED_25
+              led_next: LED_26
+            up.key:
+              led_prev: LED_16
+              led_next: LED_17
+            home.key:
+              led_prev: LED_13
+              led_next: LED_14
+            down.key:
+              led_prev: LED_4
+              led_next: LED_5
 
         ring:
           key:
-            col_net: P18
+            col_net: P4
             stagger: 0.3 ky
             origin: [0,-ky/2]
+          rows:
+            num.key:
+              led_prev: LED_24
+              led_next: LED_25
+            up.key:
+              led_prev: LED_17
+              led_next: LED_18
+            home.key:
+              led_prev: LED_12
+              led_next: LED_13
+            down.key:
+              led_prev: LED_5
+              led_next: LED_6
 
         middle:
           key:
-            col_net: P10
+            col_net: P5
             stagger: 0.3 ky
             origin: [0,-ky/2]
+          rows:
+            num.key:
+              led_prev: LED_23
+              led_next: LED_24
+            up.key:
+              led_prev: LED_18
+              led_next: LED_19
+            home.key:
+              led_prev: LED_11
+              led_next: LED_12
+            down.key:
+              led_prev: LED_6
+              led_next: LED_7
 
         index:
           key:
-            col_net: P9
+            col_net: P7
             stagger: -0.3 ky
             origin: [0,-ky/2]
+          rows:
+            num.key:
+              led_prev: LED_22
+              led_next: LED_23
+            up.key:
+              led_prev: LED_19
+              led_next: LED_20
+            home.key:
+              led_prev: LED_10
+              led_next: LED_11
+            down.key:
+              led_prev: LED_7
+              led_next: LED_8
 
         inner:
           key:
             col_net: P8
             stagger: -0.ky
             origin: [0,-ky/2]
+          rows:
+            num.key:
+              led_prev: LED_21
+              led_next: LED_22
+            up.key:
+              led_prev: LED_20
+              led_next: LED_21
+            home.key:
+              led_prev: LED_9
+              led_next: LED_10
+            down.key:
+              led_prev: LED_8
+              led_next: LED_9
 
     thumbs:
       key:
@@ -76,24 +159,37 @@ points:
 
       rows:
         cluster:
-          row_net: P7
+          row_net: P10
 
       columns:
         col1:
           key:
-              col_net: P7
-              origin: [-kx/2,-ky/2]
-              splay: -5
+            col_net: P7
+            origin: [-kx/2,-ky/2]
+            splay: -5
+          rows:
+            cluster.key:
+              led_prev: LED_2
+              led_next: LED_3
         col2:
           key:
-              col_net: P8
-              origin: [-kx/2,-ky/2]
-              splay: -10
+            col_net: P8
+            origin: [-kx/2,-ky/2]
+            splay: -10
+          rows:
+            cluster.key:
+              led_prev: LED_1
+              led_next: LED_2
         col3:
           key:
-              col_net: P9
-              origin: [-kx/2,-ky/2]
-              splay: -10
+            col_net: P9
+            origin: [-kx/2,-ky/2]
+            splay: -10
+          rows:
+            cluster.key:
+              # This will be LED_0
+              led_prev: P6 # pin P6 on the MCU
+              led_next: LED_1
 
 # Rest of your outlines section remains the same
 outlines:
@@ -170,10 +266,10 @@ outlines:
            shift: [1.8kx, -0.6ky]
 
   board_outline:
-      - what: outline
-        name: _raw_keys_layout
-        operation: stack
-        fillet: 2
+    - what: outline
+      name: _raw_keys_layout
+      operation: stack
+      fillet: 2
 
   preview:
     - what: outline
@@ -184,131 +280,137 @@ outlines:
       operation: stack
 
 pcbs.aditya:
-    template: kicad8 # Required, since footprints are KiCad 8 only
-    outlines:
-        main.outline: board_outline
-        keycaps:
-            outline: keycap_outlines
-            layer: Eco1.User
-    footprints:
-        # diode:
-        #     what: avocado/sod-123w
-        #     where: true
-        #     params:
-        #         from: "{{name}}"
-        #         to: "{{row_net}}"
-        #     adjust:
-        #         shift: [ -7.6, -1.6 ]
-        #         rotate: 90
-        diode:
-            what: ceoloide/diode_tht_sod123
-            where: true
-            params:
-                from: "{{name}}"
-                to: "{{row_net}}"
-                reversible: true
-                include_tht: false
-                diode_3dmodel_filename:  '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step'
-            adjust:
-                shift: [ -7.6, -1.6 ]
-                rotate: 90
-        # choc:
-        #     what: choc
-        #     where: true
-        #     params:
-        #         keycaps: true
-        #         reverse: true
-        #         hotswap: true
-        #         from: "{{col_net}}"
-        #         to: "{{name}}"
-        choc:
-            what: ceoloide/switch_choc_v1_v2
-            where: true
-            params:
-                reversible: true
-                hotswap: true
-                # If you are using LEDs you cannot use solder
-                solder: false
-                include_plated_holes: true
-                include_keycap: false
-                include_corner_marks: true
-                # remove this later - after adding LEDs
-                include_choc_v1_led_cutout_marks: true
-                choc_v1_support: true
-                choc_v2_support: false
-                switch_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step'
-                hotswap_3dmodel_filename:  '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step'
-                from: "{{col_net}}"
-                to: "{{name}}"
-        # promicro:
-        #     what: avocado/promicro_pretty
-        #     where:
-        #         ref: matrix_inner_home
-        #     adjust:
-        #         shift: [22, 6.5]
-        #         rotate: -90
-        promicro:
-            what: ceoloide/mcu_supermini_nrf52840
-            where:
-                ref: matrix_inner_home
-            params:
-                reversible: true
-                reverse_mount: false
-                include_traces: true
-                mcu_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2_Flipped.step'
-            adjust:
-                shift: [22, 24]
-            #     rotate: -90
+  template: kicad8 # Required, since footprints are KiCad 8 only
+  outlines:
+    main.outline: board_outline
+    keycaps:
+      outline: keycap_outlines
+      layer: Eco1.User
 
-        fillzone:
-            what: ceoloide/utility_filled_zone
-            params:
-                side: 'F&B'
-                net: 'GND'
+  footprints:
+    diode:
+      what: ceoloide/diode_tht_sod123
+      where: true
+      params:
+        from: "{{name}}"
+        to: "{{row_net}}"
+        reversible: true
+        include_tht: false
+        # diode_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step'
+      adjust:
+        shift: [ -7.6, -1.6 ]
+        rotate: 90
 
-        jst-s2b-ph-kl:
-            what: avocado/jst-s2b-ph-kl
-            where:
-                ref: matrix_inner_down
-                shift: [21, -2]
-                rotate: 180
-            params:
-                neg: GND
-        pcm12:
-            what: avocado/pcm12
-            where:
-                ref: matrix_inner_down
-                shift: [30.5, 3]
-                rotate: 90
-            params:
-                from: pos
-                to: RAW
-        wuerth-434121025816:
-            what: avocado/wuerth-434121025816
-            where:
-                ref: matrix_inner_down
-                shift: [30, -6]
-                rotate: 90
-            params:
-                r1: RST
-                r2: GND
-        front_text: &text
-            what: avocado/text
-            where: &textWhere
-                ref: matrix_pinky_down
-                shift: [12, -7]
-            params: &textParams
-                text: A keyboard for Aditya
-                justify: left
-        back_text:
-            <<: *text
-            where:
-                <<: *textWhere
-                shift: [27, -7]
-            params:
-                <<: *textParams
-                layer: B.SilkS
-                justify: left mirror
+    choc:
+      what: ceoloide/switch_choc_v1_v2
+      where: true
+      params:
+        reversible: true
+        hotswap: true
+        # If you are using LEDs you cannot use solder
+        solder: false
+        include_plated_holes: false
+        include_keycap: false
+        include_corner_marks: true
+        # remove this later - after adding LEDs
+        include_choc_v1_led_cutout_marks: true
+        choc_v1_support: true
+        choc_v2_support: false
+        # switch_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step'
+        # hotswap_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step'
+        from: "{{col_net}}"
+        to: "{{name}}"
+
+    promicro:
+      what: ceoloide/mcu_supermini_nrf52840
+      where:
+        ref: matrix_inner_home
+      params:
+        reversible: true
+        reverse_mount: false
+        include_traces: true
+        # mcu_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2_Flipped.step'
+      adjust:
+        shift: [22, 24]
+
+    per_key_leds_default:
+      what: ceoloide/led_sk6812mini-e
+      # where: true
+      where:
+        - /matrix_.*_up/
+        - /matrix_.*_down/
+      params:
+        P1: VCC
+        P2: "{{key.led_next}}" #DOUT
+        P3: GND
+        P4: "{{key.led_prev}}" #DIN
+        reversible: true
+        reverse_mount: true #(per-key LED)
+        include_traces_vias: true
+        # led_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step'
+      adjust:
+        shift: [led_pos_x, led_pos_y]
+        rotate: led_rotation
+
+    # rotate alternate rows for easier routing
+    per_key_leds_rotate_rows:
+      $extends: pcbs.aditya.footprints.per_key_leds_default
+      where:
+        - /matrix_.*_num/
+        - /matrix_.*_home/
+        - /thumbs.*_cluster/
+      adjust:
+        rotate: led_rotation - 180
+
+    fillzone:
+      what: ceoloide/utility_filled_zone
+      params:
+        side: 'F&B'
+        net: 'GND'
+
+    jst-s2b-ph-kl:
+      what: avocado/jst-s2b-ph-kl
+      where:
+        ref: matrix_inner_down
+        shift: [21, -2]
+        rotate: 180
+      params:
+        neg: GND
+    pcm12:
+      what: avocado/pcm12
+      where:
+        ref: matrix_inner_down
+        shift: [30.5, 3]
+        rotate: 90
+      params:
+        from: pos
+        to: RAW
+    wuerth-434121025816:
+      what: avocado/wuerth-434121025816
+      where:
+        ref: matrix_inner_down
+        shift: [30, -6]
+        rotate: 90
+      params:
+        r1: RST
+        r2: GND
+    front_text: &text
+      what: avocado/text
+      where: &textWhere
+        ref: matrix_pinky_down
+        shift: [12, -7]
+      params: &textParams
+        text: A keyboard for Aditya
+        justify: left
+    back_text:
+      <<: *text
+      where:
+        <<: *textWhere
+        shift: [27, -7]
+      params:
+        <<: *textParams
+        layer: B.SilkS
+        justify: left mirror
         # safeText:
         #     <<: *text
         #     what: josukey/keepout
@@ -345,3 +447,4 @@ pcbs.aditya:
         #                 y: 13.25
         #             -   x: -0.5
         #                 y: 13.25
+
