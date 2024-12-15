@@ -19,7 +19,6 @@ Try to reserve pins like so (pins in arduino format)
 - D14, D15, D16 - SPI - idk what i might use this for, just leave em blank
 
 
-Do like a 2 vias per key thing.
 on one layer connect rows, and another columns
 move the power switch near USB C
 idk what to do about Reset yet
@@ -27,3 +26,7 @@ connector for power move it else where - make it efficient even if it mean solde
 Add Oled display
 Add version number on silkscreen
 Find a cool name for this board
+increase more padding for PCB, pads are almost at the edge
+add screw holes for this
+may be create a rectangular hole in pcb to better fit battery
+adjust the thumb cluster spacing

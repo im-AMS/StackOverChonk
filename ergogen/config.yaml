@@ -12,10 +12,40 @@ units:
   padd_val: 5
   px: kx + padd_val
   py: ky + padd_val
+
+  outer_boundary: 1.5
+
   thumb_spread: 1.15kx
+
   led_pos_x: 0 # Led X position relative to the switch center
   led_pos_y: -4.7 # Led Y position relative to the switch center
   led_rotation: 0 # Led rotation
+
+  diode_pos_x: -3
+  diode_pos_y: 0
+  diode_roation: 90
+
+  # right top edge - its a bit janky
+  mcu_pos_x: ( 1.95kx+outer_boundary-8.9 ) + ( -outer_boundary - 2)
+  mcu_pos_y: (0.6ky+outer_boundary-14) + ( -outer_boundary - 4)
+
+  oled_pos_x: mcu_pos_x + 0
+  oled_pos_y: mcu_pos_y - 3
+
+  # relative to matrix_inner_home
+  battery_pads_x: 15
+  battery_pads_y: 5
+
+  power_switch_x: ( 1.95kx+outer_boundary ) + ( -outer_boundary - 8.9 - 2)
+  power_switch_y: (0.6ky+outer_boundary) + ( -outer_boundary - 0.2)
+
+  # relative to matrix_inner_home
+  reset_switch_x: 32.5
+  reset_switch_y: 22
+  reset_switch_rotate: -90
+
+
+
 
 points:
   zones:
@@ -28,7 +58,7 @@ points:
 
       rows:
         down:
-          row_net: P18
+          row_net: P18  
         home:
           row_net: P19
         up:
@@ -133,7 +163,7 @@ points:
         inner:
           key:
             col_net: P8
-            stagger: -0.ky
+            stagger: -0.11 ky
             origin: [0,-ky/2]
           rows:
             num.key:
@@ -159,12 +189,12 @@ points:
 
       rows:
         cluster:
-          row_net: P10
+          row_net: P7
 
       columns:
         col1:
           key:
-            col_net: P7
+            col_net: P5
             origin: [-kx/2,-ky/2]
             splay: -5
           rows:
@@ -173,7 +203,7 @@ points:
               led_next: LED_3
         col2:
           key:
-            col_net: P8
+            col_net: P7
             origin: [-kx/2,-ky/2]
             splay: -10
           rows:
@@ -182,13 +212,13 @@ points:
               led_next: LED_2
         col3:
           key:
-            col_net: P9
+            col_net: P8
             origin: [-kx/2,-ky/2]
             splay: -10
           rows:
             cluster.key:
               # This will be LED_0
-              led_prev: P6 # pin P6 on the MCU
+              led_prev: P6
               led_next: LED_1
 
 # Rest of your outlines section remains the same
@@ -204,66 +234,66 @@ outlines:
       operation: stack
       points:
         -  ref: thumbs_col3_cluster
-           shift: [0.6kx, 0.6ky]
+           shift: [0.6kx+outer_boundary, 0.6ky+outer_boundary]
         -  ref: thumbs_col3_cluster
-           shift: [0.6kx, -0.6ky]
+           shift: [0.6kx+outer_boundary, -0.6ky-outer_boundary]
         -  ref: thumbs_col3_cluster
-           shift: [-0.4kx, -0.6ky]
+           shift: [-0.4kx, -0.6ky-outer_boundary]
 
         -  ref: thumbs_col2_cluster
-           shift: [0.4thumb_spread, -0.6ky]
+           shift: [0.4thumb_spread, -0.6ky-outer_boundary]
         -  ref: thumbs_col2_cluster
-           shift: [-0.4thumb_spread, -0.6ky]
+           shift: [-0.4thumb_spread, -0.6ky-outer_boundary]
 
         -  ref: thumbs_col1_cluster
-           shift: [0.4thumb_spread, -0.6ky]
+           shift: [0.4thumb_spread, -0.6ky-outer_boundary]
         -  ref: thumbs_col1_cluster
-           shift: [-0.6kx, -0.6ky]
+           shift: [-0.6kx, -0.6ky-outer_boundary]
 
         -  ref: matrix_outer_down
-           shift: [1.6kx, -0.6ky]
+           shift: [1.6kx, -0.6ky-outer_boundary]
         -  ref: matrix_outer_down
-           shift: [0.6kx, -0.6ky]
+           shift: [0.6kx, -0.6ky-outer_boundary]
         -  ref: matrix_outer_down
-           shift: [-0.6kx, -0.6ky]
+           shift: [-0.6kx-outer_boundary, -0.6ky-outer_boundary]
 
         -  ref: matrix_outer_num
-           shift: [-0.6kx, 0.6ky]
+           shift: [-0.6kx-outer_boundary, 0.6ky+outer_boundary]
         -  ref: matrix_outer_num
-           shift: [0.4kx, 0.6ky]
+           shift: [0.4kx, 0.6ky+outer_boundary]
 
         -  ref: matrix_pinky_num
-           shift: [-0.5kx, 0.6ky]
+           shift: [-0.5kx, 0.6ky+outer_boundary]
         -  ref: matrix_pinky_num
-           shift: [0.4kx, 0.6ky]
+           shift: [0.4kx, 0.6ky+outer_boundary]
 
         -  ref: matrix_ring_num
-           shift: [-0.5kx, 0.6ky]
+           shift: [-0.5kx, 0.6ky+outer_boundary]
         -  ref: matrix_ring_num
-           shift: [0.4kx, 0.6ky]
+           shift: [0.4kx, 0.6ky+outer_boundary]
 
         -  ref: matrix_middle_num
-           shift: [-0.5kx, 0.6ky]
+           shift: [-0.5kx, 0.6ky+outer_boundary]
         -  ref: matrix_middle_num
-           shift: [0.5kx, 0.6ky]
+           shift: [0.5kx, 0.6ky+outer_boundary]
 
         -  ref: matrix_index_num
-           shift: [-0.4kx, 0.6ky]
+           shift: [-0.4kx, 0.6ky+outer_boundary]
         -  ref: matrix_index_num
-           shift: [0.5kx, 0.6ky]
+           shift: [0.5kx, 0.6ky+outer_boundary]
 
         -  ref: matrix_inner_num
-           shift: [-0.4kx, 0.6ky]
+           shift: [-0.4kx, 0.6ky+outer_boundary]
         -  ref: matrix_inner_num
-           shift: [0.5kx, 0.6ky]
+           shift: [0.5kx, 0.6ky+outer_boundary]
 
         -  ref: matrix_inner_num
-           shift: [0.6kx, 0.4ky]
+           shift: [0.6kx, 0.6ky+outer_boundary]
         -  ref: matrix_inner_num
-           shift: [1.8kx, 0.4ky]
+           shift: [1.95kx+outer_boundary, 0.6ky+outer_boundary]
 
         -  ref: matrix_inner_down
-           shift: [1.8kx, -0.6ky]
+           shift: [1.95kx+outer_boundary, -0.6ky-5]
 
   board_outline:
     - what: outline
@@ -296,10 +326,13 @@ pcbs.aditya:
         to: "{{row_net}}"
         reversible: true
         include_tht: false
+        include_traces_vias: true
+        # trace_distance: -0.5
+        trace_distance: -1.1
         # diode_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step'
       adjust:
-        shift: [ -7.6, -1.6 ]
-        rotate: 90
+        shift: [ diode_pos_x, diode_pos_y ]
+        rotate: diode_roation
 
     choc:
       what: ceoloide/switch_choc_v1_v2
@@ -316,6 +349,8 @@ pcbs.aditya:
         include_choc_v1_led_cutout_marks: true
         choc_v1_support: true
         choc_v2_support: false
+        include_traces_vias: true
+        hotswap_pads_same_side: true
         # switch_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step'
         # hotswap_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step'
         from: "{{col_net}}"
@@ -327,11 +362,24 @@ pcbs.aditya:
         ref: matrix_inner_home
       params:
         reversible: true
-        reverse_mount: false
+        reverse_mount: true
         include_traces: true
         # mcu_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2_Flipped.step'
       adjust:
-        shift: [22, 24]
+        ref: matrix_inner_num
+        shift: [mcu_pos_x, mcu_pos_y]
+
+    oled_display:
+      what: ceoloide/display_ssd1306
+      where:
+        ref: matrix_inner_num
+      params:
+        reversible: true
+        include_traces: true
+        SDA: P2
+        SCL: P3
+      adjust:
+        shift: [oled_pos_x, oled_pos_y]
 
     per_key_leds_default:
       what: ceoloide/led_sk6812mini-e
@@ -368,32 +416,47 @@ pcbs.aditya:
         side: 'F&B'
         net: 'GND'
 
-    jst-s2b-ph-kl:
-      what: avocado/jst-s2b-ph-kl
-      where:
-        ref: matrix_inner_down
-        shift: [21, -2]
-        rotate: 180
+    battery_pads_front:
+      what: battery_pad
       params:
+        pos: pos
         neg: GND
-    pcm12:
-      what: avocado/pcm12
+        side: 'F'
+        flip_pads: false
       where:
-        ref: matrix_inner_down
-        shift: [30.5, 3]
+        ref: matrix_inner_home
+        shift: [battery_pads_x, battery_pads_y]
+
+    battery_pads_back:
+      $extends: pcbs.aditya.footprints.battery_pads_front
+      params:
+        side: 'B'
+
+    power_switch:
+      what: ceoloide/power_switch_smd_side
+      where:
+        ref: matrix_inner_num
+        shift: [power_switch_x, power_switch_y]
         rotate: 90
       params:
+        side: 'B'
+        reversible: true
         from: pos
         to: RAW
-    wuerth-434121025816:
-      what: avocado/wuerth-434121025816
+
+    reset_switch:
+      what: ceoloide/reset_switch_smd_side
       where:
         ref: matrix_inner_down
-        shift: [30, -6]
-        rotate: 90
+        shift: [reset_switch_x, reset_switch_y]
+        rotate: reset_switch_rotate
       params:
-        r1: RST
-        r2: GND
+        side: F
+        reversible: true
+        include_bosses: true
+        from: RST
+        to: GND
+
     front_text: &text
       what: avocado/text
       where: &textWhere
