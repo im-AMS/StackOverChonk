@@ -15,7 +15,7 @@ units:
 
   outer_boundary: 1.5
 
-  thumb_spread: 1.15kx
+  thumb_spread: 1.05kx
 
   led_pos_x: 0 # Led X position relative to the switch center
   led_pos_y: -4.7 # Led Y position relative to the switch center
@@ -185,7 +185,7 @@ points:
         spread: thumb_spread
       anchor:
         ref: matrix_inner_down
-        shift: [-1.5 kx, -1.15 ky]
+        shift: [-1.5 kx, -1.01 ky]
 
       rows:
         cluster:
@@ -233,8 +233,8 @@ outlines:
     - what: polygon
       operation: stack
       points:
-        -  ref: thumbs_col3_cluster
-           shift: [0.6kx+outer_boundary, 0.6ky+outer_boundary]
+        # -  ref: thumbs_col3_cluster
+        #    shift: [0.6kx+outer_boundary, 0.6ky+outer_boundary]
         -  ref: thumbs_col3_cluster
            shift: [0.6kx+outer_boundary, -0.6ky-outer_boundary]
         -  ref: thumbs_col3_cluster
@@ -456,6 +456,46 @@ pcbs.aditya:
         include_bosses: true
         from: RST
         to: GND
+
+    pussy_cat:
+      what: memes/pussy_cat
+      where:
+        ref: matrix_pinky_down
+        shift: [8, -4]
+      params:
+        layer: 'F.SilkS'
+        scale: 0.06
+        flip: false
+
+    confused_af:
+      what: memes/confused_af
+      where:
+        ref: matrix_ring_down
+        shift: [20, -3]
+      params:
+        scale: 0.08
+        layer: 'B.SilkS'
+        flip: true
+
+    done_with_life:
+      what: memes/done_with_life
+      where:
+        ref: matrix_inner_down
+        shift: [37, 15]
+      params:
+        scale: 0.14
+        layer: 'B.SilkS'
+        flip: true
+
+    thinking:
+      what: memes/thinking
+      where:
+        ref: matrix_inner_down
+        shift: [10, 15]
+      params:
+        scale: 0.032
+        layer: 'F.SilkS'
+        flip: false
 
     front_text: &text
       what: avocado/text
