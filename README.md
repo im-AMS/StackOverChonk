@@ -7,6 +7,7 @@
 [supermini pinout specs](https://docs.nordicsemi.com/bundle/ps_nrf52840/page/pin.html)
 [Arduino Pro Micro Pinout](https://cdn.sparkfun.com/assets/9/c/3/c/4/523a1765757b7f5c6e8b4567.png)
 [ergogen configs from Corney-island](https://github.com/ceoloide/corney-island/blob/main/ergogen/config.yaml)
+[svg to points](https://shinao.github.io/PathToPoints/)
 
 # Notes
 checkout to version v0.0.7 during the cloing of ceolodie repo, since this was the latest tag.

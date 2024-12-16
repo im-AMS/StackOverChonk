@@ -3,7 +3,6 @@
 # refer to the pinout specs from Readme
 meta:
   engine: 4.1.0
-  version: 0.0.2
   author: Aditya
 
 units: 
@@ -43,6 +42,11 @@ units:
   reset_switch_x: 32.5
   reset_switch_y: 22
   reset_switch_rotate: -90
+
+  # relative to matrix_inner_up
+  board_info_x: 0.5kx + 4
+  board_info_y: 0.5ky
+  board_info_rotate: -90
 
 
 
@@ -497,57 +501,15 @@ pcbs.aditya:
         layer: 'F.SilkS'
         flip: false
 
-    front_text: &text
-      what: avocado/text
-      where: &textWhere
-        ref: matrix_pinky_down
-        shift: [12, -7]
-      params: &textParams
-        text: A keyboard for Aditya
-        justify: left
-    back_text:
-      <<: *text
+    board_info:
+      what: ceoloide/utility_text
       where:
-        <<: *textWhere
-        shift: [27, -7]
+        ref: matrix_inner_up
+        shift: [board_info_x, board_info_y]
+        rotate: board_info_rotate
       params:
-        <<: *textParams
-        layer: B.SilkS
-        justify: left mirror
-        # safeText:
-        #     <<: *text
-        #     what: josukey/keepout
-        #     params:
-        #         points:
-        #             -   x: -0.5
-        #                 y: -2
-        #             -   x: 15.5
-        #                 y: -2
-        #             -   x: 15.5
-        #                 y: 2
-        #             -   x: -0.5
-        #                 y: 2
-        # peace: &icon
-        #     what: josukey/peace
-        #     where:
-        #         ref: matrix_inner_down
-        #         shift: [13, -6]
-        #     params:
-        #         scale: 2
-        # love:
-        #     <<: *icon
-        #     what: josukey/love
-        # safeIcon:
-        #     <<: *icon
-        #     what: josukey/keepout
-        #     params:
-        #         points:
-        #             -   x: -0.5
-        #                 y: -0.5
-        #             -   x: 13.25
-        #                 y: -0.5
-        #             -   x: 13.25
-        #                 y: 13.25
-        #             -   x: -0.5
-        #                 y: 13.25
-
+        side: F
+        text: "StackOverChonk - v0.1 pre-release\\ngithub.com/im-AMS/StackOverChonk"
+        reversible: true
+        knockout: false
+        mirrored: true
