@@ -31,3 +31,17 @@ increase more padding for PCB, pads are almost at the edge
 add screw holes for this
 may be create a rectangular hole in pcb to better fit battery
 adjust the thumb cluster spacing
+move the pinky column more down
+
+
+
+check the power switch wiring - something seems off
+check the oled pinout very carefully and route it on both sides
+
+DRC issues:
+move oled slighly below so that gnd forms properly
+move diode slightly to left so gnd forms properly
+oled pads hole clearance DRC error
+move the power switch little bit inside
+led edge clearance 0.19999, required 0.2
+MCU back layer gnd not fully connecting

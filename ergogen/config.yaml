@@ -20,7 +20,7 @@ units:
   led_pos_y: -4.7 # Led Y position relative to the switch center
   led_rotation: 0 # Led rotation
 
-  diode_pos_x: -3
+  diode_pos_x: -3.2
   diode_pos_y: 0
   diode_roation: 90
 
@@ -29,14 +29,14 @@ units:
   mcu_pos_y: (0.6ky+outer_boundary-14) + ( -outer_boundary - 4)
 
   oled_pos_x: mcu_pos_x + 0
-  oled_pos_y: mcu_pos_y - 3
+  oled_pos_y: mcu_pos_y - 3.5
 
   # relative to matrix_inner_home
   battery_pads_x: 15
   battery_pads_y: 5
 
   power_switch_x: ( 1.95kx+outer_boundary ) + ( -outer_boundary - 8.9 - 2)
-  power_switch_y: (0.6ky+outer_boundary) + ( -outer_boundary - 0.2)
+  power_switch_y: (0.6ky+outer_boundary) + ( -outer_boundary - 0.30)
 
   # relative to matrix_inner_home
   reset_switch_x: 32.5
@@ -193,7 +193,7 @@ points:
 
       rows:
         cluster:
-          row_net: P7
+          row_net: P15
 
       columns:
         col1:
