@@ -20,13 +20,13 @@ units:
   led_pos_y: -4.7 # Led Y position relative to the switch center
   led_rotation: 0 # Led rotation
 
-  diode_pos_x: -3.2
-  diode_pos_y: 0
+  diode_pos_x: -7.3
+  diode_pos_y: -2.85
   diode_roation: 90
 
   # right top edge - its a bit janky
   mcu_pos_x: ( 1.95kx+outer_boundary-8.9 ) + ( -outer_boundary - 2)
-  mcu_pos_y: (0.6ky+outer_boundary-14) + ( -outer_boundary - 4)
+  mcu_pos_y: (0.6ky+outer_boundary-14) + ( -outer_boundary - 3)
 
   oled_pos_x: mcu_pos_x + 0
   oled_pos_y: mcu_pos_y - 3.5
@@ -333,7 +333,7 @@ pcbs.aditya:
         include_traces_vias: true
         # trace_distance: -0.5
         trace_distance: -1.1
-        # diode_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step'
+        diode_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step'
       adjust:
         shift: [ diode_pos_x, diode_pos_y ]
         rotate: diode_roation
@@ -354,9 +354,14 @@ pcbs.aditya:
         choc_v1_support: true
         choc_v2_support: false
         include_traces_vias: true
-        hotswap_pads_same_side: true
-        # switch_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step'
-        # hotswap_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step'
+        hotswap_pads_same_side: false
+        switch_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step'
+        switch_3dmodel_xyz_rotation: [0,0,180]
+        hotswap_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step'
+        hotswap_3dmodel_xyz_rotation: [0,0,180]
+        keycap_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step'
+        keycap_3dmodel_xyz_offset: [0, 0, 10]
+        keycap_3dmodel_xyz_rotation: [0, 180, 90]
         from: "{{col_net}}"
         to: "{{name}}"
 
@@ -368,7 +373,10 @@ pcbs.aditya:
         reversible: true
         reverse_mount: true
         include_traces: true
-        # mcu_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2_Flipped.step'
+        mcu_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2_Flipped.step'
+        mcu_3dmodel_xyz_offset: [0, 0, -7]
+        mcu_3dmodel_xyz_rotation: [0, 180, 0]
+
       adjust:
         ref: matrix_inner_num
         shift: [mcu_pos_x, mcu_pos_y]
@@ -399,7 +407,9 @@ pcbs.aditya:
         reversible: true
         reverse_mount: true #(per-key LED)
         include_traces_vias: true
-        # led_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step'
+        side: F
+        led_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step'
+        led_3dmodel_xyz_rotation: [90, 0, 180]
       adjust:
         shift: [led_pos_x, led_pos_y]
         rotate: led_rotation
@@ -447,6 +457,9 @@ pcbs.aditya:
         reversible: true
         from: pos
         to: RAW
+        invert_behavior: false
+        switch_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step'
+        switch_3dmodel_xyz_rotation: [0,0,90]
 
     reset_switch:
       what: ceoloide/reset_switch_smd_side
@@ -460,6 +473,45 @@ pcbs.aditya:
         include_bosses: true
         from: RST
         to: GND
+
+    mounting_hole_top_left:
+      what: ceoloide/mounting_hole_plated
+      where:
+        ref: matrix_pinky_num
+        shift: [-kx/2, -ky/2]
+      params:
+        side: B
+        outline: 0.7
+        drill: 2.2
+
+    mounting_hole_bottom_left:
+      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      where:
+        ref: matrix_pinky_home
+
+
+    mounting_hole_top_right:
+      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      where:
+        ref: matrix_inner_num
+        shift: [(-kx/2) - 0.5 , (-kx/2) + 2.2]
+
+    mounting_hole_bottom_right:
+      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      where:
+        ref: matrix_inner_home
+        shift: [(-kx/2) - 0.5 , (-kx/2) + 2.2]
+
+    mounting_hole_top_center:
+      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      where:
+        ref: matrix_middle_home
+
+    mounting_hole_bottom_center:
+      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      where:
+        ref: matrix_middle_num
+
 
     pussy_cat:
       what: memes/pussy_cat

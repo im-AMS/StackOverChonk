@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "aditya")
-    (date "2024-12-16")
+    (date "2024-12-17")
     (rev "v1.0.0")
     (company "Aditya")
   )
@@ -196,7 +196,7 @@
   
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 96.8 100 90)
+        (at 92.7 102.85 90)
         (property "Reference" "D1"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -226,46 +226,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "P18"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "matrix_outer_down"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 96.8 98.35)
-      (end 96.8 99.45)
+      (start 92.7 101.19999999999999)
+      (end 92.7 102.3)
       (width 0.25)
       (layer "F.Cu")
       (net 1)
     )
     (via
-      (at 96.8 99.45)
+      (at 92.7 102.3)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 1)
     )
     (segment
-      (start 96.8 99.45)
-      (end 96.8 98.35)
+      (start 92.7 102.3)
+      (end 92.7 101.19999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 1)
     )
     (segment
-      (start 96.8 101.65)
-      (end 96.8 100.55)
+      (start 92.7 104.5)
+      (end 92.7 103.39999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 2)
     )
     (via
-      (at 96.8 100.55)
+      (at 92.7 103.39999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 2)
     )
     (segment
-      (start 96.8 100.55)
-      (end 96.8 101.65)
+      (start 92.7 103.39999999999999)
+      (end 92.7 104.5)
       (width 0.25)
       (layer "B.Cu")
       (net 2)
@@ -274,7 +279,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 96.8 83 90)
+        (at 92.7 85.85 90)
         (property "Reference" "D2"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -304,46 +309,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 4 "P19"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 3 "matrix_outer_home"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 96.8 81.35)
-      (end 96.8 82.45)
+      (start 92.7 84.19999999999999)
+      (end 92.7 85.3)
       (width 0.25)
       (layer "F.Cu")
       (net 3)
     )
     (via
-      (at 96.8 82.45)
+      (at 92.7 85.3)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 3)
     )
     (segment
-      (start 96.8 82.45)
-      (end 96.8 81.35)
+      (start 92.7 85.3)
+      (end 92.7 84.19999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 3)
     )
     (segment
-      (start 96.8 84.65)
-      (end 96.8 83.55)
+      (start 92.7 87.5)
+      (end 92.7 86.39999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 4)
     )
     (via
-      (at 96.8 83.55)
+      (at 92.7 86.39999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 4)
     )
     (segment
-      (start 96.8 83.55)
-      (end 96.8 84.65)
+      (start 92.7 86.39999999999999)
+      (end 92.7 87.5)
       (width 0.25)
       (layer "B.Cu")
       (net 4)
@@ -352,7 +362,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 96.8 66 90)
+        (at 92.7 68.85 90)
         (property "Reference" "D3"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -382,46 +392,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "P20"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 5 "matrix_outer_up"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 96.8 64.35)
-      (end 96.8 65.45)
+      (start 92.7 67.19999999999999)
+      (end 92.7 68.3)
       (width 0.25)
       (layer "F.Cu")
       (net 5)
     )
     (via
-      (at 96.8 65.45)
+      (at 92.7 68.3)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 5)
     )
     (segment
-      (start 96.8 65.45)
-      (end 96.8 64.35)
+      (start 92.7 68.3)
+      (end 92.7 67.19999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 5)
     )
     (segment
-      (start 96.8 67.65)
-      (end 96.8 66.55)
+      (start 92.7 70.5)
+      (end 92.7 69.39999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 6)
     )
     (via
-      (at 96.8 66.55)
+      (at 92.7 69.39999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 6)
     )
     (segment
-      (start 96.8 66.55)
-      (end 96.8 67.65)
+      (start 92.7 69.39999999999999)
+      (end 92.7 70.5)
       (width 0.25)
       (layer "B.Cu")
       (net 6)
@@ -430,7 +445,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 96.8 49 90)
+        (at 92.7 51.85 90)
         (property "Reference" "D4"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -460,46 +475,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "P21"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 7 "matrix_outer_num"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 96.8 47.35)
-      (end 96.8 48.45)
+      (start 92.7 50.2)
+      (end 92.7 51.300000000000004)
       (width 0.25)
       (layer "F.Cu")
       (net 7)
     )
     (via
-      (at 96.8 48.45)
+      (at 92.7 51.300000000000004)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 7)
     )
     (segment
-      (start 96.8 48.45)
-      (end 96.8 47.35)
+      (start 92.7 51.300000000000004)
+      (end 92.7 50.2)
       (width 0.25)
       (layer "B.Cu")
       (net 7)
     )
     (segment
-      (start 96.8 50.65)
-      (end 96.8 49.55)
+      (start 92.7 53.5)
+      (end 92.7 52.4)
       (width 0.25)
       (layer "F.Cu")
       (net 8)
     )
     (via
-      (at 96.8 49.55)
+      (at 92.7 52.4)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 8)
     )
     (segment
-      (start 96.8 49.55)
-      (end 96.8 50.65)
+      (start 92.7 52.4)
+      (end 92.7 53.5)
       (width 0.25)
       (layer "B.Cu")
       (net 8)
@@ -508,7 +528,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 114.8 96.6 90)
+        (at 110.7 99.44999999999999 90)
         (property "Reference" "D5"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -538,46 +558,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "P18"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 9 "matrix_pinky_down"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 114.8 94.94999999999999)
-      (end 114.8 96.05)
+      (start 110.7 97.79999999999998)
+      (end 110.7 98.89999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 9)
     )
     (via
-      (at 114.8 96.05)
+      (at 110.7 98.89999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 9)
     )
     (segment
-      (start 114.8 96.05)
-      (end 114.8 94.94999999999999)
+      (start 110.7 98.89999999999999)
+      (end 110.7 97.79999999999998)
       (width 0.25)
       (layer "B.Cu")
       (net 9)
     )
     (segment
-      (start 114.8 98.25)
-      (end 114.8 97.14999999999999)
+      (start 110.7 101.1)
+      (end 110.7 99.99999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 2)
     )
     (via
-      (at 114.8 97.14999999999999)
+      (at 110.7 99.99999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 2)
     )
     (segment
-      (start 114.8 97.14999999999999)
-      (end 114.8 98.25)
+      (start 110.7 99.99999999999999)
+      (end 110.7 101.1)
       (width 0.25)
       (layer "B.Cu")
       (net 2)
@@ -586,7 +611,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 114.8 79.6 90)
+        (at 110.7 82.44999999999999 90)
         (property "Reference" "D6"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -616,46 +641,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 4 "P19"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "matrix_pinky_home"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 114.8 77.94999999999999)
-      (end 114.8 79.05)
+      (start 110.7 80.79999999999998)
+      (end 110.7 81.89999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 10)
     )
     (via
-      (at 114.8 79.05)
+      (at 110.7 81.89999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 10)
     )
     (segment
-      (start 114.8 79.05)
-      (end 114.8 77.94999999999999)
+      (start 110.7 81.89999999999999)
+      (end 110.7 80.79999999999998)
       (width 0.25)
       (layer "B.Cu")
       (net 10)
     )
     (segment
-      (start 114.8 81.25)
-      (end 114.8 80.14999999999999)
+      (start 110.7 84.1)
+      (end 110.7 82.99999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 4)
     )
     (via
-      (at 114.8 80.14999999999999)
+      (at 110.7 82.99999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 4)
     )
     (segment
-      (start 114.8 80.14999999999999)
-      (end 114.8 81.25)
+      (start 110.7 82.99999999999999)
+      (end 110.7 84.1)
       (width 0.25)
       (layer "B.Cu")
       (net 4)
@@ -664,7 +694,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 114.8 62.599999999999994 90)
+        (at 110.7 65.44999999999999 90)
         (property "Reference" "D7"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -694,46 +724,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "P20"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 11 "matrix_pinky_up"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 114.8 60.949999999999996)
-      (end 114.8 62.05)
+      (start 110.7 63.79999999999999)
+      (end 110.7 64.89999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 11)
     )
     (via
-      (at 114.8 62.05)
+      (at 110.7 64.89999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 11)
     )
     (segment
-      (start 114.8 62.05)
-      (end 114.8 60.949999999999996)
+      (start 110.7 64.89999999999999)
+      (end 110.7 63.79999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 11)
     )
     (segment
-      (start 114.8 64.25)
-      (end 114.8 63.14999999999999)
+      (start 110.7 67.1)
+      (end 110.7 65.99999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 6)
     )
     (via
-      (at 114.8 63.14999999999999)
+      (at 110.7 65.99999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 6)
     )
     (segment
-      (start 114.8 63.14999999999999)
-      (end 114.8 64.25)
+      (start 110.7 65.99999999999999)
+      (end 110.7 67.1)
       (width 0.25)
       (layer "B.Cu")
       (net 6)
@@ -742,7 +777,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 114.8 45.599999999999994 90)
+        (at 110.7 48.449999999999996 90)
         (property "Reference" "D8"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -772,46 +807,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "P21"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "matrix_pinky_num"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 114.8 43.949999999999996)
-      (end 114.8 45.05)
+      (start 110.7 46.8)
+      (end 110.7 47.9)
       (width 0.25)
       (layer "F.Cu")
       (net 12)
     )
     (via
-      (at 114.8 45.05)
+      (at 110.7 47.9)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 12)
     )
     (segment
-      (start 114.8 45.05)
-      (end 114.8 43.949999999999996)
+      (start 110.7 47.9)
+      (end 110.7 46.8)
       (width 0.25)
       (layer "B.Cu")
       (net 12)
     )
     (segment
-      (start 114.8 47.24999999999999)
-      (end 114.8 46.14999999999999)
+      (start 110.7 50.099999999999994)
+      (end 110.7 48.99999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 8)
     )
     (via
-      (at 114.8 46.14999999999999)
+      (at 110.7 48.99999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 8)
     )
     (segment
-      (start 114.8 46.14999999999999)
-      (end 114.8 47.24999999999999)
+      (start 110.7 48.99999999999999)
+      (end 110.7 50.099999999999994)
       (width 0.25)
       (layer "B.Cu")
       (net 8)
@@ -820,7 +860,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 132.8 91.5 90)
+        (at 128.7 94.35 90)
         (property "Reference" "D9"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -850,46 +890,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "P18"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "matrix_ring_down"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 132.8 89.85)
-      (end 132.8 90.95)
+      (start 128.7 92.69999999999999)
+      (end 128.7 93.8)
       (width 0.25)
       (layer "F.Cu")
       (net 13)
     )
     (via
-      (at 132.8 90.95)
+      (at 128.7 93.8)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 13)
     )
     (segment
-      (start 132.8 90.95)
-      (end 132.8 89.85)
+      (start 128.7 93.8)
+      (end 128.7 92.69999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 13)
     )
     (segment
-      (start 132.8 93.15)
-      (end 132.8 92.05)
+      (start 128.7 96)
+      (end 128.7 94.89999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 2)
     )
     (via
-      (at 132.8 92.05)
+      (at 128.7 94.89999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 2)
     )
     (segment
-      (start 132.8 92.05)
-      (end 132.8 93.15)
+      (start 128.7 94.89999999999999)
+      (end 128.7 96)
       (width 0.25)
       (layer "B.Cu")
       (net 2)
@@ -898,7 +943,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 132.8 74.5 90)
+        (at 128.7 77.35 90)
         (property "Reference" "D10"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -928,46 +973,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 4 "P19"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 14 "matrix_ring_home"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 132.8 72.85)
-      (end 132.8 73.95)
+      (start 128.7 75.69999999999999)
+      (end 128.7 76.8)
       (width 0.25)
       (layer "F.Cu")
       (net 14)
     )
     (via
-      (at 132.8 73.95)
+      (at 128.7 76.8)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 14)
     )
     (segment
-      (start 132.8 73.95)
-      (end 132.8 72.85)
+      (start 128.7 76.8)
+      (end 128.7 75.69999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 14)
     )
     (segment
-      (start 132.8 76.15)
-      (end 132.8 75.05)
+      (start 128.7 79)
+      (end 128.7 77.89999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 4)
     )
     (via
-      (at 132.8 75.05)
+      (at 128.7 77.89999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 4)
     )
     (segment
-      (start 132.8 75.05)
-      (end 132.8 76.15)
+      (start 128.7 77.89999999999999)
+      (end 128.7 79)
       (width 0.25)
       (layer "B.Cu")
       (net 4)
@@ -976,7 +1026,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 132.8 57.5 90)
+        (at 128.7 60.35 90)
         (property "Reference" "D11"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1006,46 +1056,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "P20"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "matrix_ring_up"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 132.8 55.85)
-      (end 132.8 56.95)
+      (start 128.7 58.7)
+      (end 128.7 59.800000000000004)
       (width 0.25)
       (layer "F.Cu")
       (net 15)
     )
     (via
-      (at 132.8 56.95)
+      (at 128.7 59.800000000000004)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 15)
     )
     (segment
-      (start 132.8 56.95)
-      (end 132.8 55.85)
+      (start 128.7 59.800000000000004)
+      (end 128.7 58.7)
       (width 0.25)
       (layer "B.Cu")
       (net 15)
     )
     (segment
-      (start 132.8 59.15)
-      (end 132.8 58.05)
+      (start 128.7 62)
+      (end 128.7 60.9)
       (width 0.25)
       (layer "F.Cu")
       (net 6)
     )
     (via
-      (at 132.8 58.05)
+      (at 128.7 60.9)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 6)
     )
     (segment
-      (start 132.8 58.05)
-      (end 132.8 59.15)
+      (start 128.7 60.9)
+      (end 128.7 62)
       (width 0.25)
       (layer "B.Cu")
       (net 6)
@@ -1054,7 +1109,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 132.8 40.5 90)
+        (at 128.7 43.35 90)
         (property "Reference" "D12"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1084,46 +1139,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "P21"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 16 "matrix_ring_num"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 132.8 38.85)
-      (end 132.8 39.95)
+      (start 128.7 41.7)
+      (end 128.7 42.800000000000004)
       (width 0.25)
       (layer "F.Cu")
       (net 16)
     )
     (via
-      (at 132.8 39.95)
+      (at 128.7 42.800000000000004)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 16)
     )
     (segment
-      (start 132.8 39.95)
-      (end 132.8 38.85)
+      (start 128.7 42.800000000000004)
+      (end 128.7 41.7)
       (width 0.25)
       (layer "B.Cu")
       (net 16)
     )
     (segment
-      (start 132.8 42.15)
-      (end 132.8 41.05)
+      (start 128.7 45)
+      (end 128.7 43.9)
       (width 0.25)
       (layer "F.Cu")
       (net 8)
     )
     (via
-      (at 132.8 41.05)
+      (at 128.7 43.9)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 8)
     )
     (segment
-      (start 132.8 41.05)
-      (end 132.8 42.15)
+      (start 128.7 43.9)
+      (end 128.7 45)
       (width 0.25)
       (layer "B.Cu")
       (net 8)
@@ -1132,7 +1192,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 150.8 86.4 90)
+        (at 146.7 89.25 90)
         (property "Reference" "D13"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1162,46 +1222,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "P18"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 17 "matrix_middle_down"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 150.8 84.75)
-      (end 150.8 85.85000000000001)
+      (start 146.7 87.6)
+      (end 146.7 88.7)
       (width 0.25)
       (layer "F.Cu")
       (net 17)
     )
     (via
-      (at 150.8 85.85000000000001)
+      (at 146.7 88.7)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 17)
     )
     (segment
-      (start 150.8 85.85000000000001)
-      (end 150.8 84.75)
+      (start 146.7 88.7)
+      (end 146.7 87.6)
       (width 0.25)
       (layer "B.Cu")
       (net 17)
     )
     (segment
-      (start 150.8 88.05000000000001)
-      (end 150.8 86.95)
+      (start 146.7 90.9)
+      (end 146.7 89.8)
       (width 0.25)
       (layer "F.Cu")
       (net 2)
     )
     (via
-      (at 150.8 86.95)
+      (at 146.7 89.8)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 2)
     )
     (segment
-      (start 150.8 86.95)
-      (end 150.8 88.05000000000001)
+      (start 146.7 89.8)
+      (end 146.7 90.9)
       (width 0.25)
       (layer "B.Cu")
       (net 2)
@@ -1210,7 +1275,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 150.8 69.4 90)
+        (at 146.7 72.25 90)
         (property "Reference" "D14"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1240,46 +1305,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 4 "P19"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "matrix_middle_home"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 150.8 67.75)
-      (end 150.8 68.85000000000001)
+      (start 146.7 70.6)
+      (end 146.7 71.7)
       (width 0.25)
       (layer "F.Cu")
       (net 18)
     )
     (via
-      (at 150.8 68.85000000000001)
+      (at 146.7 71.7)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 18)
     )
     (segment
-      (start 150.8 68.85000000000001)
-      (end 150.8 67.75)
+      (start 146.7 71.7)
+      (end 146.7 70.6)
       (width 0.25)
       (layer "B.Cu")
       (net 18)
     )
     (segment
-      (start 150.8 71.05000000000001)
-      (end 150.8 69.95)
+      (start 146.7 73.9)
+      (end 146.7 72.8)
       (width 0.25)
       (layer "F.Cu")
       (net 4)
     )
     (via
-      (at 150.8 69.95)
+      (at 146.7 72.8)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 4)
     )
     (segment
-      (start 150.8 69.95)
-      (end 150.8 71.05000000000001)
+      (start 146.7 72.8)
+      (end 146.7 73.9)
       (width 0.25)
       (layer "B.Cu")
       (net 4)
@@ -1288,7 +1358,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 150.8 52.400000000000006 90)
+        (at 146.7 55.25000000000001 90)
         (property "Reference" "D15"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1318,46 +1388,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "P20"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 19 "matrix_middle_up"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 150.8 50.75000000000001)
-      (end 150.8 51.85000000000001)
+      (start 146.7 53.60000000000001)
+      (end 146.7 54.70000000000001)
       (width 0.25)
       (layer "F.Cu")
       (net 19)
     )
     (via
-      (at 150.8 51.85000000000001)
+      (at 146.7 54.70000000000001)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 19)
     )
     (segment
-      (start 150.8 51.85000000000001)
-      (end 150.8 50.75000000000001)
+      (start 146.7 54.70000000000001)
+      (end 146.7 53.60000000000001)
       (width 0.25)
       (layer "B.Cu")
       (net 19)
     )
     (segment
-      (start 150.8 54.050000000000004)
-      (end 150.8 52.95)
+      (start 146.7 56.900000000000006)
+      (end 146.7 55.800000000000004)
       (width 0.25)
       (layer "F.Cu")
       (net 6)
     )
     (via
-      (at 150.8 52.95)
+      (at 146.7 55.800000000000004)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 6)
     )
     (segment
-      (start 150.8 52.95)
-      (end 150.8 54.050000000000004)
+      (start 146.7 55.800000000000004)
+      (end 146.7 56.900000000000006)
       (width 0.25)
       (layer "B.Cu")
       (net 6)
@@ -1366,7 +1441,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 150.8 35.400000000000006 90)
+        (at 146.7 38.25000000000001 90)
         (property "Reference" "D16"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1396,46 +1471,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "P21"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "matrix_middle_num"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 150.8 33.75000000000001)
-      (end 150.8 34.85000000000001)
+      (start 146.7 36.60000000000001)
+      (end 146.7 37.70000000000001)
       (width 0.25)
       (layer "F.Cu")
       (net 20)
     )
     (via
-      (at 150.8 34.85000000000001)
+      (at 146.7 37.70000000000001)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 20)
     )
     (segment
-      (start 150.8 34.85000000000001)
-      (end 150.8 33.75000000000001)
+      (start 146.7 37.70000000000001)
+      (end 146.7 36.60000000000001)
       (width 0.25)
       (layer "B.Cu")
       (net 20)
     )
     (segment
-      (start 150.8 37.050000000000004)
-      (end 150.8 35.95)
+      (start 146.7 39.900000000000006)
+      (end 146.7 38.800000000000004)
       (width 0.25)
       (layer "F.Cu")
       (net 8)
     )
     (via
-      (at 150.8 35.95)
+      (at 146.7 38.800000000000004)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 8)
     )
     (segment
-      (start 150.8 35.95)
-      (end 150.8 37.050000000000004)
+      (start 146.7 38.800000000000004)
+      (end 146.7 39.900000000000006)
       (width 0.25)
       (layer "B.Cu")
       (net 8)
@@ -1444,7 +1524,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 168.8 91.5 90)
+        (at 164.7 94.35 90)
         (property "Reference" "D17"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1474,46 +1554,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "P18"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "matrix_index_down"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 168.8 89.85)
-      (end 168.8 90.95)
+      (start 164.7 92.69999999999999)
+      (end 164.7 93.8)
       (width 0.25)
       (layer "F.Cu")
       (net 21)
     )
     (via
-      (at 168.8 90.95)
+      (at 164.7 93.8)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 21)
     )
     (segment
-      (start 168.8 90.95)
-      (end 168.8 89.85)
+      (start 164.7 93.8)
+      (end 164.7 92.69999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 21)
     )
     (segment
-      (start 168.8 93.15)
-      (end 168.8 92.05)
+      (start 164.7 96)
+      (end 164.7 94.89999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 2)
     )
     (via
-      (at 168.8 92.05)
+      (at 164.7 94.89999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 2)
     )
     (segment
-      (start 168.8 92.05)
-      (end 168.8 93.15)
+      (start 164.7 94.89999999999999)
+      (end 164.7 96)
       (width 0.25)
       (layer "B.Cu")
       (net 2)
@@ -1522,7 +1607,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 168.8 74.5 90)
+        (at 164.7 77.35 90)
         (property "Reference" "D18"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1552,46 +1637,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 4 "P19"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 22 "matrix_index_home"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 168.8 72.85)
-      (end 168.8 73.95)
+      (start 164.7 75.69999999999999)
+      (end 164.7 76.8)
       (width 0.25)
       (layer "F.Cu")
       (net 22)
     )
     (via
-      (at 168.8 73.95)
+      (at 164.7 76.8)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 22)
     )
     (segment
-      (start 168.8 73.95)
-      (end 168.8 72.85)
+      (start 164.7 76.8)
+      (end 164.7 75.69999999999999)
       (width 0.25)
       (layer "B.Cu")
       (net 22)
     )
     (segment
-      (start 168.8 76.15)
-      (end 168.8 75.05)
+      (start 164.7 79)
+      (end 164.7 77.89999999999999)
       (width 0.25)
       (layer "F.Cu")
       (net 4)
     )
     (via
-      (at 168.8 75.05)
+      (at 164.7 77.89999999999999)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 4)
     )
     (segment
-      (start 168.8 75.05)
-      (end 168.8 76.15)
+      (start 164.7 77.89999999999999)
+      (end 164.7 79)
       (width 0.25)
       (layer "B.Cu")
       (net 4)
@@ -1600,7 +1690,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 168.8 57.5 90)
+        (at 164.7 60.35 90)
         (property "Reference" "D19"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1630,46 +1720,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "P20"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "matrix_index_up"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 168.8 55.85)
-      (end 168.8 56.95)
+      (start 164.7 58.7)
+      (end 164.7 59.800000000000004)
       (width 0.25)
       (layer "F.Cu")
       (net 23)
     )
     (via
-      (at 168.8 56.95)
+      (at 164.7 59.800000000000004)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 23)
     )
     (segment
-      (start 168.8 56.95)
-      (end 168.8 55.85)
+      (start 164.7 59.800000000000004)
+      (end 164.7 58.7)
       (width 0.25)
       (layer "B.Cu")
       (net 23)
     )
     (segment
-      (start 168.8 59.15)
-      (end 168.8 58.05)
+      (start 164.7 62)
+      (end 164.7 60.9)
       (width 0.25)
       (layer "F.Cu")
       (net 6)
     )
     (via
-      (at 168.8 58.05)
+      (at 164.7 60.9)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 6)
     )
     (segment
-      (start 168.8 58.05)
-      (end 168.8 59.15)
+      (start 164.7 60.9)
+      (end 164.7 62)
       (width 0.25)
       (layer "B.Cu")
       (net 6)
@@ -1678,7 +1773,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 168.8 40.5 90)
+        (at 164.7 43.35 90)
         (property "Reference" "D20"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1708,46 +1803,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "P21"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "matrix_index_num"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 168.8 38.85)
-      (end 168.8 39.95)
+      (start 164.7 41.7)
+      (end 164.7 42.800000000000004)
       (width 0.25)
       (layer "F.Cu")
       (net 24)
     )
     (via
-      (at 168.8 39.95)
+      (at 164.7 42.800000000000004)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 24)
     )
     (segment
-      (start 168.8 39.95)
-      (end 168.8 38.85)
+      (start 164.7 42.800000000000004)
+      (end 164.7 41.7)
       (width 0.25)
       (layer "B.Cu")
       (net 24)
     )
     (segment
-      (start 168.8 42.15)
-      (end 168.8 41.05)
+      (start 164.7 45)
+      (end 164.7 43.9)
       (width 0.25)
       (layer "F.Cu")
       (net 8)
     )
     (via
-      (at 168.8 41.05)
+      (at 164.7 43.9)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 8)
     )
     (segment
-      (start 168.8 41.05)
-      (end 168.8 42.15)
+      (start 164.7 43.9)
+      (end 164.7 45)
       (width 0.25)
       (layer "B.Cu")
       (net 8)
@@ -1756,7 +1856,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 186.8 93.37 90)
+        (at 182.7 96.22 90)
         (property "Reference" "D21"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1786,46 +1886,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "P18"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "matrix_inner_down"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 186.8 91.72)
-      (end 186.8 92.82000000000001)
+      (start 182.7 94.57)
+      (end 182.7 95.67)
       (width 0.25)
       (layer "F.Cu")
       (net 25)
     )
     (via
-      (at 186.8 92.82000000000001)
+      (at 182.7 95.67)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 25)
     )
     (segment
-      (start 186.8 92.82000000000001)
-      (end 186.8 91.72)
+      (start 182.7 95.67)
+      (end 182.7 94.57)
       (width 0.25)
       (layer "B.Cu")
       (net 25)
     )
     (segment
-      (start 186.8 95.02000000000001)
-      (end 186.8 93.92)
+      (start 182.7 97.87)
+      (end 182.7 96.77)
       (width 0.25)
       (layer "F.Cu")
       (net 2)
     )
     (via
-      (at 186.8 93.92)
+      (at 182.7 96.77)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 2)
     )
     (segment
-      (start 186.8 93.92)
-      (end 186.8 95.02000000000001)
+      (start 182.7 96.77)
+      (end 182.7 97.87)
       (width 0.25)
       (layer "B.Cu")
       (net 2)
@@ -1834,7 +1939,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 186.8 76.37 90)
+        (at 182.7 79.22 90)
         (property "Reference" "D22"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1864,46 +1969,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 4 "P19"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 26 "matrix_inner_home"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 186.8 74.72)
-      (end 186.8 75.82000000000001)
+      (start 182.7 77.57)
+      (end 182.7 78.67)
       (width 0.25)
       (layer "F.Cu")
       (net 26)
     )
     (via
-      (at 186.8 75.82000000000001)
+      (at 182.7 78.67)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 26)
     )
     (segment
-      (start 186.8 75.82000000000001)
-      (end 186.8 74.72)
+      (start 182.7 78.67)
+      (end 182.7 77.57)
       (width 0.25)
       (layer "B.Cu")
       (net 26)
     )
     (segment
-      (start 186.8 78.02000000000001)
-      (end 186.8 76.92)
+      (start 182.7 80.87)
+      (end 182.7 79.77)
       (width 0.25)
       (layer "F.Cu")
       (net 4)
     )
     (via
-      (at 186.8 76.92)
+      (at 182.7 79.77)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 4)
     )
     (segment
-      (start 186.8 76.92)
-      (end 186.8 78.02000000000001)
+      (start 182.7 79.77)
+      (end 182.7 80.87)
       (width 0.25)
       (layer "B.Cu")
       (net 4)
@@ -1912,7 +2022,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 186.8 59.370000000000005 90)
+        (at 182.7 62.220000000000006 90)
         (property "Reference" "D23"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -1942,46 +2052,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "P20"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 27 "matrix_inner_up"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 186.8 57.720000000000006)
-      (end 186.8 58.82000000000001)
+      (start 182.7 60.57000000000001)
+      (end 182.7 61.67000000000001)
       (width 0.25)
       (layer "F.Cu")
       (net 27)
     )
     (via
-      (at 186.8 58.82000000000001)
+      (at 182.7 61.67000000000001)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 27)
     )
     (segment
-      (start 186.8 58.82000000000001)
-      (end 186.8 57.720000000000006)
+      (start 182.7 61.67000000000001)
+      (end 182.7 60.57000000000001)
       (width 0.25)
       (layer "B.Cu")
       (net 27)
     )
     (segment
-      (start 186.8 61.02)
-      (end 186.8 59.92)
+      (start 182.7 63.870000000000005)
+      (end 182.7 62.77)
       (width 0.25)
       (layer "F.Cu")
       (net 6)
     )
     (via
-      (at 186.8 59.92)
+      (at 182.7 62.77)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 6)
     )
     (segment
-      (start 186.8 59.92)
-      (end 186.8 61.02)
+      (start 182.7 62.77)
+      (end 182.7 63.870000000000005)
       (width 0.25)
       (layer "B.Cu")
       (net 6)
@@ -1990,7 +2105,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 186.8 42.370000000000005 90)
+        (at 182.7 45.220000000000006 90)
         (property "Reference" "D24"
             (at 0 0 90)
             (layer "F.SilkS")
@@ -2020,46 +2135,51 @@
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "P21"))
       (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 28 "matrix_inner_num"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 186.8 40.720000000000006)
-      (end 186.8 41.82000000000001)
+      (start 182.7 43.57000000000001)
+      (end 182.7 44.67000000000001)
       (width 0.25)
       (layer "F.Cu")
       (net 28)
     )
     (via
-      (at 186.8 41.82000000000001)
+      (at 182.7 44.67000000000001)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 28)
     )
     (segment
-      (start 186.8 41.82000000000001)
-      (end 186.8 40.720000000000006)
+      (start 182.7 44.67000000000001)
+      (end 182.7 43.57000000000001)
       (width 0.25)
       (layer "B.Cu")
       (net 28)
     )
     (segment
-      (start 186.8 44.02)
-      (end 186.8 42.92)
+      (start 182.7 46.870000000000005)
+      (end 182.7 45.77)
       (width 0.25)
       (layer "F.Cu")
       (net 8)
     )
     (via
-      (at 186.8 42.92)
+      (at 182.7 45.77)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 8)
     )
     (segment
-      (start 186.8 42.92)
-      (end 186.8 44.02)
+      (start 182.7 45.77)
+      (end 182.7 46.870000000000005)
       (width 0.25)
       (layer "B.Cu")
       (net 8)
@@ -2068,7 +2188,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 160.5187531 111.07784840000001 85)
+        (at 156.1859609 113.55966480000001 85)
         (property "Reference" "D25"
             (at 0 0 85)
             (layer "F.SilkS")
@@ -2098,46 +2218,51 @@
       (pad "1" smd rect (at -1.65 0 85) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "P15"))
       (pad "2" smd rect (at 1.65 0 85) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 29 "thumbs_col1_cluster"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 160.6625601 109.43412710000001)
-      (end 160.5666888 110.5299413)
+      (start 156.3297679 111.91594350000001)
+      (end 156.2338966 113.0117577)
       (width 0.25)
       (layer "F.Cu")
       (net 29)
     )
     (via
-      (at 160.5666888 110.5299413)
+      (at 156.2338966 113.0117577)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 29)
     )
     (segment
-      (start 160.5666888 110.5299413)
-      (end 160.6625601 109.43412710000001)
+      (start 156.2338966 113.0117577)
+      (end 156.3297679 111.91594350000001)
       (width 0.25)
       (layer "B.Cu")
       (net 29)
     )
     (segment
-      (start 160.3749461 112.7215697)
-      (end 160.4708174 111.62575550000001)
+      (start 156.0421539 115.2033861)
+      (end 156.1380252 114.10757190000001)
       (width 0.25)
       (layer "F.Cu")
       (net 30)
     )
     (via
-      (at 160.4708174 111.62575550000001)
+      (at 156.1380252 114.10757190000001)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 30)
     )
     (segment
-      (start 160.4708174 111.62575550000001)
-      (end 160.3749461 112.7215697)
+      (start 156.1380252 114.10757190000001)
+      (end 156.0421539 115.2033861)
       (width 0.25)
       (layer "B.Cu")
       (net 30)
@@ -2146,7 +2271,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 180.6304115 113.9780245 75)
+        (at 175.9324813 115.66975500000001 75)
         (property "Reference" "D26"
             (at 0 0 75)
             (layer "F.SilkS")
@@ -2176,46 +2301,51 @@
       (pad "1" smd rect (at -1.65 0 75) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "P15"))
       (pad "2" smd rect (at 1.65 0 75) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 31 "thumbs_col2_cluster"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 181.05746290000002 112.38424690000001)
-      (end 180.772762 113.44676530000001)
+      (start 176.35953270000002 114.07597740000001)
+      (end 176.0748318 115.13849580000002)
       (width 0.25)
       (layer "F.Cu")
       (net 31)
     )
     (via
-      (at 180.772762 113.44676530000001)
+      (at 176.0748318 115.13849580000002)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 31)
     )
     (segment
-      (start 180.772762 113.44676530000001)
-      (end 181.05746290000002 112.38424690000001)
+      (start 176.0748318 115.13849580000002)
+      (end 176.35953270000002 114.07597740000001)
       (width 0.25)
       (layer "B.Cu")
       (net 31)
     )
     (segment
-      (start 180.2033601 115.5718021)
-      (end 180.48806100000002 114.5092837)
+      (start 175.5054299 117.2635326)
+      (end 175.79013080000001 116.2010142)
       (width 0.25)
       (layer "F.Cu")
       (net 30)
     )
     (via
-      (at 180.48806100000002 114.5092837)
+      (at 175.79013080000001 116.2010142)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 30)
     )
     (segment
-      (start 180.48806100000002 114.5092837)
-      (end 180.2033601 115.5718021)
+      (start 175.79013080000001 116.2010142)
+      (end 175.5054299 117.2635326)
       (width 0.25)
       (layer "B.Cu")
       (net 30)
@@ -2224,7 +2354,7 @@
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
-        (at 199.9329183 120.3264932 65)
+        (at 195.01259430000002 121.1767355 65)
         (property "Reference" "D27"
             (at 0 0 65)
             (layer "F.SilkS")
@@ -2254,46 +2384,51 @@
       (pad "1" smd rect (at -1.65 0 65) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "P15"))
       (pad "2" smd rect (at 1.65 0 65) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 32 "thumbs_col3_cluster"))
         
+      (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+          (offset (xyz 0 0 0))
+          (scale (xyz 1 1 1))
+          (rotate (xyz 0 0 0)))
+        
     )
         
     (segment
-      (start 200.63023840000002 118.8310854)
-      (end 200.1653583 119.8280239)
+      (start 195.70991440000003 119.68132770000001)
+      (end 195.24503430000001 120.67826620000001)
       (width 0.25)
       (layer "F.Cu")
       (net 32)
     )
     (via
-      (at 200.1653583 119.8280239)
+      (at 195.24503430000001 120.67826620000001)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 32)
     )
     (segment
-      (start 200.1653583 119.8280239)
-      (end 200.63023840000002 118.8310854)
+      (start 195.24503430000001 120.67826620000001)
+      (end 195.70991440000003 119.68132770000001)
       (width 0.25)
       (layer "B.Cu")
       (net 32)
     )
     (segment
-      (start 199.2355982 121.821901)
-      (end 199.70047830000001 120.8249625)
+      (start 194.3152742 122.6721433)
+      (end 194.78015430000002 121.6752048)
       (width 0.25)
       (layer "F.Cu")
       (net 30)
     )
     (via
-      (at 199.70047830000001 120.8249625)
+      (at 194.78015430000002 121.6752048)
       (size 0.6)
       (drill 0.3)
       (layers "F.Cu" "B.Cu")
       (net 30)
     )
     (segment
-      (start 199.70047830000001 120.8249625)
-      (end 199.2355982 121.821901)
+      (start 194.78015430000002 121.6752048)
+      (end 194.3152742 122.6721433)
       (width 0.25)
       (layer "B.Cu")
       (net 30)
@@ -2405,57 +2540,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 1 "matrix_outer_down")
+      (net 33 "P1")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "P1"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "matrix_outer_down"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 103.275 94.05)
-		(end 107.775 94.05)
+		(end 101.2 96.125)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 33)
+	)
+	(segment
+		(start 101.2 96.125)
+		(end 100 96.125)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 33)
 	)
 	(via
-		(at 107.775 94.05)
+		(at 100 96.125)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 107.775 96.25)
-		(end 107.775 94.05)
+		(start 98.8 96.125)
+		(end 100 96.125)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 92.225 96.25)
-		(end 92.225 94.05)
+		(start 96.725 94.05)
+		(end 98.8 96.125)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+	)
+	(segment
+		(start 93.579 98.104)
+		(end 97.846 98.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+	)
+	(segment
+		(start 99.025 96.925)
+		(end 100 96.925)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+	)
+	(segment
+		(start 91.725 96.25)
+		(end 93.579 98.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+	)
+	(segment
+		(start 97.846 98.104)
+		(end 99.025 96.925)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 1)
 	)
 	(via
-		(at 92.225 94.05)
+		(at 100 96.925)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 1)
 	)
 	(segment
-		(start 96.725 94.05)
-		(end 92.225 94.05)
+		(start 102.140166 98.104)
+		(end 100.961166 96.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 1)
+	)
+	(segment
+		(start 106.421 98.104)
+		(end 102.140166 98.104)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 1)
+	)
+	(segment
+		(start 100.961166 96.925)
+		(end 100 96.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 1)
+	)
+	(segment
+		(start 108.275 96.25)
+		(end 106.421 98.104)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 1)
@@ -2567,57 +2776,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 3 "matrix_outer_home")
+      (net 33 "P1")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "P1"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 3 "matrix_outer_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 103.275 77.05)
-		(end 107.775 77.05)
+		(end 101.2 79.125)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 33)
+	)
+	(segment
+		(start 101.2 79.125)
+		(end 100 79.125)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 33)
 	)
 	(via
-		(at 107.775 77.05)
+		(at 100 79.125)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 107.775 79.25)
-		(end 107.775 77.05)
+		(start 98.8 79.125)
+		(end 100 79.125)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 92.225 79.25)
-		(end 92.225 77.05)
+		(start 96.725 77.05)
+		(end 98.8 79.125)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+	)
+	(segment
+		(start 93.579 81.104)
+		(end 97.846 81.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+	)
+	(segment
+		(start 99.025 79.925)
+		(end 100 79.925)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+	)
+	(segment
+		(start 91.725 79.25)
+		(end 93.579 81.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+	)
+	(segment
+		(start 97.846 81.104)
+		(end 99.025 79.925)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 3)
 	)
 	(via
-		(at 92.225 77.05)
+		(at 100 79.925)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 3)
 	)
 	(segment
-		(start 96.725 77.05)
-		(end 92.225 77.05)
+		(start 102.140166 81.104)
+		(end 100.961166 79.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 3)
+	)
+	(segment
+		(start 106.421 81.104)
+		(end 102.140166 81.104)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 3)
+	)
+	(segment
+		(start 100.961166 79.925)
+		(end 100 79.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 3)
+	)
+	(segment
+		(start 108.275 79.25)
+		(end 106.421 81.104)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 3)
@@ -2729,57 +3012,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 5 "matrix_outer_up")
+      (net 33 "P1")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "P1"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 5 "matrix_outer_up"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 103.275 60.05)
-		(end 107.775 60.05)
+		(end 101.2 62.125)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 33)
+	)
+	(segment
+		(start 101.2 62.125)
+		(end 100 62.125)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 33)
 	)
 	(via
-		(at 107.775 60.05)
+		(at 100 62.125)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 107.775 62.25)
-		(end 107.775 60.05)
+		(start 98.8 62.125)
+		(end 100 62.125)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 92.225 62.25)
-		(end 92.225 60.05)
+		(start 96.725 60.05)
+		(end 98.8 62.125)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+	)
+	(segment
+		(start 93.579 64.104)
+		(end 97.846 64.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+	)
+	(segment
+		(start 99.025 62.925)
+		(end 100 62.925)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+	)
+	(segment
+		(start 91.725 62.25)
+		(end 93.579 64.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+	)
+	(segment
+		(start 97.846 64.104)
+		(end 99.025 62.925)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 5)
 	)
 	(via
-		(at 92.225 60.05)
+		(at 100 62.925)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 5)
 	)
 	(segment
-		(start 96.725 60.05)
-		(end 92.225 60.05)
+		(start 102.140166 64.104)
+		(end 100.961166 62.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 5)
+	)
+	(segment
+		(start 106.421 64.104)
+		(end 102.140166 64.104)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 5)
+	)
+	(segment
+		(start 100.961166 62.925)
+		(end 100 62.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 5)
+	)
+	(segment
+		(start 108.275 62.25)
+		(end 106.421 64.104)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 5)
@@ -2891,57 +3248,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 7 "matrix_outer_num")
+      (net 33 "P1")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "P1"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 7 "matrix_outer_num"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 103.275 43.05)
-		(end 107.775 43.05)
+		(end 101.2 45.125)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 33)
+	)
+	(segment
+		(start 101.2 45.125)
+		(end 100 45.125)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 33)
 	)
 	(via
-		(at 107.775 43.05)
+		(at 100 45.125)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 107.775 45.25)
-		(end 107.775 43.05)
+		(start 98.8 45.125)
+		(end 100 45.125)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 33)
 	)
 	(segment
-		(start 92.225 45.25)
-		(end 92.225 43.05)
+		(start 96.725 43.05)
+		(end 98.8 45.125)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+	)
+	(segment
+		(start 93.579 47.104)
+		(end 97.846 47.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+	)
+	(segment
+		(start 99.025 45.925)
+		(end 100 45.925)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+	)
+	(segment
+		(start 91.725 45.25)
+		(end 93.579 47.104)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+	)
+	(segment
+		(start 97.846 47.104)
+		(end 99.025 45.925)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 7)
 	)
 	(via
-		(at 92.225 43.05)
+		(at 100 45.925)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 7)
 	)
 	(segment
-		(start 96.725 43.05)
-		(end 92.225 43.05)
+		(start 102.140166 47.104)
+		(end 100.961166 45.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 7)
+	)
+	(segment
+		(start 106.421 47.104)
+		(end 102.140166 47.104)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 7)
+	)
+	(segment
+		(start 100.961166 45.925)
+		(end 100 45.925)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 7)
+	)
+	(segment
+		(start 108.275 45.25)
+		(end 106.421 47.104)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 7)
@@ -3053,57 +3484,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 9 "matrix_pinky_down")
+      (net 37 "P0")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "P0"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 9 "matrix_pinky_down"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 121.275 90.64999999999999)
-		(end 125.775 90.64999999999999)
+		(end 119.2 92.725)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 37)
+	)
+	(segment
+		(start 119.2 92.725)
+		(end 118 92.725)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 37)
 	)
 	(via
-		(at 125.775 90.64999999999999)
+		(at 118 92.725)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 125.775 92.85)
-		(end 125.775 90.64999999999999)
+		(start 116.8 92.725)
+		(end 118 92.725)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 110.225 92.85)
-		(end 110.225 90.64999999999999)
+		(start 114.725 90.64999999999999)
+		(end 116.8 92.725)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 37)
+	)
+	(segment
+		(start 111.579 94.704)
+		(end 115.846 94.704)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+	)
+	(segment
+		(start 117.025 93.52499999999999)
+		(end 118 93.52499999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+	)
+	(segment
+		(start 109.725 92.85)
+		(end 111.579 94.704)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+	)
+	(segment
+		(start 115.846 94.704)
+		(end 117.025 93.52499999999999)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 9)
 	)
 	(via
-		(at 110.225 90.64999999999999)
+		(at 118 93.52499999999999)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 9)
 	)
 	(segment
-		(start 114.725 90.64999999999999)
-		(end 110.225 90.64999999999999)
+		(start 120.140166 94.704)
+		(end 118.961166 93.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 9)
+	)
+	(segment
+		(start 124.421 94.704)
+		(end 120.140166 94.704)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 9)
+	)
+	(segment
+		(start 118.961166 93.52499999999999)
+		(end 118 93.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 9)
+	)
+	(segment
+		(start 126.275 92.85)
+		(end 124.421 94.704)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 9)
@@ -3215,57 +3720,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 10 "matrix_pinky_home")
+      (net 37 "P0")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "P0"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "matrix_pinky_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 121.275 73.64999999999999)
-		(end 125.775 73.64999999999999)
+		(end 119.2 75.725)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 37)
+	)
+	(segment
+		(start 119.2 75.725)
+		(end 118 75.725)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 37)
 	)
 	(via
-		(at 125.775 73.64999999999999)
+		(at 118 75.725)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 125.775 75.85)
-		(end 125.775 73.64999999999999)
+		(start 116.8 75.725)
+		(end 118 75.725)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 110.225 75.85)
-		(end 110.225 73.64999999999999)
+		(start 114.725 73.64999999999999)
+		(end 116.8 75.725)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 37)
+	)
+	(segment
+		(start 111.579 77.704)
+		(end 115.846 77.704)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+	)
+	(segment
+		(start 117.025 76.52499999999999)
+		(end 118 76.52499999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+	)
+	(segment
+		(start 109.725 75.85)
+		(end 111.579 77.704)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+	)
+	(segment
+		(start 115.846 77.704)
+		(end 117.025 76.52499999999999)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 10)
 	)
 	(via
-		(at 110.225 73.64999999999999)
+		(at 118 76.52499999999999)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 10)
 	)
 	(segment
-		(start 114.725 73.64999999999999)
-		(end 110.225 73.64999999999999)
+		(start 120.140166 77.704)
+		(end 118.961166 76.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 10)
+	)
+	(segment
+		(start 124.421 77.704)
+		(end 120.140166 77.704)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 10)
+	)
+	(segment
+		(start 118.961166 76.52499999999999)
+		(end 118 76.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 10)
+	)
+	(segment
+		(start 126.275 75.85)
+		(end 124.421 77.704)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 10)
@@ -3377,57 +3956,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 11 "matrix_pinky_up")
+      (net 37 "P0")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "P0"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 11 "matrix_pinky_up"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 121.275 56.64999999999999)
-		(end 125.775 56.64999999999999)
+		(end 119.2 58.724999999999994)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 37)
+	)
+	(segment
+		(start 119.2 58.724999999999994)
+		(end 118 58.724999999999994)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 37)
 	)
 	(via
-		(at 125.775 56.64999999999999)
+		(at 118 58.724999999999994)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 125.775 58.849999999999994)
-		(end 125.775 56.64999999999999)
+		(start 116.8 58.724999999999994)
+		(end 118 58.724999999999994)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 110.225 58.849999999999994)
-		(end 110.225 56.64999999999999)
+		(start 114.725 56.64999999999999)
+		(end 116.8 58.724999999999994)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 37)
+	)
+	(segment
+		(start 111.579 60.70399999999999)
+		(end 115.846 60.70399999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 11)
+	)
+	(segment
+		(start 117.025 59.52499999999999)
+		(end 118 59.52499999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 11)
+	)
+	(segment
+		(start 109.725 58.849999999999994)
+		(end 111.579 60.70399999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 11)
+	)
+	(segment
+		(start 115.846 60.70399999999999)
+		(end 117.025 59.52499999999999)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 11)
 	)
 	(via
-		(at 110.225 56.64999999999999)
+		(at 118 59.52499999999999)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 11)
 	)
 	(segment
-		(start 114.725 56.64999999999999)
-		(end 110.225 56.64999999999999)
+		(start 120.140166 60.70399999999999)
+		(end 118.961166 59.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 11)
+	)
+	(segment
+		(start 124.421 60.70399999999999)
+		(end 120.140166 60.70399999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 11)
+	)
+	(segment
+		(start 118.961166 59.52499999999999)
+		(end 118 59.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 11)
+	)
+	(segment
+		(start 126.275 58.849999999999994)
+		(end 124.421 60.70399999999999)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 11)
@@ -3539,57 +4192,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 12 "matrix_pinky_num")
+      (net 37 "P0")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "P0"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "matrix_pinky_num"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 121.275 39.64999999999999)
-		(end 125.775 39.64999999999999)
+		(end 119.2 41.724999999999994)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 37)
+	)
+	(segment
+		(start 119.2 41.724999999999994)
+		(end 118 41.724999999999994)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 37)
 	)
 	(via
-		(at 125.775 39.64999999999999)
+		(at 118 41.724999999999994)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 125.775 41.849999999999994)
-		(end 125.775 39.64999999999999)
+		(start 116.8 41.724999999999994)
+		(end 118 41.724999999999994)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 37)
 	)
 	(segment
-		(start 110.225 41.849999999999994)
-		(end 110.225 39.64999999999999)
+		(start 114.725 39.64999999999999)
+		(end 116.8 41.724999999999994)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 37)
+	)
+	(segment
+		(start 111.579 43.70399999999999)
+		(end 115.846 43.70399999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 12)
+	)
+	(segment
+		(start 117.025 42.52499999999999)
+		(end 118 42.52499999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 12)
+	)
+	(segment
+		(start 109.725 41.849999999999994)
+		(end 111.579 43.70399999999999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 12)
+	)
+	(segment
+		(start 115.846 43.70399999999999)
+		(end 117.025 42.52499999999999)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 12)
 	)
 	(via
-		(at 110.225 39.64999999999999)
+		(at 118 42.52499999999999)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 12)
 	)
 	(segment
-		(start 114.725 39.64999999999999)
-		(end 110.225 39.64999999999999)
+		(start 120.140166 43.70399999999999)
+		(end 118.961166 42.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 12)
+	)
+	(segment
+		(start 124.421 43.70399999999999)
+		(end 120.140166 43.70399999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 12)
+	)
+	(segment
+		(start 118.961166 42.52499999999999)
+		(end 118 42.52499999999999)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 12)
+	)
+	(segment
+		(start 126.275 41.849999999999994)
+		(end 124.421 43.70399999999999)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 12)
@@ -3701,57 +4428,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 13 "matrix_ring_down")
+      (net 38 "P4")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "P4"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "matrix_ring_down"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 139.275 85.55)
-		(end 143.775 85.55)
+		(end 137.2 87.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 38)
+	)
+	(segment
+		(start 137.2 87.625)
+		(end 136 87.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 38)
 	)
 	(via
-		(at 143.775 85.55)
+		(at 136 87.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 143.775 87.75)
-		(end 143.775 85.55)
+		(start 134.8 87.625)
+		(end 136 87.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 128.225 87.75)
-		(end 128.225 85.55)
+		(start 132.725 85.55)
+		(end 134.8 87.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 38)
+	)
+	(segment
+		(start 129.579 89.604)
+		(end 133.846 89.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 13)
+	)
+	(segment
+		(start 135.025 88.425)
+		(end 136 88.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 13)
+	)
+	(segment
+		(start 127.725 87.75)
+		(end 129.579 89.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 13)
+	)
+	(segment
+		(start 133.846 89.604)
+		(end 135.025 88.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 13)
 	)
 	(via
-		(at 128.225 85.55)
+		(at 136 88.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 13)
 	)
 	(segment
-		(start 132.725 85.55)
-		(end 128.225 85.55)
+		(start 138.140166 89.604)
+		(end 136.961166 88.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 13)
+	)
+	(segment
+		(start 142.421 89.604)
+		(end 138.140166 89.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 13)
+	)
+	(segment
+		(start 136.961166 88.425)
+		(end 136 88.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 13)
+	)
+	(segment
+		(start 144.275 87.75)
+		(end 142.421 89.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 13)
@@ -3863,57 +4664,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 14 "matrix_ring_home")
+      (net 38 "P4")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "P4"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 14 "matrix_ring_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 139.275 68.55)
-		(end 143.775 68.55)
+		(end 137.2 70.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 38)
+	)
+	(segment
+		(start 137.2 70.625)
+		(end 136 70.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 38)
 	)
 	(via
-		(at 143.775 68.55)
+		(at 136 70.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 143.775 70.75)
-		(end 143.775 68.55)
+		(start 134.8 70.625)
+		(end 136 70.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 128.225 70.75)
-		(end 128.225 68.55)
+		(start 132.725 68.55)
+		(end 134.8 70.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 38)
+	)
+	(segment
+		(start 129.579 72.604)
+		(end 133.846 72.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 14)
+	)
+	(segment
+		(start 135.025 71.425)
+		(end 136 71.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 14)
+	)
+	(segment
+		(start 127.725 70.75)
+		(end 129.579 72.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 14)
+	)
+	(segment
+		(start 133.846 72.604)
+		(end 135.025 71.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 14)
 	)
 	(via
-		(at 128.225 68.55)
+		(at 136 71.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 14)
 	)
 	(segment
-		(start 132.725 68.55)
-		(end 128.225 68.55)
+		(start 138.140166 72.604)
+		(end 136.961166 71.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 14)
+	)
+	(segment
+		(start 142.421 72.604)
+		(end 138.140166 72.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 14)
+	)
+	(segment
+		(start 136.961166 71.425)
+		(end 136 71.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 14)
+	)
+	(segment
+		(start 144.275 70.75)
+		(end 142.421 72.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 14)
@@ -4025,57 +4900,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 15 "matrix_ring_up")
+      (net 38 "P4")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "P4"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "matrix_ring_up"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 139.275 51.55)
-		(end 143.775 51.55)
+		(end 137.2 53.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 38)
+	)
+	(segment
+		(start 137.2 53.625)
+		(end 136 53.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 38)
 	)
 	(via
-		(at 143.775 51.55)
+		(at 136 53.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 143.775 53.75)
-		(end 143.775 51.55)
+		(start 134.8 53.625)
+		(end 136 53.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 128.225 53.75)
-		(end 128.225 51.55)
+		(start 132.725 51.55)
+		(end 134.8 53.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 38)
+	)
+	(segment
+		(start 129.579 55.604)
+		(end 133.846 55.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 15)
+	)
+	(segment
+		(start 135.025 54.425)
+		(end 136 54.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 15)
+	)
+	(segment
+		(start 127.725 53.75)
+		(end 129.579 55.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 15)
+	)
+	(segment
+		(start 133.846 55.604)
+		(end 135.025 54.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 15)
 	)
 	(via
-		(at 128.225 51.55)
+		(at 136 54.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 15)
 	)
 	(segment
-		(start 132.725 51.55)
-		(end 128.225 51.55)
+		(start 138.140166 55.604)
+		(end 136.961166 54.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 15)
+	)
+	(segment
+		(start 142.421 55.604)
+		(end 138.140166 55.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 15)
+	)
+	(segment
+		(start 136.961166 54.425)
+		(end 136 54.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 15)
+	)
+	(segment
+		(start 144.275 53.75)
+		(end 142.421 55.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 15)
@@ -4187,57 +5136,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 16 "matrix_ring_num")
+      (net 38 "P4")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "P4"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 16 "matrix_ring_num"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 139.275 34.55)
-		(end 143.775 34.55)
+		(end 137.2 36.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 38)
+	)
+	(segment
+		(start 137.2 36.625)
+		(end 136 36.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 38)
 	)
 	(via
-		(at 143.775 34.55)
+		(at 136 36.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 143.775 36.75)
-		(end 143.775 34.55)
+		(start 134.8 36.625)
+		(end 136 36.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 38)
 	)
 	(segment
-		(start 128.225 36.75)
-		(end 128.225 34.55)
+		(start 132.725 34.55)
+		(end 134.8 36.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 38)
+	)
+	(segment
+		(start 129.579 38.604)
+		(end 133.846 38.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 16)
+	)
+	(segment
+		(start 135.025 37.425)
+		(end 136 37.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 16)
+	)
+	(segment
+		(start 127.725 36.75)
+		(end 129.579 38.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 16)
+	)
+	(segment
+		(start 133.846 38.604)
+		(end 135.025 37.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 16)
 	)
 	(via
-		(at 128.225 34.55)
+		(at 136 37.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 16)
 	)
 	(segment
-		(start 132.725 34.55)
-		(end 128.225 34.55)
+		(start 138.140166 38.604)
+		(end 136.961166 37.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 16)
+	)
+	(segment
+		(start 142.421 38.604)
+		(end 138.140166 38.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 16)
+	)
+	(segment
+		(start 136.961166 37.425)
+		(end 136 37.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 16)
+	)
+	(segment
+		(start 144.275 36.75)
+		(end 142.421 38.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 16)
@@ -4349,57 +5372,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 17 "matrix_middle_down")
+      (net 39 "P5")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "P5"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 17 "matrix_middle_down"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 157.275 80.45)
-		(end 161.775 80.45)
+		(end 155.2 82.525)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 39)
+	)
+	(segment
+		(start 155.2 82.525)
+		(end 154 82.525)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 39)
 	)
 	(via
-		(at 161.775 80.45)
+		(at 154 82.525)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 161.775 82.65)
-		(end 161.775 80.45)
+		(start 152.8 82.525)
+		(end 154 82.525)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 146.225 82.65)
-		(end 146.225 80.45)
+		(start 150.725 80.45)
+		(end 152.8 82.525)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 39)
+	)
+	(segment
+		(start 147.579 84.504)
+		(end 151.846 84.504)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 17)
+	)
+	(segment
+		(start 153.025 83.325)
+		(end 154 83.325)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 17)
+	)
+	(segment
+		(start 145.725 82.65)
+		(end 147.579 84.504)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 17)
+	)
+	(segment
+		(start 151.846 84.504)
+		(end 153.025 83.325)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 17)
 	)
 	(via
-		(at 146.225 80.45)
+		(at 154 83.325)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 17)
 	)
 	(segment
-		(start 150.725 80.45)
-		(end 146.225 80.45)
+		(start 156.140166 84.504)
+		(end 154.961166 83.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 17)
+	)
+	(segment
+		(start 160.421 84.504)
+		(end 156.140166 84.504)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 17)
+	)
+	(segment
+		(start 154.961166 83.325)
+		(end 154 83.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 17)
+	)
+	(segment
+		(start 162.275 82.65)
+		(end 160.421 84.504)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 17)
@@ -4511,57 +5608,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 18 "matrix_middle_home")
+      (net 39 "P5")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "P5"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "matrix_middle_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 157.275 63.45)
-		(end 161.775 63.45)
+		(end 155.2 65.525)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 39)
+	)
+	(segment
+		(start 155.2 65.525)
+		(end 154 65.525)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 39)
 	)
 	(via
-		(at 161.775 63.45)
+		(at 154 65.525)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 161.775 65.65)
-		(end 161.775 63.45)
+		(start 152.8 65.525)
+		(end 154 65.525)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 146.225 65.65)
-		(end 146.225 63.45)
+		(start 150.725 63.45)
+		(end 152.8 65.525)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 39)
+	)
+	(segment
+		(start 147.579 67.504)
+		(end 151.846 67.504)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+	)
+	(segment
+		(start 153.025 66.325)
+		(end 154 66.325)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+	)
+	(segment
+		(start 145.725 65.65)
+		(end 147.579 67.504)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+	)
+	(segment
+		(start 151.846 67.504)
+		(end 153.025 66.325)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 18)
 	)
 	(via
-		(at 146.225 63.45)
+		(at 154 66.325)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 18)
 	)
 	(segment
-		(start 150.725 63.45)
-		(end 146.225 63.45)
+		(start 156.140166 67.504)
+		(end 154.961166 66.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 18)
+	)
+	(segment
+		(start 160.421 67.504)
+		(end 156.140166 67.504)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 18)
+	)
+	(segment
+		(start 154.961166 66.325)
+		(end 154 66.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 18)
+	)
+	(segment
+		(start 162.275 65.65)
+		(end 160.421 67.504)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 18)
@@ -4673,57 +5844,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 19 "matrix_middle_up")
+      (net 39 "P5")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "P5"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 19 "matrix_middle_up"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 157.275 46.45)
-		(end 161.775 46.45)
+		(end 155.2 48.525000000000006)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 39)
+	)
+	(segment
+		(start 155.2 48.525000000000006)
+		(end 154 48.525000000000006)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 39)
 	)
 	(via
-		(at 161.775 46.45)
+		(at 154 48.525000000000006)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 161.775 48.650000000000006)
-		(end 161.775 46.45)
+		(start 152.8 48.525000000000006)
+		(end 154 48.525000000000006)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 146.225 48.650000000000006)
-		(end 146.225 46.45)
+		(start 150.725 46.45)
+		(end 152.8 48.525000000000006)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 39)
+	)
+	(segment
+		(start 147.579 50.504000000000005)
+		(end 151.846 50.504000000000005)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 19)
+	)
+	(segment
+		(start 153.025 49.325)
+		(end 154 49.325)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 19)
+	)
+	(segment
+		(start 145.725 48.650000000000006)
+		(end 147.579 50.504000000000005)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 19)
+	)
+	(segment
+		(start 151.846 50.504000000000005)
+		(end 153.025 49.325)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 19)
 	)
 	(via
-		(at 146.225 46.45)
+		(at 154 49.325)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 19)
 	)
 	(segment
-		(start 150.725 46.45)
-		(end 146.225 46.45)
+		(start 156.140166 50.504000000000005)
+		(end 154.961166 49.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 19)
+	)
+	(segment
+		(start 160.421 50.504000000000005)
+		(end 156.140166 50.504000000000005)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 19)
+	)
+	(segment
+		(start 154.961166 49.325)
+		(end 154 49.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 19)
+	)
+	(segment
+		(start 162.275 48.650000000000006)
+		(end 160.421 50.504000000000005)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 19)
@@ -4835,57 +6080,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 20 "matrix_middle_num")
+      (net 39 "P5")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "P5"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "matrix_middle_num"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 157.275 29.450000000000006)
-		(end 161.775 29.450000000000006)
+		(end 155.2 31.525000000000006)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 39)
+	)
+	(segment
+		(start 155.2 31.525000000000006)
+		(end 154 31.525000000000006)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 39)
 	)
 	(via
-		(at 161.775 29.450000000000006)
+		(at 154 31.525000000000006)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 161.775 31.650000000000006)
-		(end 161.775 29.450000000000006)
+		(start 152.8 31.525000000000006)
+		(end 154 31.525000000000006)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 146.225 31.650000000000006)
-		(end 146.225 29.450000000000006)
+		(start 150.725 29.450000000000006)
+		(end 152.8 31.525000000000006)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 39)
+	)
+	(segment
+		(start 147.579 33.504000000000005)
+		(end 151.846 33.504000000000005)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+	)
+	(segment
+		(start 153.025 32.325)
+		(end 154 32.325)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+	)
+	(segment
+		(start 145.725 31.650000000000006)
+		(end 147.579 33.504000000000005)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+	)
+	(segment
+		(start 151.846 33.504000000000005)
+		(end 153.025 32.325)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 20)
 	)
 	(via
-		(at 146.225 29.450000000000006)
+		(at 154 32.325)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 20)
 	)
 	(segment
-		(start 150.725 29.450000000000006)
-		(end 146.225 29.450000000000006)
+		(start 156.140166 33.504000000000005)
+		(end 154.961166 32.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 20)
+	)
+	(segment
+		(start 160.421 33.504000000000005)
+		(end 156.140166 33.504000000000005)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 20)
+	)
+	(segment
+		(start 154.961166 32.325)
+		(end 154 32.325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 20)
+	)
+	(segment
+		(start 162.275 31.650000000000006)
+		(end 160.421 33.504000000000005)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 20)
@@ -4997,57 +6316,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 21 "matrix_index_down")
+      (net 40 "P7")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "P7"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "matrix_index_down"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 175.275 85.55)
-		(end 179.775 85.55)
+		(end 173.2 87.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 40)
+	)
+	(segment
+		(start 173.2 87.625)
+		(end 172 87.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 40)
 	)
 	(via
-		(at 179.775 85.55)
+		(at 172 87.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 179.775 87.75)
-		(end 179.775 85.55)
+		(start 170.8 87.625)
+		(end 172 87.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 164.225 87.75)
-		(end 164.225 85.55)
+		(start 168.725 85.55)
+		(end 170.8 87.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 40)
+	)
+	(segment
+		(start 165.579 89.604)
+		(end 169.846 89.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+	)
+	(segment
+		(start 171.025 88.425)
+		(end 172 88.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+	)
+	(segment
+		(start 163.725 87.75)
+		(end 165.579 89.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+	)
+	(segment
+		(start 169.846 89.604)
+		(end 171.025 88.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 21)
 	)
 	(via
-		(at 164.225 85.55)
+		(at 172 88.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 21)
 	)
 	(segment
-		(start 168.725 85.55)
-		(end 164.225 85.55)
+		(start 174.140166 89.604)
+		(end 172.961166 88.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 21)
+	)
+	(segment
+		(start 178.421 89.604)
+		(end 174.140166 89.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 21)
+	)
+	(segment
+		(start 172.961166 88.425)
+		(end 172 88.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 21)
+	)
+	(segment
+		(start 180.275 87.75)
+		(end 178.421 89.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 21)
@@ -5159,57 +6552,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 22 "matrix_index_home")
+      (net 40 "P7")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "P7"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 22 "matrix_index_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 175.275 68.55)
-		(end 179.775 68.55)
+		(end 173.2 70.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 40)
+	)
+	(segment
+		(start 173.2 70.625)
+		(end 172 70.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 40)
 	)
 	(via
-		(at 179.775 68.55)
+		(at 172 70.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 179.775 70.75)
-		(end 179.775 68.55)
+		(start 170.8 70.625)
+		(end 172 70.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 164.225 70.75)
-		(end 164.225 68.55)
+		(start 168.725 68.55)
+		(end 170.8 70.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 40)
+	)
+	(segment
+		(start 165.579 72.604)
+		(end 169.846 72.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+	)
+	(segment
+		(start 171.025 71.425)
+		(end 172 71.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+	)
+	(segment
+		(start 163.725 70.75)
+		(end 165.579 72.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+	)
+	(segment
+		(start 169.846 72.604)
+		(end 171.025 71.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 22)
 	)
 	(via
-		(at 164.225 68.55)
+		(at 172 71.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 22)
 	)
 	(segment
-		(start 168.725 68.55)
-		(end 164.225 68.55)
+		(start 174.140166 72.604)
+		(end 172.961166 71.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 22)
+	)
+	(segment
+		(start 178.421 72.604)
+		(end 174.140166 72.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 22)
+	)
+	(segment
+		(start 172.961166 71.425)
+		(end 172 71.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 22)
+	)
+	(segment
+		(start 180.275 70.75)
+		(end 178.421 72.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 22)
@@ -5321,57 +6788,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 23 "matrix_index_up")
+      (net 40 "P7")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "P7"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "matrix_index_up"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 175.275 51.55)
-		(end 179.775 51.55)
+		(end 173.2 53.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 40)
+	)
+	(segment
+		(start 173.2 53.625)
+		(end 172 53.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 40)
 	)
 	(via
-		(at 179.775 51.55)
+		(at 172 53.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 179.775 53.75)
-		(end 179.775 51.55)
+		(start 170.8 53.625)
+		(end 172 53.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 164.225 53.75)
-		(end 164.225 51.55)
+		(start 168.725 51.55)
+		(end 170.8 53.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 40)
+	)
+	(segment
+		(start 165.579 55.604)
+		(end 169.846 55.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+	)
+	(segment
+		(start 171.025 54.425)
+		(end 172 54.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+	)
+	(segment
+		(start 163.725 53.75)
+		(end 165.579 55.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+	)
+	(segment
+		(start 169.846 55.604)
+		(end 171.025 54.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 23)
 	)
 	(via
-		(at 164.225 51.55)
+		(at 172 54.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 23)
 	)
 	(segment
-		(start 168.725 51.55)
-		(end 164.225 51.55)
+		(start 174.140166 55.604)
+		(end 172.961166 54.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 23)
+	)
+	(segment
+		(start 178.421 55.604)
+		(end 174.140166 55.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 23)
+	)
+	(segment
+		(start 172.961166 54.425)
+		(end 172 54.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 23)
+	)
+	(segment
+		(start 180.275 53.75)
+		(end 178.421 55.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 23)
@@ -5483,57 +7024,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 24 "matrix_index_num")
+      (net 40 "P7")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "P7"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "matrix_index_num"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 175.275 34.55)
-		(end 179.775 34.55)
+		(end 173.2 36.625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 40)
+	)
+	(segment
+		(start 173.2 36.625)
+		(end 172 36.625)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 40)
 	)
 	(via
-		(at 179.775 34.55)
+		(at 172 36.625)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 179.775 36.75)
-		(end 179.775 34.55)
+		(start 170.8 36.625)
+		(end 172 36.625)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 164.225 36.75)
-		(end 164.225 34.55)
+		(start 168.725 34.55)
+		(end 170.8 36.625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 40)
+	)
+	(segment
+		(start 165.579 38.604)
+		(end 169.846 38.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 24)
+	)
+	(segment
+		(start 171.025 37.425)
+		(end 172 37.425)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 24)
+	)
+	(segment
+		(start 163.725 36.75)
+		(end 165.579 38.604)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 24)
+	)
+	(segment
+		(start 169.846 38.604)
+		(end 171.025 37.425)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 24)
 	)
 	(via
-		(at 164.225 34.55)
+		(at 172 37.425)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 24)
 	)
 	(segment
-		(start 168.725 34.55)
-		(end 164.225 34.55)
+		(start 174.140166 38.604)
+		(end 172.961166 37.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 24)
+	)
+	(segment
+		(start 178.421 38.604)
+		(end 174.140166 38.604)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 24)
+	)
+	(segment
+		(start 172.961166 37.425)
+		(end 172 37.425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 24)
+	)
+	(segment
+		(start 180.275 36.75)
+		(end 178.421 38.604)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 24)
@@ -5645,57 +7260,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 25 "matrix_inner_down")
+      (net 41 "P8")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "P8"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "matrix_inner_down"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 193.275 87.42)
-		(end 197.775 87.42)
+		(end 191.2 89.495)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 41)
+	)
+	(segment
+		(start 191.2 89.495)
+		(end 190 89.495)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 41)
 	)
 	(via
-		(at 197.775 87.42)
+		(at 190 89.495)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 197.775 89.62)
-		(end 197.775 87.42)
+		(start 188.8 89.495)
+		(end 190 89.495)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 182.225 89.62)
-		(end 182.225 87.42)
+		(start 186.725 87.42)
+		(end 188.8 89.495)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 41)
+	)
+	(segment
+		(start 183.579 91.474)
+		(end 187.846 91.474)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 25)
+	)
+	(segment
+		(start 189.025 90.295)
+		(end 190 90.295)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 25)
+	)
+	(segment
+		(start 181.725 89.62)
+		(end 183.579 91.474)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 25)
+	)
+	(segment
+		(start 187.846 91.474)
+		(end 189.025 90.295)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 25)
 	)
 	(via
-		(at 182.225 87.42)
+		(at 190 90.295)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 25)
 	)
 	(segment
-		(start 186.725 87.42)
-		(end 182.225 87.42)
+		(start 192.140166 91.474)
+		(end 190.961166 90.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 25)
+	)
+	(segment
+		(start 196.421 91.474)
+		(end 192.140166 91.474)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 25)
+	)
+	(segment
+		(start 190.961166 90.295)
+		(end 190 90.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 25)
+	)
+	(segment
+		(start 198.275 89.62)
+		(end 196.421 91.474)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 25)
@@ -5807,57 +7496,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 26 "matrix_inner_home")
+      (net 41 "P8")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "P8"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 26 "matrix_inner_home"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 193.275 70.42)
-		(end 197.775 70.42)
+		(end 191.2 72.495)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 41)
+	)
+	(segment
+		(start 191.2 72.495)
+		(end 190 72.495)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 41)
 	)
 	(via
-		(at 197.775 70.42)
+		(at 190 72.495)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 197.775 72.62)
-		(end 197.775 70.42)
+		(start 188.8 72.495)
+		(end 190 72.495)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 182.225 72.62)
-		(end 182.225 70.42)
+		(start 186.725 70.42)
+		(end 188.8 72.495)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 41)
+	)
+	(segment
+		(start 183.579 74.474)
+		(end 187.846 74.474)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 26)
+	)
+	(segment
+		(start 189.025 73.295)
+		(end 190 73.295)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 26)
+	)
+	(segment
+		(start 181.725 72.62)
+		(end 183.579 74.474)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 26)
+	)
+	(segment
+		(start 187.846 74.474)
+		(end 189.025 73.295)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 26)
 	)
 	(via
-		(at 182.225 70.42)
+		(at 190 73.295)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 26)
 	)
 	(segment
-		(start 186.725 70.42)
-		(end 182.225 70.42)
+		(start 192.140166 74.474)
+		(end 190.961166 73.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 26)
+	)
+	(segment
+		(start 196.421 74.474)
+		(end 192.140166 74.474)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 26)
+	)
+	(segment
+		(start 190.961166 73.295)
+		(end 190 73.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 26)
+	)
+	(segment
+		(start 198.275 72.62)
+		(end 196.421 74.474)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 26)
@@ -5969,57 +7732,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 27 "matrix_inner_up")
+      (net 41 "P8")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "P8"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 27 "matrix_inner_up"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 193.275 53.42)
-		(end 197.775 53.42)
+		(end 191.2 55.495000000000005)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 41)
+	)
+	(segment
+		(start 191.2 55.495000000000005)
+		(end 190 55.495000000000005)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 41)
 	)
 	(via
-		(at 197.775 53.42)
+		(at 190 55.495000000000005)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 197.775 55.620000000000005)
-		(end 197.775 53.42)
+		(start 188.8 55.495000000000005)
+		(end 190 55.495000000000005)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 182.225 55.620000000000005)
-		(end 182.225 53.42)
+		(start 186.725 53.42)
+		(end 188.8 55.495000000000005)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 41)
+	)
+	(segment
+		(start 183.579 57.474000000000004)
+		(end 187.846 57.474000000000004)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 27)
+	)
+	(segment
+		(start 189.025 56.295)
+		(end 190 56.295)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 27)
+	)
+	(segment
+		(start 181.725 55.620000000000005)
+		(end 183.579 57.474000000000004)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 27)
+	)
+	(segment
+		(start 187.846 57.474000000000004)
+		(end 189.025 56.295)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 27)
 	)
 	(via
-		(at 182.225 53.42)
+		(at 190 56.295)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 27)
 	)
 	(segment
-		(start 186.725 53.42)
-		(end 182.225 53.42)
+		(start 192.140166 57.474000000000004)
+		(end 190.961166 56.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 27)
+	)
+	(segment
+		(start 196.421 57.474000000000004)
+		(end 192.140166 57.474000000000004)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 27)
+	)
+	(segment
+		(start 190.961166 56.295)
+		(end 190 56.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 27)
+	)
+	(segment
+		(start 198.275 55.620000000000005)
+		(end 196.421 57.474000000000004)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 27)
@@ -6131,57 +7968,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 28 "matrix_inner_num")
+      (net 41 "P8")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "P8"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 28 "matrix_inner_num"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 193.275 36.42)
-		(end 197.775 36.42)
+		(end 191.2 38.495000000000005)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 41)
+	)
+	(segment
+		(start 191.2 38.495000000000005)
+		(end 190 38.495000000000005)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 41)
 	)
 	(via
-		(at 197.775 36.42)
+		(at 190 38.495000000000005)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 197.775 38.620000000000005)
-		(end 197.775 36.42)
+		(start 188.8 38.495000000000005)
+		(end 190 38.495000000000005)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 182.225 38.620000000000005)
-		(end 182.225 36.42)
+		(start 186.725 36.42)
+		(end 188.8 38.495000000000005)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 41)
+	)
+	(segment
+		(start 183.579 40.474000000000004)
+		(end 187.846 40.474000000000004)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 28)
+	)
+	(segment
+		(start 189.025 39.295)
+		(end 190 39.295)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 28)
+	)
+	(segment
+		(start 181.725 38.620000000000005)
+		(end 183.579 40.474000000000004)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 28)
+	)
+	(segment
+		(start 187.846 40.474000000000004)
+		(end 189.025 39.295)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 28)
 	)
 	(via
-		(at 182.225 36.42)
+		(at 190 39.295)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 28)
 	)
 	(segment
-		(start 186.725 36.42)
-		(end 182.225 36.42)
+		(start 192.140166 40.474000000000004)
+		(end 190.961166 39.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 28)
+	)
+	(segment
+		(start 196.421 40.474000000000004)
+		(end 192.140166 40.474000000000004)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 28)
+	)
+	(segment
+		(start 190.961166 39.295)
+		(end 190 39.295)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 28)
+	)
+	(segment
+		(start 198.275 38.620000000000005)
+		(end 196.421 40.474000000000004)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 28)
@@ -6293,57 +8204,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 29 "thumbs_col1_cluster")
+      (net 39 "P5")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "P5"))
+    (pad "2" smd rect (at 8.275 -3.75 -5) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 29 "thumbs_col1_cluster"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 190) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 167.48769040000002 105.71482340000001)
-		(end 171.97056650000002 106.10702420000001)
+		(end 165.2397382 107.60107920000002)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 39)
+	)
+	(segment
+		(start 165.2397382 107.60107920000002)
+		(end 164.0443046 107.49649230000001)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 39)
 	)
 	(via
-		(at 171.97056650000002 106.10702420000001)
+		(at 164.0443046 107.49649230000001)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 171.77882390000002 108.29865260000001)
-		(end 171.97056650000002 106.10702420000001)
+		(start 162.848871 107.39190550000001)
+		(end 164.0443046 107.49649230000001)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 39)
 	)
 	(segment
-		(start 156.2879964 106.94338080000001)
-		(end 156.479739 104.75175240000002)
+		(start 160.9626151 105.1439533)
+		(end 162.848871 107.39190550000001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 39)
+	)
+	(segment
+		(start 157.47525720000002 108.90833460000002)
+		(end 161.72602 109.28022820000001)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 29)
+	)
+	(segment
+		(start 163.0032902 108.20847130000001)
+		(end 163.97458 108.2934481)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 29)
+	)
+	(segment
+		(start 155.78989900000002 106.89980290000001)
+		(end 157.47525720000002 108.90833460000002)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 29)
+	)
+	(segment
+		(start 161.72602 109.28022820000001)
+		(end 163.0032902 108.20847130000001)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 29)
 	)
 	(via
-		(at 156.479739 104.75175240000002)
+		(at 163.97458 108.2934481)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 29)
 	)
 	(segment
-		(start 160.9626151 105.1439533)
-		(end 156.479739 104.75175240000002)
+		(start 166.00384540000002 109.65448940000002)
+		(end 164.93208850000002 108.37721920000001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 29)
+	)
+	(segment
+		(start 170.2683895 110.02758870000001)
+		(end 166.00384540000002 109.65448940000002)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 29)
+	)
+	(segment
+		(start 164.93208850000002 108.37721920000001)
+		(end 163.97458 108.2934481)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 29)
+	)
+	(segment
+		(start 172.2769213 108.34223050000001)
+		(end 170.2683895 110.02758870000001)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 29)
@@ -6455,57 +8440,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 31 "thumbs_col2_cluster")
+      (net 40 "P7")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -15) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "P7"))
+    (pad "2" smd rect (at 8.275 -3.75 -15) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 31 "thumbs_col2_cluster"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 188.4247545 109.90661910000001)
-		(end 192.77142070000002 111.07130480000001)
+		(end 185.8834089 111.37386570000001)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 40)
+	)
+	(segment
+		(start 185.8834089 111.37386570000001)
+		(end 184.7242979 111.06328280000001)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 40)
 	)
 	(via
-		(at 192.77142070000002 111.07130480000001)
+		(at 184.7242979 111.06328280000001)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 192.20201880000002 113.19634160000001)
-		(end 192.77142070000002 111.07130480000001)
+		(start 183.56518690000001 110.7527)
+		(end 184.7242979 111.06328280000001)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 40)
 	)
 	(segment
-		(start 177.18187220000002 109.1717055)
-		(end 177.75127410000002 107.04666870000001)
+		(start 182.09794030000003 108.2113544)
+		(end 183.56518690000001 110.7527)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 40)
+	)
+	(segment
+		(start 178.0098853 111.3129729)
+		(end 182.13149080000002 112.41735380000001)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 31)
+	)
+	(segment
+		(start 183.575465 111.5836749)
+		(end 184.51724270000003 111.83602350000001)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 31)
+	)
+	(segment
+		(start 176.69890930000003 109.04229600000001)
+		(end 178.0098853 111.3129729)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 31)
+	)
+	(segment
+		(start 182.13149080000002 112.41735380000001)
+		(end 183.575465 111.5836749)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 31)
 	)
 	(via
-		(at 177.75127410000002 107.04666870000001)
+		(at 184.51724270000003 111.83602350000001)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 31)
 	)
 	(segment
-		(start 182.09794030000003 108.2113544)
-		(end 177.75127410000002 107.04666870000001)
+		(start 186.27933660000002 113.5287658)
+		(end 185.44565770000003 112.0847916)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 31)
+	)
+	(segment
+		(start 190.41430470000003 114.6367271)
+		(end 186.27933660000002 113.5287658)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 31)
+	)
+	(segment
+		(start 185.44565770000003 112.0847916)
+		(end 184.51724270000003 111.83602350000001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 31)
+	)
+	(segment
+		(start 192.6849817 113.3257511)
+		(end 190.41430470000003 114.6367271)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 31)
@@ -6617,57 +8676,131 @@
       (roundrect_rratio 0)
 			(chamfer_ratio 0.455)
 			(chamfer bottom_left)
-      (net 32 "thumbs_col3_cluster")
+      (net 41 "P8")
     )
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -25) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "P8"))
+    (pad "2" smd rect (at 8.275 -3.75 -25) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 32 "thumbs_col3_cluster"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+	  
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+      (offset (xyz 0 0 10))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 90))
+    )
+	  
   )
     
-  (segment
+	(segment
 		(start 208.31583990000001 117.67041510000001)
-		(end 212.3942249 119.57219730000001)
+		(end 205.5583183 118.67407080000001)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 41)
+	)
+	(segment
+		(start 205.5583183 118.67407080000001)
+		(end 204.470749 118.1669289)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 41)
 	)
 	(via
-		(at 212.3942249 119.57219730000001)
+		(at 204.470749 118.1669289)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 211.4644647 121.5660744)
-		(end 212.3942249 119.57219730000001)
+		(start 203.3831796 117.65978700000001)
+		(end 204.470749 118.1669289)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 41)
 	)
 	(segment
-		(start 197.3713786 114.9943604)
-		(end 198.30113880000002 113.00048330000001)
+		(start 202.3795239 114.90226550000001)
+		(end 203.3831796 117.65978700000001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 41)
+	)
+	(segment
+		(start 197.8149851 117.2468802)
+		(end 201.68220050000002 119.0501923)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 32)
+	)
+	(segment
+		(start 203.24900430000002 118.47992230000001)
+		(end 204.1326544 118.8919752)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 32)
+	)
+	(segment
+		(start 196.9182247 114.78305130000001)
+		(end 197.8149851 117.2468802)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 32)
+	)
+	(segment
+		(start 201.68220050000002 119.0501923)
+		(end 203.24900430000002 118.47992230000001)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 32)
 	)
 	(via
-		(at 198.30113880000002 113.00048330000001)
+		(at 204.1326544 118.8919752)
 		(size 0.6)
     (drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 32)
 	)
 	(segment
-		(start 202.3795239 114.90226550000001)
-		(end 198.30113880000002 113.00048330000001)
+		(start 205.5740365 120.86498530000001)
+		(end 205.0037666 119.29818150000001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 32)
+	)
+	(segment
+		(start 209.45378970000002 122.6741439)
+		(end 205.5740365 120.86498530000001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 32)
+	)
+	(segment
+		(start 205.0037666 119.29818150000001)
+		(end 204.1326544 118.8919752)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 32)
+	)
+	(segment
+		(start 211.91761860000003 121.77738350000001)
+		(end 209.45378970000002 122.6741439)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 32)
@@ -6678,7 +8811,7 @@
     
   (footprint "ceoloide:mcu_supermini_nrf52840"
     (layer "F.Cu")
-    (at 214.2 50.17 0)
+    (at 214.2 49.17 0)
     (property "Reference" "MCU1"
       (at 0 -15 0)
       (layer "F.SilkS")
@@ -8087,255 +10220,261 @@
     )
     
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2_Flipped.step
+      (offset (xyz 0 0 -7))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 0))
+    )
+    
   )
 
   
   
-  (segment (start 218.975 37.47) (end 217.6 37.47) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 37.47) (end 210.79999999999998 37.47) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 36.47) (end 217.6 36.47) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 36.47) (end 210.79999999999998 36.47) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 37.47) (end 208.7 37.47) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 37.47) (end 208.7 37.47) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 37.47) (end 221.82 37.47) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 37.47) (end 219.7 37.47) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 36.47) (end 208.7 36.47) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 36.47) (end 208.7 36.47) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 36.47) (end 221.82 36.47) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 36.47) (end 219.7 36.47) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 37.7) (end 217.36999999999998 37.7) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 37.47) (end 209.77469499999998 37.47) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 38.195) (end 211.100305 38.195) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 37.47) (end 210.49969499999997 38.195) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 38.195) (end 211.595305 37.7) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 36.7) (end 217.36999999999998 36.7) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 36.47) (end 209.77469499999998 36.47) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 37.195) (end 211.100305 37.195) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 36.47) (end 210.49969499999997 37.195) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 37.195) (end 211.595305 36.7) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 37.47) (end 218.625305 37.47) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 37.25) (end 211.01999999999998 37.25) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 37.47) (end 217.900305 36.745000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 36.745000000000005) (end 217.29969499999999 36.745000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 36.745000000000005) (end 216.794695 37.25) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 36.47) (end 218.625305 36.47) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 36.25) (end 211.01999999999998 36.25) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 36.47) (end 217.900305 35.745000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 35.745000000000005) (end 217.29969499999999 35.745000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 35.745000000000005) (end 216.794695 36.25) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 40.010000000000005) (end 217.6 40.010000000000005) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 40.010000000000005) (end 210.79999999999998 40.010000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 39.010000000000005) (end 217.6 39.010000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 39.010000000000005) (end 210.79999999999998 39.010000000000005) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 40.010000000000005) (end 208.7 40.010000000000005) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 40.010000000000005) (end 208.7 40.010000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 40.010000000000005) (end 221.82 40.010000000000005) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 40.010000000000005) (end 219.7 40.010000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 39.010000000000005) (end 208.7 39.010000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 39.010000000000005) (end 208.7 39.010000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 39.010000000000005) (end 221.82 39.010000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 39.010000000000005) (end 219.7 39.010000000000005) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 40.24) (end 217.36999999999998 40.24) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 40.010000000000005) (end 209.77469499999998 40.010000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 40.735) (end 211.100305 40.735) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 40.010000000000005) (end 210.49969499999997 40.735) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 40.735) (end 211.595305 40.24) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 39.24) (end 217.36999999999998 39.24) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 39.010000000000005) (end 209.77469499999998 39.010000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 39.735) (end 211.100305 39.735) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 39.010000000000005) (end 210.49969499999997 39.735) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 39.735) (end 211.595305 39.24) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 40.010000000000005) (end 218.625305 40.010000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 39.79) (end 211.01999999999998 39.79) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 40.010000000000005) (end 217.900305 39.285000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 39.285000000000004) (end 217.29969499999999 39.285000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 39.285000000000004) (end 216.794695 39.79) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 39.010000000000005) (end 218.625305 39.010000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 38.79) (end 211.01999999999998 38.79) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 39.010000000000005) (end 217.900305 38.285000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 38.285000000000004) (end 217.29969499999999 38.285000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 38.285000000000004) (end 216.794695 38.79) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 42.550000000000004) (end 217.6 42.550000000000004) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 42.550000000000004) (end 210.79999999999998 42.550000000000004) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 41.550000000000004) (end 217.6 41.550000000000004) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 41.550000000000004) (end 210.79999999999998 41.550000000000004) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 42.550000000000004) (end 208.7 42.550000000000004) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 42.550000000000004) (end 208.7 42.550000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 42.550000000000004) (end 221.82 42.550000000000004) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 42.550000000000004) (end 219.7 42.550000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 41.550000000000004) (end 208.7 41.550000000000004) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 41.550000000000004) (end 208.7 41.550000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 41.550000000000004) (end 221.82 41.550000000000004) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 41.550000000000004) (end 219.7 41.550000000000004) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 42.78) (end 217.36999999999998 42.78) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 42.550000000000004) (end 209.77469499999998 42.550000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 43.275000000000006) (end 211.100305 43.275000000000006) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 42.550000000000004) (end 210.49969499999997 43.275000000000006) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 43.275000000000006) (end 211.595305 42.78) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 41.78) (end 217.36999999999998 41.78) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 41.550000000000004) (end 209.77469499999998 41.550000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 42.275000000000006) (end 211.100305 42.275000000000006) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 41.550000000000004) (end 210.49969499999997 42.275000000000006) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 42.275000000000006) (end 211.595305 41.78) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 42.550000000000004) (end 218.625305 42.550000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 42.33) (end 211.01999999999998 42.33) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 42.550000000000004) (end 217.900305 41.825) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 41.825) (end 217.29969499999999 41.825) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 41.825) (end 216.794695 42.33) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 41.550000000000004) (end 218.625305 41.550000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 41.33) (end 211.01999999999998 41.33) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 41.550000000000004) (end 217.900305 40.825) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 40.825) (end 217.29969499999999 40.825) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 40.825) (end 216.794695 41.33) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 45.09) (end 217.6 45.09) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 45.09) (end 210.79999999999998 45.09) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 44.09) (end 217.6 44.09) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 44.09) (end 210.79999999999998 44.09) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 45.09) (end 208.7 45.09) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 45.09) (end 208.7 45.09) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 45.09) (end 221.82 45.09) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 45.09) (end 219.7 45.09) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 44.09) (end 208.7 44.09) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 44.09) (end 208.7 44.09) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 44.09) (end 221.82 44.09) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 44.09) (end 219.7 44.09) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 45.32) (end 217.36999999999998 45.32) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 45.09) (end 209.77469499999998 45.09) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 45.815) (end 211.100305 45.815) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 45.09) (end 210.49969499999997 45.815) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 45.815) (end 211.595305 45.32) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 44.32) (end 217.36999999999998 44.32) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 44.09) (end 209.77469499999998 44.09) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 44.815) (end 211.100305 44.815) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 44.09) (end 210.49969499999997 44.815) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 44.815) (end 211.595305 44.32) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 45.09) (end 218.625305 45.09) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 44.870000000000005) (end 211.01999999999998 44.870000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 45.09) (end 217.900305 44.365) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 44.365) (end 217.29969499999999 44.365) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 44.365) (end 216.794695 44.870000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 44.09) (end 218.625305 44.09) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 43.870000000000005) (end 211.01999999999998 43.870000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 44.09) (end 217.900305 43.365) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 43.365) (end 217.29969499999999 43.365) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 43.365) (end 216.794695 43.870000000000005) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 47.63) (end 217.6 47.63) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 47.63) (end 210.79999999999998 47.63) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 46.63) (end 217.6 46.63) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 46.63) (end 210.79999999999998 46.63) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 47.63) (end 208.7 47.63) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 47.63) (end 208.7 47.63) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 47.63) (end 221.82 47.63) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 47.63) (end 219.7 47.63) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 46.63) (end 208.7 46.63) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 46.63) (end 208.7 46.63) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 46.63) (end 221.82 46.63) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 46.63) (end 219.7 46.63) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 47.86) (end 217.36999999999998 47.86) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 47.63) (end 209.77469499999998 47.63) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 48.355000000000004) (end 211.100305 48.355000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 47.63) (end 210.49969499999997 48.355000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 48.355000000000004) (end 211.595305 47.86) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 46.86) (end 217.36999999999998 46.86) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 46.63) (end 209.77469499999998 46.63) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 47.355000000000004) (end 211.100305 47.355000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 46.63) (end 210.49969499999997 47.355000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 47.355000000000004) (end 211.595305 46.86) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 47.63) (end 218.625305 47.63) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 47.410000000000004) (end 211.01999999999998 47.410000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 47.63) (end 217.900305 46.905) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 46.905) (end 217.29969499999999 46.905) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 46.905) (end 216.794695 47.410000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 46.63) (end 218.625305 46.63) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 46.410000000000004) (end 211.01999999999998 46.410000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 46.63) (end 217.900305 45.905) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 45.905) (end 217.29969499999999 45.905) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 45.905) (end 216.794695 46.410000000000004) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 50.17) (end 217.6 50.17) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 50.17) (end 210.79999999999998 50.17) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 49.17) (end 217.6 49.17) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 49.17) (end 210.79999999999998 49.17) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 50.17) (end 208.7 50.17) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 50.17) (end 208.7 50.17) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 50.17) (end 221.82 50.17) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 50.17) (end 219.7 50.17) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 49.17) (end 208.7 49.17) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 49.17) (end 208.7 49.17) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 49.17) (end 221.82 49.17) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 49.17) (end 219.7 49.17) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 50.4) (end 217.36999999999998 50.4) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 50.17) (end 209.77469499999998 50.17) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 50.895) (end 211.100305 50.895) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 50.17) (end 210.49969499999997 50.895) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 50.895) (end 211.595305 50.4) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 49.4) (end 217.36999999999998 49.4) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 49.17) (end 209.77469499999998 49.17) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 49.895) (end 211.100305 49.895) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 49.17) (end 210.49969499999997 49.895) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 49.895) (end 211.595305 49.4) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 50.17) (end 218.625305 50.17) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 49.95) (end 211.01999999999998 49.95) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 50.17) (end 217.900305 49.445) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 49.445) (end 217.29969499999999 49.445) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 49.445) (end 216.794695 49.95) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 49.17) (end 218.625305 49.17) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 48.95) (end 211.01999999999998 48.95) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 49.17) (end 217.900305 48.445) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 48.445) (end 217.29969499999999 48.445) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 48.445) (end 216.794695 48.95) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 52.71) (end 217.6 52.71) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 52.71) (end 210.79999999999998 52.71) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 51.71) (end 217.6 51.71) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 51.71) (end 210.79999999999998 51.71) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 52.71) (end 208.7 52.71) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 52.71) (end 208.7 52.71) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 52.71) (end 221.82 52.71) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 52.71) (end 219.7 52.71) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 51.71) (end 208.7 51.71) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 51.71) (end 208.7 51.71) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 51.71) (end 221.82 51.71) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 51.71) (end 219.7 51.71) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 52.940000000000005) (end 217.36999999999998 52.940000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 52.71) (end 209.77469499999998 52.71) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 53.435) (end 211.100305 53.435) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 52.71) (end 210.49969499999997 53.435) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 53.435) (end 211.595305 52.940000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 51.940000000000005) (end 217.36999999999998 51.940000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 51.71) (end 209.77469499999998 51.71) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 52.435) (end 211.100305 52.435) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 51.71) (end 210.49969499999997 52.435) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 52.435) (end 211.595305 51.940000000000005) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 52.71) (end 218.625305 52.71) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 52.49) (end 211.01999999999998 52.49) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 52.71) (end 217.900305 51.985) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 51.985) (end 217.29969499999999 51.985) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 51.985) (end 216.794695 52.49) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 51.71) (end 218.625305 51.71) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 51.49) (end 211.01999999999998 51.49) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 51.71) (end 217.900305 50.985) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 50.985) (end 217.29969499999999 50.985) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 50.985) (end 216.794695 51.49) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 55.25) (end 217.6 55.25) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 55.25) (end 210.79999999999998 55.25) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 54.25) (end 217.6 54.25) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 54.25) (end 210.79999999999998 54.25) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 55.25) (end 208.7 55.25) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 55.25) (end 208.7 55.25) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 55.25) (end 221.82 55.25) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 55.25) (end 219.7 55.25) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 54.25) (end 208.7 54.25) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 54.25) (end 208.7 54.25) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 54.25) (end 221.82 54.25) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 54.25) (end 219.7 54.25) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 55.480000000000004) (end 217.36999999999998 55.480000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 55.25) (end 209.77469499999998 55.25) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 55.975) (end 211.100305 55.975) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 55.25) (end 210.49969499999997 55.975) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 55.975) (end 211.595305 55.480000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 54.480000000000004) (end 217.36999999999998 54.480000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 54.25) (end 209.77469499999998 54.25) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 54.975) (end 211.100305 54.975) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 54.25) (end 210.49969499999997 54.975) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 54.975) (end 211.595305 54.480000000000004) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 55.25) (end 218.625305 55.25) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 55.03) (end 211.01999999999998 55.03) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 55.25) (end 217.900305 54.525000000000006) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 54.525000000000006) (end 217.29969499999999 54.525000000000006) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 54.525000000000006) (end 216.794695 55.03) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 54.25) (end 218.625305 54.25) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 54.03) (end 211.01999999999998 54.03) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 54.25) (end 217.900305 53.525000000000006) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 53.525000000000006) (end 217.29969499999999 53.525000000000006) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 53.525000000000006) (end 216.794695 54.03) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 57.79) (end 217.6 57.79) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 57.79) (end 210.79999999999998 57.79) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 56.79) (end 217.6 56.79) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 56.79) (end 210.79999999999998 56.79) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 57.79) (end 208.7 57.79) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 57.79) (end 208.7 57.79) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 57.79) (end 221.82 57.79) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 57.79) (end 219.7 57.79) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 56.79) (end 208.7 56.79) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 56.79) (end 208.7 56.79) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 56.79) (end 221.82 56.79) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 56.79) (end 219.7 56.79) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 58.02) (end 217.36999999999998 58.02) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 57.79) (end 209.77469499999998 57.79) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 58.515) (end 211.100305 58.515) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 57.79) (end 210.49969499999997 58.515) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 58.515) (end 211.595305 58.02) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 57.02) (end 217.36999999999998 57.02) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 56.79) (end 209.77469499999998 56.79) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 57.515) (end 211.100305 57.515) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 56.79) (end 210.49969499999997 57.515) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 57.515) (end 211.595305 57.02) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 57.79) (end 218.625305 57.79) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 57.57) (end 211.01999999999998 57.57) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 57.79) (end 217.900305 57.065) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 57.065) (end 217.29969499999999 57.065) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 57.065) (end 216.794695 57.57) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 56.79) (end 218.625305 56.79) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 56.57) (end 211.01999999999998 56.57) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 56.79) (end 217.900305 56.065) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 56.065) (end 217.29969499999999 56.065) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 56.065) (end 216.794695 56.57) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 60.33) (end 217.6 60.33) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 60.33) (end 210.79999999999998 60.33) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 59.33) (end 217.6 59.33) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 59.33) (end 210.79999999999998 59.33) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 60.33) (end 208.7 60.33) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 60.33) (end 208.7 60.33) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 60.33) (end 221.82 60.33) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 60.33) (end 219.7 60.33) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 59.33) (end 208.7 59.33) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 59.33) (end 208.7 59.33) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 59.33) (end 221.82 59.33) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 59.33) (end 219.7 59.33) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 60.56) (end 217.36999999999998 60.56) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 60.33) (end 209.77469499999998 60.33) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 61.055) (end 211.100305 61.055) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 60.33) (end 210.49969499999997 61.055) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 61.055) (end 211.595305 60.56) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 59.56) (end 217.36999999999998 59.56) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 59.33) (end 209.77469499999998 59.33) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 60.055) (end 211.100305 60.055) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 59.33) (end 210.49969499999997 60.055) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 60.055) (end 211.595305 59.56) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 60.33) (end 218.625305 60.33) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 60.11) (end 211.01999999999998 60.11) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 60.33) (end 217.900305 59.605000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 59.605000000000004) (end 217.29969499999999 59.605000000000004) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 59.605000000000004) (end 216.794695 60.11) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 59.33) (end 218.625305 59.33) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 59.11) (end 211.01999999999998 59.11) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 59.33) (end 217.900305 58.605000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 58.605000000000004) (end 217.29969499999999 58.605000000000004) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 58.605000000000004) (end 216.794695 59.11) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 62.870000000000005) (end 217.6 62.870000000000005) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 62.870000000000005) (end 210.79999999999998 62.870000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 61.870000000000005) (end 217.6 61.870000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 61.870000000000005) (end 210.79999999999998 61.870000000000005) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 62.870000000000005) (end 208.7 62.870000000000005) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 62.870000000000005) (end 208.7 62.870000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 62.870000000000005) (end 221.82 62.870000000000005) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 62.870000000000005) (end 219.7 62.870000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 61.870000000000005) (end 208.7 61.870000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 61.870000000000005) (end 208.7 61.870000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 61.870000000000005) (end 221.82 61.870000000000005) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 61.870000000000005) (end 219.7 61.870000000000005) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 63.1) (end 217.36999999999998 63.1) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 62.870000000000005) (end 209.77469499999998 62.870000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 63.595) (end 211.100305 63.595) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 62.870000000000005) (end 210.49969499999997 63.595) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 63.595) (end 211.595305 63.1) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 62.1) (end 217.36999999999998 62.1) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 61.870000000000005) (end 209.77469499999998 61.870000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 62.595) (end 211.100305 62.595) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 61.870000000000005) (end 210.49969499999997 62.595) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 62.595) (end 211.595305 62.1) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 62.870000000000005) (end 218.625305 62.870000000000005) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 62.650000000000006) (end 211.01999999999998 62.650000000000006) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 62.870000000000005) (end 217.900305 62.145) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 62.145) (end 217.29969499999999 62.145) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 62.145) (end 216.794695 62.650000000000006) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 61.870000000000005) (end 218.625305 61.870000000000005) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 61.650000000000006) (end 211.01999999999998 61.650000000000006) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 61.870000000000005) (end 217.900305 61.145) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 61.145) (end 217.29969499999999 61.145) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 61.145) (end 216.794695 61.650000000000006) (width 0.25) (layer "B.Cu"))
         
-  (segment (start 218.975 65.41) (end 217.6 65.41) (width 0.25) (layer "F.Cu"))
-  (segment (start 209.42499999999998 65.41) (end 210.79999999999998 65.41) (width 0.25) (layer "F.Cu"))
+  (segment (start 218.975 64.41) (end 217.6 64.41) (width 0.25) (layer "F.Cu"))
+  (segment (start 209.42499999999998 64.41) (end 210.79999999999998 64.41) (width 0.25) (layer "F.Cu"))
 
-  (segment (start 206.57999999999998 65.41) (end 208.7 65.41) (width 0.25) (layer "F.Cu"))
-  (segment (start 206.57999999999998 65.41) (end 208.7 65.41) (width 0.25) (layer "B.Cu"))
-  (segment (start 219.7 65.41) (end 221.82 65.41) (width 0.25) (layer "F.Cu"))
-  (segment (start 221.82 65.41) (end 219.7 65.41) (width 0.25) (layer "B.Cu"))
+  (segment (start 206.57999999999998 64.41) (end 208.7 64.41) (width 0.25) (layer "F.Cu"))
+  (segment (start 206.57999999999998 64.41) (end 208.7 64.41) (width 0.25) (layer "B.Cu"))
+  (segment (start 219.7 64.41) (end 221.82 64.41) (width 0.25) (layer "F.Cu"))
+  (segment (start 221.82 64.41) (end 219.7 64.41) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 211.595305 65.64) (end 217.36999999999998 65.64) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.42499999999998 65.41) (end 209.77469499999998 65.41) (width 0.25) (layer "B.Cu"))
-  (segment (start 210.49969499999997 66.135) (end 211.100305 66.135) (width 0.25) (layer "B.Cu"))
-  (segment (start 209.77469499999998 65.41) (end 210.49969499999997 66.135) (width 0.25) (layer "B.Cu"))
-  (segment (start 211.100305 66.135) (end 211.595305 65.64) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.595305 64.64) (end 217.36999999999998 64.64) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.42499999999998 64.41) (end 209.77469499999998 64.41) (width 0.25) (layer "B.Cu"))
+  (segment (start 210.49969499999997 65.135) (end 211.100305 65.135) (width 0.25) (layer "B.Cu"))
+  (segment (start 209.77469499999998 64.41) (end 210.49969499999997 65.135) (width 0.25) (layer "B.Cu"))
+  (segment (start 211.100305 65.135) (end 211.595305 64.64) (width 0.25) (layer "B.Cu"))
 
-  (segment (start 218.975 65.41) (end 218.625305 65.41) (width 0.25) (layer "B.Cu"))
-  (segment (start 216.794695 65.19) (end 211.01999999999998 65.19) (width 0.25) (layer "B.Cu"))
-  (segment (start 218.625305 65.41) (end 217.900305 64.685) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.900305 64.685) (end 217.29969499999999 64.685) (width 0.25) (layer "B.Cu"))
-  (segment (start 217.29969499999999 64.685) (end 216.794695 65.19) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.975 64.41) (end 218.625305 64.41) (width 0.25) (layer "B.Cu"))
+  (segment (start 216.794695 64.19) (end 211.01999999999998 64.19) (width 0.25) (layer "B.Cu"))
+  (segment (start 218.625305 64.41) (end 217.900305 63.685) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.900305 63.685) (end 217.29969499999999 63.685) (width 0.25) (layer "B.Cu"))
+  (segment (start 217.29969499999999 63.685) (end 216.794695 64.19) (width 0.25) (layer "B.Cu"))
         
     
 
   (footprint "ceoloide:display_ssd1306"
     (layer "F.Cu")
-    (at 214.2 53.67 0)
+    (at 214.2 52.67 0)
     (property "Reference" "DISP1"
       (at 0 20 0)
       (layer "F.SilkS")
@@ -8433,22 +10572,22 @@
     (fp_line (start -6.00 12.55) (end 6.00 12.55) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
   )
     
-  (segment (start 210.39 70.37) (end 210.39 68.62) (width 0.25) (layer "F.Cu") (net 34))
-  (segment (start 212.92999999999998 70.37) (end 212.92999999999998 68.62) (width 0.25) (layer "F.Cu") (net 44))
-  (segment (start 215.47 70.37) (end 215.47 68.62) (width 0.25) (layer "F.Cu") (net 49))
-  (segment (start 218.01 70.37) (end 218.01 68.62) (width 0.25) (layer "F.Cu") (net 48))
-  (segment (start 210.39 70.37) (end 210.39 68.62) (width 0.25) (layer "B.Cu") (net 34))
-  (segment (start 212.92999999999998 70.37) (end 212.92999999999998 68.62) (width 0.25) (layer "B.Cu") (net 44))
-  (segment (start 215.47 70.37) (end 215.47 68.62) (width 0.25) (layer "B.Cu") (net 49))
-  (segment (start 218.01 70.37) (end 218.01 68.62) (width 0.25) (layer "B.Cu") (net 48))
+  (segment (start 210.39 69.37) (end 210.39 67.62) (width 0.25) (layer "F.Cu") (net 34))
+  (segment (start 212.92999999999998 69.37) (end 212.92999999999998 67.62) (width 0.25) (layer "F.Cu") (net 44))
+  (segment (start 215.47 69.37) (end 215.47 67.62) (width 0.25) (layer "F.Cu") (net 49))
+  (segment (start 218.01 69.37) (end 218.01 67.62) (width 0.25) (layer "F.Cu") (net 48))
+  (segment (start 210.39 69.37) (end 210.39 67.62) (width 0.25) (layer "B.Cu") (net 34))
+  (segment (start 212.92999999999998 69.37) (end 212.92999999999998 67.62) (width 0.25) (layer "B.Cu") (net 44))
+  (segment (start 215.47 69.37) (end 215.47 67.62) (width 0.25) (layer "B.Cu") (net 49))
+  (segment (start 218.01 69.37) (end 218.01 67.62) (width 0.25) (layer "B.Cu") (net 48))
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 100 104.7 0)
     (property "Reference" "LED1"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -8555,6 +10694,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -8587,11 +10732,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 100 70.7 0)
     (property "Reference" "LED2"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -8698,6 +10843,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -8730,11 +10881,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 118 101.3 0)
     (property "Reference" "LED3"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -8841,6 +10992,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -8873,11 +11030,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 118 67.3 0)
     (property "Reference" "LED4"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -8984,6 +11141,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -9016,11 +11179,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 136 96.2 0)
     (property "Reference" "LED5"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -9127,6 +11290,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -9159,11 +11328,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 136 62.2 0)
     (property "Reference" "LED6"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -9270,6 +11439,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -9302,11 +11477,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 154 91.10000000000001 0)
     (property "Reference" "LED7"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -9413,6 +11588,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -9445,11 +11626,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 154 57.10000000000001 0)
     (property "Reference" "LED8"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -9556,6 +11737,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -9588,11 +11775,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 172 96.2 0)
     (property "Reference" "LED9"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -9699,6 +11886,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -9731,11 +11924,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 172 62.2 0)
     (property "Reference" "LED10"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -9842,6 +12035,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -9874,11 +12073,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 190 98.07000000000001 0)
     (property "Reference" "LED11"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -9985,6 +12184,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -10017,11 +12222,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 190 64.07000000000001 0)
     (property "Reference" "LED12"
       (at -4.75 0 90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -10128,6 +12333,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -10160,11 +12371,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 100 87.7 -180)
     (property "Reference" "LED13"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -10271,6 +12482,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -10303,11 +12520,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 100 53.7 -180)
     (property "Reference" "LED14"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -10414,6 +12631,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -10446,11 +12669,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 118 84.3 -180)
     (property "Reference" "LED15"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -10557,6 +12780,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -10589,11 +12818,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 118 50.3 -180)
     (property "Reference" "LED16"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -10700,6 +12929,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -10732,11 +12967,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 136 79.2 -180)
     (property "Reference" "LED17"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -10843,6 +13078,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -10875,11 +13116,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 136 45.2 -180)
     (property "Reference" "LED18"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -10986,6 +13227,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -11018,11 +13265,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 154 74.10000000000001 -180)
     (property "Reference" "LED19"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -11129,6 +13376,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -11161,11 +13414,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 154 40.10000000000001 -180)
     (property "Reference" "LED20"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -11272,6 +13525,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -11304,11 +13563,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 172 79.2 -180)
     (property "Reference" "LED21"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -11415,6 +13674,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -11447,11 +13712,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 172 45.2 -180)
     (property "Reference" "LED22"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -11558,6 +13823,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -11590,11 +13861,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 190 81.07000000000001 -180)
     (property "Reference" "LED23"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -11701,6 +13972,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -11733,11 +14010,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 190 47.07000000000001 -180)
     (property "Reference" "LED24"
       (at -4.75 0 -90)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -11844,6 +14121,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -11876,11 +14159,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 163.29694410000002 116.03886190000001 -185)
     (property "Reference" "LED25"
       (at -4.75 0 -95)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -11987,6 +14270,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -12019,11 +14308,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 182.5049246 119.34609680000001 -195)
     (property "Reference" "LED26"
       (at -4.75 0 -105)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -12130,6 +14419,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -12162,11 +14457,11 @@
     
 
   (footprint "ceoloide:led_SK6812mini-e (per-key, reversible)" 
-    (layer "B.Cu")
+    (layer "F.Cu")
     (at 200.8467974 125.9385182 -205)
     (property "Reference" "LED27"
       (at -4.75 0 -115)
-      (layer "B.SilkS")
+      (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -12273,6 +14568,12 @@
       (layer "B.CrtYd")
     )
     
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 180))
+    )
+      
     (fp_rect (start -1.8 -1.55) (end 1.8 1.55) (layer "Edge.Cuts") (stroke (width 0.12) (type solid)) (fill none))
   )
     
@@ -12432,14 +14733,14 @@
     (pad "" smd rect (at -1.085 -3.65 180) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
     (pad "" smd rect (at -1.085 3.65 180) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
     (pad "" smd rect (at 1.125 3.65 180) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
-    (pad "1" smd rect (at -1.735 2.25 180) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") )
+    (pad "1" smd rect (at -1.735 2.25 180) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 110 "pos"))
     (pad "2" smd rect (at -1.735 -0.75 180) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 42 "RAW"))
-    (pad "3" smd rect (at -1.735 -2.25 180) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 110 "pos"))
+    (pad "3" smd rect (at -1.735 -2.25 180) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") )
     
-    (fp_text user "ON" (at 0 -5 90) (layer "F.SilkS")
+    (fp_text user "ON" (at 0 5 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "OFF" (at 0 5 90) (layer "F.SilkS")
+    (fp_text user "OFF" (at 0 -5 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.415 -3.45) (end -0.375 -3.45) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
@@ -12462,17 +14763,17 @@
     (pad "" smd rect (at 1.125 -3.65 360) (size 1 0.8) (layers "B.Cu" "B.Paste" "B.Mask"))
     (pad "" smd rect (at -1.085 3.65 360) (size 1 0.8) (layers "B.Cu" "B.Paste" "B.Mask"))
     (pad "" smd rect (at 1.125 3.65 360) (size 1 0.8) (layers "B.Cu" "B.Paste" "B.Mask"))
-    (pad "1" smd rect (at -1.735 -2.25 360) (size 0.7 1.5) (layers "B.Cu" "B.Paste" "B.Mask") (net 110 "pos"))
+    (pad "1" smd rect (at -1.735 -2.25 360) (size 0.7 1.5) (layers "B.Cu" "B.Paste" "B.Mask") )
     (pad "2" smd rect (at -1.735 0.75 360) (size 0.7 1.5) (layers "B.Cu" "B.Paste" "B.Mask") (net 42 "RAW"))
-    (pad "3" smd rect (at -1.735 2.25 360) (size 0.7 1.5) (layers "B.Cu" "B.Paste" "B.Mask") )
+    (pad "3" smd rect (at -1.735 2.25 360) (size 0.7 1.5) (layers "B.Cu" "B.Paste" "B.Mask") (net 110 "pos"))
     
     (fp_text user "PWR1" (at -3.5 0 180) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user "ON" (at 0 -5 90) (layer "B.SilkS")
+    (fp_text user "ON" (at 0 5 90) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user "OFF" (at 0 5 90) (layer "B.SilkS")
+    (fp_text user "OFF" (at 0 -5 90) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -1.425 1.4) (end -1.425 1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
@@ -12480,6 +14781,12 @@
     (fp_line (start -0.375 -3.45) (end 0.415 -3.45) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -1.425 -1.6) (end -1.425 0.1) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 1.425 -2.85) (end 1.425 2.85) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
+    
+    (model ${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
     
     (pad "" np_thru_hole circle (at 0.025 -1.5 180) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at 0.025 1.5 180) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
@@ -12534,6 +14841,114 @@
     (fp_line (start 2.1 1.75) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
     (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
     (fp_line (start 2.35 1.5) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
+    
+  )
+    
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "B.Cu")
+    (at 109 54.099999999999994 0)
+    (property "Reference" "H1"
+      (at 0 3 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 0) (size 3.6 3.6) (drill 2.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -2.05 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -2.05 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    
+  )
+    
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "B.Cu")
+    (at 109 88.1 0)
+    (property "Reference" "H2"
+      (at 0 3 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 0) (size 3.6 3.6) (drill 2.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -2.05 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -2.05 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    
+  )
+    
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "B.Cu")
+    (at 180.5 49.17 0)
+    (property "Reference" "H3"
+      (at 0 3 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 0) (size 3.6 3.6) (drill 2.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -2.05 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -2.05 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    
+  )
+    
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "B.Cu")
+    (at 180.5 83.17 0)
+    (property "Reference" "H4"
+      (at 0 3 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 0) (size 3.6 3.6) (drill 2.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -2.05 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -2.05 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    
+  )
+    
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "B.Cu")
+    (at 145 77.9 0)
+    (property "Reference" "H5"
+      (at 0 3 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 0) (size 3.6 3.6) (drill 2.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -2.05 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -2.05 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    
+  )
+    
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "B.Cu")
+    (at 145 43.900000000000006 0)
+    (property "Reference" "H6"
+      (at 0 3 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 0) (size 3.6 3.6) (drill 2.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -2.05 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -2.05 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
     
   )
     
