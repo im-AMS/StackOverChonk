@@ -313,7 +313,7 @@ outlines:
       name: keycap_outlines
       operation: stack
 
-pcbs.aditya:
+pcbs.StackOverChonk:
   template: kicad8 # Required, since footprints are KiCad 8 only
   outlines:
     main.outline: board_outline
@@ -416,7 +416,7 @@ pcbs.aditya:
 
     # rotate alternate rows for easier routing
     per_key_leds_rotate_rows:
-      $extends: pcbs.aditya.footprints.per_key_leds_default
+      $extends: pcbs.StackOverChonk.footprints.per_key_leds_default
       where:
         - /matrix_.*_num/
         - /matrix_.*_home/
@@ -442,7 +442,7 @@ pcbs.aditya:
         shift: [battery_pads_x, battery_pads_y]
 
     battery_pads_back:
-      $extends: pcbs.aditya.footprints.battery_pads_front
+      $extends: pcbs.StackOverChonk.footprints.battery_pads_front
       params:
         side: 'B'
 
@@ -485,30 +485,30 @@ pcbs.aditya:
         drill: 2.2
 
     mounting_hole_bottom_left:
-      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
       where:
         ref: matrix_pinky_home
 
 
     mounting_hole_top_right:
-      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
       where:
         ref: matrix_inner_num
         shift: [(-kx/2) - 0.5 , (-kx/2) + 2.2]
 
     mounting_hole_bottom_right:
-      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
       where:
         ref: matrix_inner_home
         shift: [(-kx/2) - 0.5 , (-kx/2) + 2.2]
 
     mounting_hole_top_center:
-      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
       where:
         ref: matrix_middle_home
 
     mounting_hole_bottom_center:
-      $extends: pcbs.aditya.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
       where:
         ref: matrix_middle_num
 
