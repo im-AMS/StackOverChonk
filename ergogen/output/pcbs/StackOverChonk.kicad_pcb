@@ -14901,7 +14901,7 @@
 
   (footprint "ceoloide:mounting_hole_plated"
     (layer "B.Cu")
-    (at 180.5 83.17 0)
+    (at 181 83.97 0)
     (property "Reference" "H4"
       (at 0 3 0)
       (layer "B.SilkS")

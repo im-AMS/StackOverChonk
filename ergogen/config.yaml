@@ -500,7 +500,7 @@ pcbs.StackOverChonk:
       $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
       where:
         ref: matrix_inner_home
-        shift: [(-kx/2) - 0.5 , (-kx/2) + 2.2]
+        shift: [(-kx/2) - 0.0 , (-kx/2) + 1.4]
 
     mounting_hole_top_center:
       $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
