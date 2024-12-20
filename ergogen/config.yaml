@@ -478,7 +478,7 @@ pcbs.StackOverChonk:
       what: ceoloide/mounting_hole_plated
       where:
         ref: matrix_pinky_num
-        shift: [-kx/2, -ky/2]
+        shift: [(-kx/2), (-ky/2) -0.5 ]
       params:
         side: B
         outline: 0.7

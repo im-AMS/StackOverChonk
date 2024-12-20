@@ -14847,7 +14847,7 @@
 
   (footprint "ceoloide:mounting_hole_plated"
     (layer "B.Cu")
-    (at 109 54.099999999999994 0)
+    (at 109 54.599999999999994 0)
     (property "Reference" "H1"
       (at 0 3 0)
       (layer "B.SilkS")
@@ -14865,7 +14865,7 @@
 
   (footprint "ceoloide:mounting_hole_plated"
     (layer "B.Cu")
-    (at 109 88.1 0)
+    (at 109 88.6 0)
     (property "Reference" "H2"
       (at 0 3 0)
       (layer "B.SilkS")
@@ -14919,7 +14919,7 @@
 
   (footprint "ceoloide:mounting_hole_plated"
     (layer "B.Cu")
-    (at 145 77.9 0)
+    (at 145 78.4 0)
     (property "Reference" "H5"
       (at 0 3 0)
       (layer "B.SilkS")
@@ -14937,7 +14937,7 @@
 
   (footprint "ceoloide:mounting_hole_plated"
     (layer "B.Cu")
-    (at 145 43.900000000000006 0)
+    (at 145 44.400000000000006 0)
     (property "Reference" "H6"
       (at 0 3 0)
       (layer "B.SilkS")
