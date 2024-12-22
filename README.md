@@ -19,6 +19,9 @@ Try to reserve pins like so (pins in arduino format)
 - D6 for high speed comms like RGB underglow, because docs is also using it
 - D14, D15, D16 - SPI - idk what i might use this for, just leave em blank
 
+can the battery be connected to RAW for charging or do i have to connect it to top two pins
+move the display a little more down
+check the reversable footprint of this oled, it seems faulty
 
 on one layer connect rows, and another columns
 move the power switch near USB C

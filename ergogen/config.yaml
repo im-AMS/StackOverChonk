@@ -20,16 +20,13 @@ units:
   led_pos_y: -4.7 # Led Y position relative to the switch center
   led_rotation: 0 # Led rotation
 
-  diode_pos_x: -7.3
-  diode_pos_y: -2.85
-  diode_roation: 90
 
   # right top edge - its a bit janky
   mcu_pos_x: ( 1.95kx+outer_boundary-8.9 ) + ( -outer_boundary - 2)
   mcu_pos_y: (0.6ky+outer_boundary-14) + ( -outer_boundary - 3)
 
   oled_pos_x: mcu_pos_x + 0
-  oled_pos_y: mcu_pos_y - 3.5
+  oled_pos_y: mcu_pos_y - 3.7
 
   # relative to matrix_inner_home
   battery_pads_x: 15
@@ -322,9 +319,9 @@ pcbs.StackOverChonk:
       layer: Eco1.User
 
   footprints:
-    diode:
+    diode_definition:
       what: ceoloide/diode_tht_sod123
-      where: true
+      where: false
       params:
         from: "{{name}}"
         to: "{{row_net}}"
@@ -335,8 +332,58 @@ pcbs.StackOverChonk:
         trace_distance: -1.1
         diode_3dmodel_filename: '${SCOTTO_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step'
       adjust:
-        shift: [ diode_pos_x, diode_pos_y ]
-        rotate: diode_roation
+        rotate: 90
+        shift: [-8, -0.2]
+
+    diode_outer_col:
+      $extends: pcbs.StackOverChonk.footprints.diode_definition
+      where:
+        - /matrix_outer_.*/
+      adjust:
+        shift: [-8, -0.2]
+
+    diode_pinky_col:
+      $extends: pcbs.StackOverChonk.footprints.diode_definition
+      where:
+        - /matrix_pinky_.*/
+      adjust:
+        shift: [-5.1, -1.8]
+        rotate: 190
+
+    diode_ring_col:
+      $extends: pcbs.StackOverChonk.footprints.diode_definition
+      where:
+        - /matrix_ring_.*/
+      adjust:
+        shift: [-5.1, -1.8]
+        rotate: 190
+
+    diode_middle_col:
+      $extends: pcbs.StackOverChonk.footprints.diode_definition
+      where:
+        - /matrix_middle_.*/
+      adjust:
+        shift: [-5.1, -1.8]
+        rotate: 190
+
+    diode_index_col:
+      $extends: pcbs.StackOverChonk.footprints.diode_definition
+      where:
+        - /matrix_index_.*/
+      adjust:
+
+    diode_inner_col:
+      $extends: pcbs.StackOverChonk.footprints.diode_definition
+      where:
+        - /matrix_inner_.*/
+      adjust:
+
+    diode_cluster:
+      $extends: pcbs.StackOverChonk.footprints.diode_definition
+      where:
+        - /thumbs.*_cluster/
+      adjust:
+
 
     choc:
       what: ceoloide/switch_choc_v1_v2
@@ -388,6 +435,7 @@ pcbs.StackOverChonk:
       params:
         reversible: true
         include_traces: true
+        include_courtyard: false
         SDA: P2
         SCL: P3
       adjust:
@@ -474,43 +522,50 @@ pcbs.StackOverChonk:
         from: RST
         to: GND
 
-    mounting_hole_top_left:
+    mounting_hole_definition:
       what: ceoloide/mounting_hole_plated
-      where:
-        ref: matrix_pinky_num
-        shift: [(-kx/2), (-ky/2) -0.5 ]
+      where: false
       params:
         side: B
         outline: 0.7
         drill: 2.2
 
+    mounting_hole_top_left:
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_definition
+      where:
+        ref: matrix_pinky_num
+        shift: [(-kx/2), (-ky/2) -1.1 ]
+
     mounting_hole_bottom_left:
-      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_definition
       where:
         ref: matrix_pinky_home
+        shift: [(-kx/2), (-ky/2) -1.1 ]
 
 
     mounting_hole_top_right:
-      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_definition
       where:
         ref: matrix_inner_num
-        shift: [(-kx/2) - 0.5 , (-kx/2) + 2.2]
+        shift: [(-kx/2) - 0.0 , (-kx/2) + 1.2]
 
     mounting_hole_bottom_right:
-      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_definition
       where:
         ref: matrix_inner_home
-        shift: [(-kx/2) - 0.0 , (-kx/2) + 1.4]
+        shift: [(-kx/2) - 0.0 , (-kx/2) + 1.2]
 
     mounting_hole_top_center:
-      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_definition
       where:
         ref: matrix_middle_home
+        shift: [(-kx/2), (-ky/2) -1.1 ]
 
     mounting_hole_bottom_center:
-      $extends: pcbs.StackOverChonk.footprints.mounting_hole_top_left
+      $extends: pcbs.StackOverChonk.footprints.mounting_hole_definition
       where:
         ref: matrix_middle_num
+        shift: [(-kx/2), (-ky/2) -1.1 ]
 
 
     pussy_cat:
