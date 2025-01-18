@@ -1,0 +1,5 @@
+config SHIELD_STACKOVERCHONK_LEFT
+    def_bool $(shields_list_contains,StackOverChonk_left)
+
+config SHIELD_STACKOVERCHONK_RIGHT
+    def_bool $(shields_list_contains,StackOverChonk_right)
