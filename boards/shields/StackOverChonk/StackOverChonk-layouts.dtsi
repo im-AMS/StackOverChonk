@@ -3,7 +3,7 @@
 / {
     stackoverchonk_layout: stackoverchonk_layout {
         compatible = "zmk,physical-layout";
-        display-name = "StackOverChonk"
+        display-name = "StackOverChonk";
 
         kscan = <&kscan0>;
         transform = <&matrix_transform0>;
