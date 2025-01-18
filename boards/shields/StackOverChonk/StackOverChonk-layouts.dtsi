@@ -1,9 +1,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+    stackoverchonk_layout: stackoverchonk_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Default";
+        display-name = "StackOverChonk"
 
         kscan = <&kscan0>;
         transform = <&matrix_transform0>;
