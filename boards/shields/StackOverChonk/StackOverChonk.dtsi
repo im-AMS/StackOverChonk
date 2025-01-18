@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "stackoverchonk-layouts.dtsi"
+#include "StackOverChonk-layouts.dtsi"
 
 / {
     chosen {

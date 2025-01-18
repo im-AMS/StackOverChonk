@@ -1,4 +1,4 @@
-#include "stackoverchonk.dtsi"
+#include "StackOverChonk.dtsi"
 
 &kscan0 {
        col-gpios
