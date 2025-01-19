@@ -29,16 +29,19 @@
         };
     };
 
-    gpio0_default: gpio0_default {
-        group1 {
-            psels = <NRF_PSEL(GPIO, 0, 0)>,
-                    <NRF_PSEL(GPIO, 0, 1)>;
-        };
-    };
+    # gpio0_default: gpio0_default {
+    #     group1 {
+    #         psels = <NRF_PSEL(GPIO, 0, 0)>,
+    #                 <NRF_PSEL(GPIO, 0, 1)>;
+    #     };
+    # };
 };
 
 &uart0 {
     status = "disabled";
+    pinctrl-0 = <>;
+    pinctrl-1 = <>;
+    pinctrl-names = "default", "sleep";
 };
 
 &i2c0 {
