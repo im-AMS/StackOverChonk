@@ -29,12 +29,23 @@
         };
     };
 
+    uart0_default: uart0_default {
+        group1 {
+            /* try to assign them to unused pins and see if it works */
+            psels = <NRF_PSEL(UART_TX, 0, 9)>, <NRF_PSEL(UART_RTS, 0, 10)>;
+        };
+    uart0_sleep: uart0_sleep {
+        group1 {
+            /* try to assign them to unused pins and see if it works */
+            psels = <NRF_PSEL(UART_TX, 0, 9)>, <NRF_PSEL(UART_RTS, 0, 10)>;
+            low-power-enable;
+        };
 };
 
 &uart0 {
     status = "disabled";
-    pinctrl-0 = <>;
-    pinctrl-1 = <>;
+    pinctrl-0 = <&uart0_default>;
+    pinctrl-1 = <&uart0_sleep>;
     pinctrl-names = "default", "sleep";
 };
 
