@@ -1,8 +1,8 @@
 &pinctrl {
     gpio0_default: gpio0_default {
         group1 {
-            psels = <NRF_PSEL(GPIO, 0, 8)>,  /* P0 */
-                    <NRF_PSEL(GPIO, 0, 6)>;  /* P1 */
+            psels = <NRF_PSEL(GPIO, 0, 8)>,
+                    <NRF_PSEL(GPIO, 0, 6)>;
         };
     };
 
