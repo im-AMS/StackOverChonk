@@ -1,3 +1,20 @@
+&pinctrl {
+    gpio0_default: gpio0_default {
+        group1 {
+            psels = <NRF_PSEL(GPIO, 0, 8)>,  /* P0 */
+                    <NRF_PSEL(GPIO, 0, 6)>;  /* P1 */
+        };
+    };
+
+    gpio0_sleep: gpio0_sleep {
+        group1 {
+            psels = <NRF_PSEL(GPIO, 0, 8)>,
+                    <NRF_PSEL(GPIO, 0, 6)>;
+            low-power-enable;
+        };
+    };
+};
+
 &uart0 {
     status = "disabled";
     pinctrl-0 = <>;
@@ -5,3 +22,8 @@
     pinctrl-names = "default", "sleep";
 };
 
+&gpio0 {
+    pinctrl-0 = <&gpio0_default>;
+    pinctrl-1 = <&gpio0_sleep>;
+    pinctrl-names = "default", "sleep";
+};
