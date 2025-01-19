@@ -31,6 +31,13 @@
 
 };
 
+&uart0 {
+    status = "disabled";
+    pinctrl-0 = <>;
+    pinctrl-1 = <>;
+    pinctrl-names = "default", "sleep";
+};
+
 &i2c0 {
     compatible = "nordic,nrf-twi";
     pinctrl-0 = <&i2c0_default>;
