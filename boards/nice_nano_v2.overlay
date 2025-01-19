@@ -30,6 +30,10 @@
     };
 };
 
+&uart0 {
+    status = "disabled";
+};
+
 &i2c0 {
     compatible = "nordic,nrf-twi";
     pinctrl-0 = <&i2c0_default>;
