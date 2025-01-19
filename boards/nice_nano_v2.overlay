@@ -29,12 +29,6 @@
         };
     };
 
-    # gpio0_default: gpio0_default {
-    #     group1 {
-    #         psels = <NRF_PSEL(GPIO, 0, 0)>,
-    #                 <NRF_PSEL(GPIO, 0, 1)>;
-    #     };
-    # };
 };
 
 &uart0 {
