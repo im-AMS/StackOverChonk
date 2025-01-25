@@ -1,14 +1,16 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/led/led.h>
 #include "StackOverChonk-layouts.dtsi"
 
 / {
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
+        zmk,underglow = &led_strip;
         zmk,physical-layout = &stackoverchonk_layout;
     };
 
-default_transform: keymap_transform_0 {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <5>;
@@ -27,6 +29,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,6) RC(3,7
                         RC(4,3) RC(4,4) RC(4,5)                   RC(4,6) RC(4,7) RC(4,8)
         >;
     };
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
@@ -40,7 +43,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,6) RC(3,7
             , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
-
 };
 
 &stackoverchonk_layout{
