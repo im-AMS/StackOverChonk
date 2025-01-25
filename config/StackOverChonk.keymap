@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "BSPC_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -36,9 +36,35 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_HYPER";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        cmd_spc_tap: behavior_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CMD_SPACE_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <140>;
+            bindings = <&kp LGUI>, <&kp LG(SPACE)>;
+        };
+
+        ctrl_opt_spc_tap: behavior_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRL_OPT_SPACE_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <140>;
+            bindings = <&kp LCTRL>, <&kp LA(SPACE)>;
+        };
+
+        opt_ctrl_opt: behavior_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "OPT_CTRL_OPT";
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
@@ -47,7 +73,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
+            bindings = 
 // ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐   ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
     &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -59,13 +85,13 @@
     &mt LSHFT LBKT
               &kp Z     &kp X     &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &mt RSHFT RBKT
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                  &kp LALT  &space_layer 1 SPACE  &kp LGUI     &kp LCTRL &bspc_layer 2 BSPC  &kp RET
+                                  &kp LALT  &space_layer 1 SPACE  &cmd_spc_tap     &ctrl_opt_spc_tap &bspc_layer 2 BSPC  &kp RET
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
             >;
         };
 
         lower_layer {
-            bindings = <
+            bindings = 
 // ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐   ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    
                 &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
@@ -77,14 +103,14 @@
     &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans  &trans  &trans    
                 &trans    &trans    &trans    &trans    &trans    &trans
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                  &trans    &trans    &trans        &trans    &trans    &trans
+                                  &opt_ctrl_opt LC(LALT) LALT    &trans    &cmd_spc_tap        &ctrl_opt_spc_tap    &trans    &trans
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
             >;
         };
 
         raise_layer {
-            bindings = <
-// ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐   ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
+            bindings = 
+// ┌─────────┬────────┬─────────┬─────────┬─────────┬─────────┐   ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
     &trans    &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans    &trans    &trans    &trans
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &trans
@@ -93,7 +119,7 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12       &kp PLUS  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                  &trans    &trans    &trans        &trans    &trans    &trans
+                                  &opt_ctrl_opt LC(LALT) LALT    &trans    &cmd_spc_tap        &ctrl_opt_spc_tap    &trans    &trans
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
             >;
         };
