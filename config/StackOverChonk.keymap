@@ -42,25 +42,25 @@
             bindings = <&kp>, <&kp>;
         };
 
-        cmd_spc_tap: behavior_tap_dance {
+        td_cmd_spc: tap_dance_cmd_spc {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMD_SPACE_TAP";
+            label = "TAP_DANCE_CMD_SPACE";
             #binding-cells = <0>;
             tapping-term-ms = <140>;
             bindings = <&kp LGUI>, <&kp LG(SPACE)>;
         };
 
-        ctrl_opt_spc_tap: behavior_tap_dance {
+        td_ctrl_ospc: tap_dance_ctrl_optspace {
             compatible = "zmk,behavior-tap-dance";
-            label = "CTRL_OPT_SPACE_TAP";
+            label = "TAP_DANCE_CTRL_OPTSPACE";
             #binding-cells = <0>;
             tapping-term-ms = <140>;
             bindings = <&kp LCTRL>, <&kp LA(SPACE)>;
         };
 
-        opt_ctrl_opt: behavior_hold_tap {
+        hm_opt_copt: homerow_mods_opt_ctrlopt {
             compatible = "zmk,behavior-hold-tap";
-            label = "OPT_CTRL_OPT";
+            label = "HOMEROW_MODS_OPT_CTRLOPT";
             #binding-cells = <2>;
             tapping-term-ms = <140>;
             quick-tap-ms = <0>;
@@ -85,7 +85,7 @@
     &mt LSHFT LBKT
               &kp Z     &kp X     &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &mt RSHFT RBKT
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                  &kp LALT  &space_layer 1 SPACE  &cmd_spc_tap     &ctrl_opt_spc_tap &bspc_layer 2 BSPC  &kp RET
+                                  &kp LALT  &space_layer 1 SPACE  &td_cmd_spc     &td_ctrl_ospc &bspc_layer 2 BSPC  &kp RET
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
             >;
         };
@@ -103,14 +103,14 @@
     &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans  &trans  &trans    
                 &trans    &trans    &trans    &trans    &trans    &trans
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                  &opt_ctrl_opt LC(LALT) LALT    &trans    &cmd_spc_tap        &ctrl_opt_spc_tap    &trans    &trans
+                                  &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc        &td_ctrl_ospc    &trans    &trans
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
             >;
         };
 
         raise_layer {
             bindings = 
-// ┌─────────┬────────┬─────────┬─────────┬─────────┬─────────┐   ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
+// ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐   ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
     &trans    &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans    &trans    &trans    &trans
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &trans
@@ -119,7 +119,7 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12       &kp PLUS  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                  &opt_ctrl_opt LC(LALT) LALT    &trans    &cmd_spc_tap        &ctrl_opt_spc_tap    &trans    &trans
+                                  &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc        &td_ctrl_ospc    &trans    &trans
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
             >;
         };
