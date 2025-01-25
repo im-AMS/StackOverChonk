@@ -47,17 +47,11 @@
 
     led_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
-
-        /* SPI */
         reg = <0>;
-        spi-max-frequency = <3200000>;  // SK6812 specific frequency
-
-        /* WS2812 */
+        spi-max-frequency = <4000000>;
         chain-length = <27>;
-        spi-one-frame = <0x78>;        // Adjusted for SK6812
-        spi-zero-frame = <0x60>;       // Adjusted for SK6812
-        color-mapping = <LED_COLOR_ID_GREEN
-                        LED_COLOR_ID_RED
-                        LED_COLOR_ID_BLUE>;
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
     };
 };
