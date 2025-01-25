@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "BSPC_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_HYPER";
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -46,7 +46,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CMD_SPACE";
             #binding-cells = <0>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
             bindings = <&kp LGUI>, <&kp LG(SPACE)>;
         };
 
@@ -54,7 +54,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CTRL_OPTSPACE";
             #binding-cells = <0>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
             bindings = <&kp LCTRL>, <&kp LA(SPACE)>;
         };
 
@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_OPT_CTRLOPT";
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
@@ -98,10 +98,11 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6        &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-&trans &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &trans   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
+&esc_hyper LS(LC(LA(LGUI))) ESC
+              &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &trans   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans  &trans  &trans    
-                &trans    &trans    &trans    &trans    &trans    &trans
+&mt LSHFT LBKT &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans  &trans  &trans    
+                &trans    &trans    &trans    &trans    &trans
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                   &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc        &td_ctrl_ospc    &trans    &trans
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
@@ -115,9 +116,10 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
     &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &trans
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
+    &esc_hyper LS(LC(LA(LGUI))) ESC
+              &trans    &trans    &trans    &trans    &trans        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
 // ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12       &kp PLUS  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
+  &mt LSHFT LBKT &trans    &trans    &trans    &trans    &trans        &trans    &trans    &trans    &trans    &trans    &trans
 // └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                   &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc        &td_ctrl_ospc    &trans    &trans
 //                               └─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┘
