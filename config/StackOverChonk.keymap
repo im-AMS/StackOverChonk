@@ -11,32 +11,64 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        bspc_ctrl: backspace_ctrl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE_CTRL";
-            #binding-cells = <2>;
-            tapping-term-ms = <160>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
+  // Num pad - triggered only when both space keys are held
+    combos {
+          compatible = "zmk,combos";
+          combo_numpad {
+              timeout-ms = <800>;
+              key-positions = <49 52>;  // Position numbers of your space layer keys
+              layers = <0>;  // Only active in default layer
+              bindings = <&tog 3>;  // Toggle layer 3 (numpad)
+          };
+      };
 
+    behaviors {
         space_layer: space_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_LAYER";
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
 
-        td_bspc_alt_space: tap_dance_bspc_altspace {
+      // Double tap for cmd+space - set as raycast
+      td_cmd_spc: tap_dance_cmd_spc {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_BSPC_ALTSPACE";
+            label = "TAP_DANCE_CMD_SPACE";
             #binding-cells = <0>;
-            tapping-term-ms = <160>;
+            tapping-term-ms = <165>;
+            bindings = <&kp LGUI>, <&kp LG(SPACE)>;
+        };
+
+      // used with rectangle for window management
+      hm_opt_copt: homerow_mods_opt_ctrlopt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_OPT_CTRLOPT";
+            #binding-cells = <2>;
+            tapping-term-ms = <165>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+      // Backpsace preferred, held for Ctrl
+        bspc_ctrl: backspace_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BACKSPACE_CTRL";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        bspc_ctrl_td: backspace_ctrl_tapdance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACKSPACE_CTRL_TAPDANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&bspc_ctrl LCTRL BSPC>, <&kp LA(SPACE)>;
         };
 
@@ -46,7 +78,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
@@ -56,7 +88,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
@@ -72,13 +104,13 @@
     &kp TAB        &kp Q           &kp W           &kp E           &kp R           &kp T                                       &kp Y           &kp U           &kp I           &kp O           &kp P           &kp EQUAL
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &esc_hyper LS(LC(LA(LGUI))) ESC    
-                   &kp A           &kp S           &kp D           &kp F           &kp G                                       &kp H           &kp J           &kp K           &kp L           &kp SEMI        &kp SQT
+                    &kp A           &kp S           &kp D           &kp F           &kp G                                     &kp H           &kp J           &kp K           &kp L           &kp SEMI        &kp SQT
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &mt LSHFT LBKT
-                   &kp Z           &kp X           &kp C           &kp V           &kp B                                       &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &mt RSHFT RBKT
+                   &kp Z           &kp X           &kp C           &kp V           &kp B                                      &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &mt RSHFT RBKT
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
-                                                   &kp LALT        &mo 1           &kp LGUI                                    &bspc_ctrl LCTRL BSPC    &space_layer 2 SPACE    &kp RET
-//                                               └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
+                                                   &kp LALT       &space_layer 1 SPACE    &td_cmd_spc                       &bspc_ctrl LCTRL BSPC  &space_layer 2 SPACE  &kp RET
+//                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
             >;
         };
 
@@ -90,12 +122,12 @@
     &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                                     &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &esc_hyper LS(LC(LA(LGUI))) ESC
-                   &kp C_BRI_DN    &kp C_BRI_UP    &kp C_VOL_DN    &kp C_VOL_UP    &trans                                     &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
+                   &kp C_BRI_DN    &kp C_BRI_UP    &kp C_VOL_DN    &kp C_VOL_UP    &trans                                     &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &bslash
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-    &mt LSHFT LBKT &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans         &trans                                  &trans          &trans          &trans          &trans          &trans          &trans
+  &mt LSHFT LBKT   &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans                                  &trans          &trans          &trans          &trans          &trans          &trans
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
-                                                   &trans          &trans          &trans                                      &td_bspc_alt_space    &space_layer 2 SPACE    &trans
-//                                               └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
+                                                   &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc                        &bspc_ctrl_td   &space_layer 2 SPACE    &kp RET
+//                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
             >;
         };
 
@@ -111,8 +143,23 @@
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &mt LSHFT LBKT &trans          &trans          &trans          &trans          &trans                                      &trans          &trans          &trans          &trans          &trans          &trans
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
-                                                   &trans          &trans          &trans                                      &td_bspc_alt_space    &space_layer 2 SPACE    &trans
-//                                               └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
+                                                  &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc                         &bspc_ctrl_td   &space_layer 2 SPACE    &kp RET
+//                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
+            >;
+        };
+      numpad_layer {
+            bindings = <
+//┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐                          ┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
+    &trans          &trans          &kp KP_PLUS     &kp KP_MINUS    &kp KP_MULTIPLY &trans                                     &trans          &kp KP_MULTIPLY &kp KP_MINUS    &kp KP_PLUS     &trans          &trans
+//├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
+    &trans          &trans          &kp KP_N7       &kp KP_N8       &kp KP_N9       &trans                                     &trans          &kp KP_N9       &kp KP_N8       &kp KP_N7       &trans          &trans
+//├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
+    &trans          &trans          &kp KP_N4       &kp KP_N5       &kp KP_N6       &trans                                     &trans          &kp KP_N6       &kp KP_N5       &kp KP_N4       &trans          &trans
+//├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
+    &trans          &trans          &kp KP_N1       &kp KP_N2       &kp KP_N3       &trans                                     &trans          &kp KP_N3       &kp KP_N2       &kp KP_N1       &trans          &trans
+//└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
+                                                &hm_opt_copt LC(LALT) LALT &kp KP_N0  &td_cmd_spc                             &bspc_ctrl_td     &kp KP_N0       &kp RET
+//                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
             >;
         };
     };
