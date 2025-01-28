@@ -17,7 +17,6 @@
           combo_numpad {
               timeout-ms = <800>;
               key-positions = <49 52>;  // Position numbers of your space layer keys
-              layers = <0>;  // Only active in default layer
               bindings = <&tog 3>;  // Toggle layer 3 (numpad)
           };
       };
