@@ -4,7 +4,7 @@
 
 / {
     chosen {
-        //zephyr,display = &oled;
+        zephyr,display = &oled;
         zmk,kscan = &kscan0;
         // zmk,underglow = &led_strip;
         zmk,physical-layout = &stackoverchonk_layout;
