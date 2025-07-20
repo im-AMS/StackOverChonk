@@ -24,13 +24,13 @@
 
     behaviors {
         space_layer: space_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_LAYER";
-            #binding-cells = <2>;
-            tapping-term-ms = <160>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
+          compatible = "zmk,behavior-hold-tap";
+          label = "SPACE_LAYER";
+          #binding-cells = <2>;
+          tapping-term-ms = <500>;
+          quick-tap-ms = <150>;
+          flavor = "tap-preferred";
+          bindings = <&tog>, <&kp>;
         };
 
       // Double tap for cmd+space - set as raycast
@@ -59,7 +59,7 @@
             label = "BACKSPACE_CTRL";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
