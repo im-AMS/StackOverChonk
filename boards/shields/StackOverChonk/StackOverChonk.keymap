@@ -100,22 +100,38 @@
     &mt LSHFT LBKT
                    &kp Z           &kp X           &kp C           &kp V           &kp B                                      &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &mt RSHFT RBKT
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
-                                                   &kp LALT       &space_layer 1 SPACE    &td_cmd_spc                       &bspc_ctrl LCTRL BSPC  &space_layer 1 SPACE  &kp RET
+                                                   &kp LALT       &space_layer 1 SPACE    &td_cmd_spc                       &bspc_ctrl LCTRL BSPC  &space_layer 2 SPACE  &kp RET
 //                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
             >;
         };
 
-        lower_layer {
+        left_layer {
             bindings = <                                                            // using this to toggle output source
 //┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐                          ┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
-    &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &out OUT_TOG                               &trans         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &trans
+    &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &out OUT_TOG                               &trans          &trans          &trans          &trans          &trans          &trans 
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-    &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                                     &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12
+    &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                                     &trans          &trans          &trans          &trans          &trans          &trans 
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &esc_hyper LS(LC(LA(LGUI))) ESC
-                   &kp C_BRI_DN    &kp C_BRI_UP    &kp C_VOL_DN    &kp C_VOL_UP    &trans                                     &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &kp BSLH
+                   &kp C_BRI_DN    &kp C_BRI_UP    &kp C_VOL_DN    &kp C_VOL_UP    &trans                                     &trans          &trans          &trans          &trans          &trans          &trans 
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-  &mt LSHFT LBKT   &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans                                  &trans          &rgb_ug RGB_BRD  &rgb_ug RGB_BRI &rgb_ug RGB_SPD &rgb_ug RGB_SPI          &trans
+  &mt LSHFT LBKT   &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans                                  &trans          &trans          &trans          &trans          &trans          &trans  
+//└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
+                                                 &hm_opt_copt LC(LALT) LALT    &to 0    &td_cmd_spc                         &bspc_ctrl LCTRL BSPC   &to 0    &kp RET
+//                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
+            >;
+        };
+
+        right_layer {
+            bindings = <                                                            // using this to toggle output source
+//┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐                          ┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
+   &trans          &trans          &trans          &trans          &trans          &trans                                     &trans         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &trans
+//├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
+   &trans          &trans          &trans          &trans          &trans          &trans                                      &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12
+//├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
+   &trans          &trans          &trans          &trans          &trans          &trans                                      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &kp BSLH
+//├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
+   &trans          &trans          &trans          &trans          &trans          &trans                                      &trans          &rgb_ug RGB_BRD  &rgb_ug RGB_BRI &rgb_ug RGB_SPD &rgb_ug RGB_SPI          &trans
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
                                                  &hm_opt_copt LC(LALT) LALT    &to 0    &td_cmd_spc                         &bspc_ctrl LCTRL BSPC   &to 0    &kp RET
 //                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
