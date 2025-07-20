@@ -27,8 +27,8 @@
           compatible = "zmk,behavior-hold-tap";
           label = "SPACE_LAYER";
           #binding-cells = <2>;
-          tapping-term-ms = <500>;
-          quick-tap-ms = <150>;
+          tapping-term-ms = <300>;
+          quick-tap-ms = <180>;
           flavor = "tap-preferred";
           bindings = <&tog>, <&kp>;
         };
@@ -59,7 +59,7 @@
             label = "BACKSPACE_CTRL";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <180>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -117,7 +117,7 @@
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
   &mt LSHFT LBKT   &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans                                  &trans          &rgb_ug RGB_BRD  &rgb_ug RGB_BRI &rgb_ug RGB_SPD &rgb_ug RGB_SPI          &trans
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
-                                                   &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc                        &bspc_ctrl_td   &space_layer 2 SPACE    &kp RET
+                                                   &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc                       &bspc_ctrl LCTRL BSPC   &space_layer 2 SPACE    &kp RET
 //                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
             >;
         };
@@ -134,7 +134,7 @@
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &mt LSHFT LBKT &trans          &trans          &trans          &trans          &trans                                      &trans         &rgb_ug RGB_BRD  &rgb_ug RGB_BRI &rgb_ug RGB_SPD &rgb_ug RGB_SPI  &trans
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
-                                                  &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc                         &bspc_ctrl_td   &space_layer 2 SPACE    &kp RET
+                                                  &hm_opt_copt LC(LALT) LALT    &trans    &td_cmd_spc                        &bspc_ctrl LCTRL BSPC   &space_layer 2 SPACE    &kp RET
 //                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
             >;
         };
@@ -149,7 +149,7 @@
 //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &trans          &trans          &kp KP_N1       &kp KP_N2       &kp KP_N3       &trans                                     &trans          &kp KP_N3       &kp KP_N2       &kp KP_N1       &trans          &trans
 //└───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┼                          ┼───────────────┼───────────────┼───────────────┼───────────────┴───────────────┴───────────────┘
-                                                &hm_opt_copt LC(LALT) LALT &kp KP_N0  &td_cmd_spc                             &bspc_ctrl_td     &kp KP_N0       &kp RET
+                                                &hm_opt_copt LC(LALT) LALT &kp KP_N0  &td_cmd_spc                            &bspc_ctrl LCTRL BSPC     &kp KP_N0       &kp RET
 //                                                └───────────────┴───────────────┴───────────────┘                          └───────────────┴───────────────┴───────────────┘
             >;
         };
