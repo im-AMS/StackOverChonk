@@ -9869,8 +9869,8 @@ UNICODE_MORPH_MODS
         layer_System {
             bindings = <
  &kp F1         &kp F2         &kp F3         &kp F4         &kp F5         &kp F6                                                &kp F7         &kp F8         &kp F9         &kp F10        &kp F11        &kp F12
- &rgb_tog       &rgb_brd       &rgb_bri       &rgb_spd       &rgb_spi       &rgb_eff                                              &none          &kp _PASTE      &kp _COPY       &kp _CUT        &none          &none
- &rgb_hui       &kp BR_DOWN    &kp BR_UP      &kp VOL_DOWN   &kp VOL_UP     &kp C_MUTE                                           &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp CAPS       &none
+ &rgb_ug RGB_TOG       &rgb_ug RGB_BRD       &rgb_ug RGB_BRI       &rgb_ug RGB_SPD       &rgb_ug RGB_SPI       &rgb_ug RGB_EFF                                              &none          &kp _PASTE      &kp _COPY       &kp _CUT        &none          &none
+ &RGB_HUI       &kp BR_DOWN    &kp BR_UP      &kp VOL_DOWN   &kp VOL_UP     &kp C_MUTE                                           &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp CAPS       &none
  &none          &none          &none          &kp C_PREVIOUS &kp C_NEXT     &kp C_PLAY_PAUSE                                   &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        &none          &none
                              &trans          &trans          &trans                          &trans          &trans          &trans
 
