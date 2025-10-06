@@ -9729,25 +9729,25 @@ UNICODE_MORPH_MODS
   };
   // ==== MOUSE-KEY <section ends> =====
 #else
-  #define mkp none
-  #define mmv none
-  #define msc none
-  #define LCLK
-  #define MCLK
-  #define RCLK
-  #define MB1
-  #define MB2
-  #define MB3
-  #define MB4
-  #define MB5
-  #define MOVE_UP
-  #define MOVE_DOWN
-  #define MOVE_LEFT
-  #define MOVE_RIGHT
-  #define SCRL_UP
-  #define SCRL_DOWN
-  #define SCRL_LEFT
-  #define SCRL_RIGHT
+  // #define mkp none
+  // #define mmv none
+  // #define msc none
+  // #define LCLK
+  // #define MCLK
+  // #define RCLK
+  // #define MB1
+  // #define MB2
+  // #define MB3
+  // #define MB4
+  // #define MB5
+  // #define MOVE_UP
+  // #define MOVE_DOWN
+  // #define MOVE_LEFT
+  // #define MOVE_RIGHT
+  // #define SCRL_UP
+  // #define SCRL_DOWN
+  // #define SCRL_LEFT
+  // #define SCRL_RIGHT
 #endif
 /*HACK*//{
 
