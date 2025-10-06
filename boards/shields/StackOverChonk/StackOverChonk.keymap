@@ -60,7 +60,7 @@
 #define LAYER_System  9
 #define LAYER_Symbols 10
 #define LAYER_Magic   11
-#define LAYER_Lower   11
+#define LAYER_Lower   12
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
@@ -266,6 +266,9 @@
 //#define WORLD_HOST_AZERTY  // host computer is set to AZERTY locale
 //#define WORLD_SHIFT_NUMBER // apply Shift to type number row digits
 // TIP: Add more setting overrides here instead of editing them below.
+#define COMBO_FIRING_DECAY 75 // default is 50 below
+#define MAGIC_HOLD_TIME 3000
+#define TAP_DANCE_DURATION 165
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -414,7 +417,7 @@ combos {
   // T3+T2
   combo_caps_word_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T3 POS_RH_T2>;
+    key-positions = <POS_RH_T2 POS_RH_T3>;
     bindings = <&caps_word>;
     layers = <0>;
   };
@@ -447,7 +450,7 @@ combos {
   combo_magic_layer {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T2 POS_RH_T2>;
-    bindings = <&combo_magic_space SPACE LAYER_Magic>;
+    bindings = <&combo_magic_space LAYER_Magic SPACE>;
     layers = <0>;
   };
 
@@ -460,7 +463,19 @@ behaviors {
         #binding-cells = <2>;
         flavor = "hold-preferred";
         tapping-term-ms = <MAGIC_HOLD_TIME>;       
-        bindings = <&kp>, <&tog>;
+        bindings = <&to>, <&kp>;
+    };
+
+    #ifndef #TAP_DANCE_DURATION
+    #define TAP_DANCE_DURATION 180
+    #endif
+
+    td_lgui_lgspc: td_lgui_lgspc {
+      compatible = "zmk,behavior-tap-dance";
+      label = "TAP_DANCE_LGUI_OR_LGUI_SPACE";
+      #binding-cells = <0>;
+      tapping-term-ms = <TAP_DANCE_DURATION>;
+      bindings = <&kp LGUI>, <&kp LG(SPACE)>;
     };
 
   //////////////////////////////////////////////////////////////////////////
@@ -2708,6 +2723,7 @@ behaviors {
       UNDERSCORE MINUS
       BACKSPACE DELETE
       N1 N2 N3 N4 N5 N6 N7 N8 N9 N0
+      LSHIFT RSHIFT
     >;
   };
 
@@ -9771,7 +9787,7 @@ UNICODE_MORPH_MODS
                 &kp GRAVE                 &kp N1                 &kp N2                 &kp N3                 &kp N4                 &kp N5                 &kp N6                 &kp N7                 &kp N8                 &kp N9                 &kp N0                 &kp MINUS
                 &kp TAB                   &kp Q                  &kp W                  &kp E                  &kp R                  &kp T                  &kp Y                  &kp U                  &kp I                  &kp O                  &kp P                  &kp EQUAL
                 &esc_hyper LG(LA(LC(LSHFT))) ESC &LeftPinky(A, LAYER_QWERTY)  &LeftRingy(S, LAYER_QWERTY)  &LeftMiddy(D, LAYER_QWERTY)  &LeftIndex(F, LAYER_QWERTY)  &kp G                  &kp H  &RightIndex(J, LAYER_QWERTY)  &RightMiddy(K, LAYER_QWERTY)  &RightRingy(L, LAYER_QWERTY)  &RightPinky(SEMI, LAYER_QWERTY)  &kp SQT
-                &crumb LAYER_Lower LBKT                 &kp Z                  &kp X                  &kp C                  &kp V                  &kp B                  &kp N                  &kp M                  &kp COMMA              &kp DOT                &kp FSLH               &crumb LAYER_Lower RBKT
+                &thumb LAYER_Lower LBKT                 &kp Z                  &kp X                  &kp C                  &kp V                  &kp B                  &kp N                  &kp M                  &kp COMMA              &kp DOT                &kp FSLH               &thumb LAYER_Lower RBKT
                                                             &kp LALT                &thumb LAYER_System SPACE               &kp LGUI                &kp BSPC                &thumb LAYER_Symbols SPACE              &kp ENTER
             >;
         };
@@ -9863,7 +9879,7 @@ UNICODE_MORPH_MODS
  &rgb_ug RGB_TOG       &rgb_ug RGB_BRD       &rgb_ug RGB_BRI       &rgb_ug RGB_SPD       &rgb_ug RGB_SPI       &rgb_ug RGB_EFF                                              &none          &kp _PASTE      &kp _COPY       &kp _CUT        &none          &none
  &rgb_ug RGB_HUI       &kp C_BRI_DN    &kp C_BRI_UP      &kp C_VOL_DN   &kp C_VOL_UP     &kp C_MUTE                                           &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp CAPS       &none
  &none          &none          &none          &kp C_PREVIOUS &kp C_NEXT     &kp C_PLAY_PAUSE                                   &kp _HOME       &kp PG_DN      &kp PG_UP      &kp _END        &none          &none
-                             &trans          &trans          &trans                          &trans          &trans          &trans
+                             &trans          &to LAYER_QWERTY          &trans                          &trans          &trans          &trans
 
             >;
         };
@@ -9874,7 +9890,7 @@ UNICODE_MORPH_MODS
  &kp EXCL       &kp COMMA      &kp LBRC       &kp RBRC       &kp SEMI       &kp QMARK                                          &trans          &trans          &trans          &trans          &trans          &trans
  &kp HASH       &kp CARET      &kp EQUAL      &kp UNDER      &kp DLLR       &kp ASTRK                                          &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
  &kp TILDE      &kp LT         &kp PIPE       &kp MINUS      &kp GT         &kp FSLH                                           &trans          &trans          &trans          &trans          &trans          &trans
-                                   &kp BSLH    &kp COLON      &kp ASTRK                     &trans          &trans          &trans
+                                   &kp BSLH    &kp COLON      &kp ASTRK                     &trans          &to LAYER_QWERTY          &trans
 
             >;
         };
