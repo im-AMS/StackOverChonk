@@ -268,7 +268,7 @@
 // TIP: Add more setting overrides here instead of editing them below.
 #define COMBO_FIRING_DECAY 90 // default is 50 below
 #define MAGIC_HOLD_TIME 3000
-#define TAP_DANCE_DURATION 165
+#define TAP_DANCE_DURATION 200
 
 //////////////////////////////////////////////////////////////////////////////
 //
