@@ -466,7 +466,7 @@ behaviors {
         bindings = <&to>, <&kp>;
     };
 
-    #ifndef #TAP_DANCE_DURATION
+    #ifndef TAP_DANCE_DURATION
     #define TAP_DANCE_DURATION 180
     #endif
 
@@ -9788,7 +9788,7 @@ UNICODE_MORPH_MODS
                 &kp TAB                   &kp Q                  &kp W                  &kp E                  &kp R                  &kp T                  &kp Y                  &kp U                  &kp I                  &kp O                  &kp P                  &kp EQUAL
                 &esc_hyper LG(LA(LC(LSHFT))) ESC &LeftPinky(A, LAYER_QWERTY)  &LeftRingy(S, LAYER_QWERTY)  &LeftMiddy(D, LAYER_QWERTY)  &LeftIndex(F, LAYER_QWERTY)  &kp G                  &kp H  &RightIndex(J, LAYER_QWERTY)  &RightMiddy(K, LAYER_QWERTY)  &RightRingy(L, LAYER_QWERTY)  &RightPinky(SEMI, LAYER_QWERTY)  &kp SQT
                 &thumb LAYER_Lower LBKT                 &kp Z                  &kp X                  &kp C                  &kp V                  &kp B                  &kp N                  &kp M                  &kp COMMA              &kp DOT                &kp FSLH               &thumb LAYER_Lower RBKT
-                                                            &kp LALT                &thumb LAYER_System SPACE               &kp LGUI                &kp BSPC                &thumb LAYER_Symbols SPACE              &kp ENTER
+                                                            &kp LALT                &thumb LAYER_System SPACE               &kp LGUI                &thumb LCTRL BSPC                &thumb LAYER_Symbols SPACE              &kp ENTER
             >;
         };
 
