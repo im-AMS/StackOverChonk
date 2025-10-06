@@ -467,7 +467,7 @@ behaviors {
     };
 
     #ifndef TAP_DANCE_DURATION
-    #define TAP_DANCE_DURATION 180
+    #define TAP_DANCE_DURATION 165
     #endif
 
     td_lgui_lgspc: td_lgui_lgspc {
