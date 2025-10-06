@@ -266,7 +266,7 @@
 //#define WORLD_HOST_AZERTY  // host computer is set to AZERTY locale
 //#define WORLD_SHIFT_NUMBER // apply Shift to type number row digits
 // TIP: Add more setting overrides here instead of editing them below.
-#define COMBO_FIRING_DECAY 75 // default is 50 below
+#define COMBO_FIRING_DECAY 90 // default is 50 below
 #define MAGIC_HOLD_TIME 3000
 #define TAP_DANCE_DURATION 165
 
@@ -417,7 +417,7 @@ combos {
   // T3+T2
   combo_caps_word_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_RH_T2 POS_RH_T3>;
+    key-positions = <POS_RH_T3 POS_RH_T2>;
     bindings = <&caps_word>;
     layers = <0>;
   };
@@ -2705,6 +2705,17 @@ behaviors {
     #binding-cells = <2>;
     bindings = <&kp>, <&kp>;
   };
+
+    // Backpsace preferred, held for Ctrl
+    bspc_ctrl: backspace_ctrl {
+      compatible = "zmk,behavior-hold-tap";
+      label = "BACKSPACE_CTRL";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <180>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
 
 
   //////////////////////////////////////////////////////////////////////////
@@ -9788,7 +9799,7 @@ UNICODE_MORPH_MODS
                 &kp TAB                   &kp Q                  &kp W                  &kp E                  &kp R                  &kp T                  &kp Y                  &kp U                  &kp I                  &kp O                  &kp P                  &kp EQUAL
                 &esc_hyper LG(LA(LC(LSHFT))) ESC &LeftPinky(A, LAYER_QWERTY)  &LeftRingy(S, LAYER_QWERTY)  &LeftMiddy(D, LAYER_QWERTY)  &LeftIndex(F, LAYER_QWERTY)  &kp G                  &kp H  &RightIndex(J, LAYER_QWERTY)  &RightMiddy(K, LAYER_QWERTY)  &RightRingy(L, LAYER_QWERTY)  &RightPinky(SEMI, LAYER_QWERTY)  &kp SQT
                 &thumb LAYER_Lower LBKT                 &kp Z                  &kp X                  &kp C                  &kp V                  &kp B                  &kp N                  &kp M                  &kp COMMA              &kp DOT                &kp FSLH               &thumb LAYER_Lower RBKT
-                                                            &kp LALT                &thumb LAYER_System SPACE               &kp LGUI                &thumb LCTRL BSPC                &thumb LAYER_Symbols SPACE              &kp ENTER
+                                                            &kp LALT                &thumb LAYER_System SPACE               &td_lgui_lgspc                &bspc_ctrl LCTRL BSPC                &thumb LAYER_Symbols SPACE              &kp ENTER
             >;
         };
 
