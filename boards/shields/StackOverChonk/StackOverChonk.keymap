@@ -447,7 +447,7 @@ combos {
   combo_magic_layer {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T2 POS_RH_T2>;
-    bindings = <&combo_magic_space>;
+    bindings = <&combo_magic_space SPACE LAYER_Magic>;
     layers = <0>;
   };
 
@@ -460,7 +460,7 @@ behaviors {
         #binding-cells = <2>;
         flavor = "hold-preferred";
         tapping-term-ms = <MAGIC_HOLD_TIME>;       
-        bindings = <&kp SPACE>, <&tog LAYER_Magic>; 
+        bindings = <&kp>, <&tog>;
     };
 
   //////////////////////////////////////////////////////////////////////////
