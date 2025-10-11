@@ -269,6 +269,8 @@
 #define COMBO_FIRING_DECAY 90 // default is 50 below
 #define MAGIC_HOLD_TIME 3000
 #define TAP_DANCE_DURATION 200
+#define TAPPING_RESOLUTION 140
+#define THUMB_HOLDING_TIME (TAPPING_RESOLUTION + 40)
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -2711,7 +2713,7 @@ behaviors {
       compatible = "zmk,behavior-hold-tap";
       label = "BACKSPACE_CTRL";
       #binding-cells = <2>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <180>;
       quick-tap-ms = <180>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
