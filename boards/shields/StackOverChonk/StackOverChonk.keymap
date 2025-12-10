@@ -143,9 +143,6 @@
             #binding-cells = <0>;
             bindings
                 = <&out OUT_BLE>,
-                  <&bt BT_DISC 1>,
-                  <&bt BT_DISC 2>,
-                  <&bt BT_DISC 3>,
                   <&bt BT_SEL 0>;
         };
         bt_1: bt_1 {
@@ -153,9 +150,6 @@
             #binding-cells = <0>;
             bindings
                 = <&out OUT_BLE>,
-                  <&bt BT_DISC 0>,
-                  <&bt BT_DISC 2>,
-                  <&bt BT_DISC 3>,
                   <&bt BT_SEL 1>;
         };
         bt_2: bt_2 {
@@ -163,9 +157,6 @@
             #binding-cells = <0>;
             bindings
                 = <&out OUT_BLE>,
-                  <&bt BT_DISC 0>,
-                  <&bt BT_DISC 1>,
-                  <&bt BT_DISC 3>,
                   <&bt BT_SEL 2>;
         };
         bt_3: bt_3 {
@@ -173,9 +164,6 @@
             #binding-cells = <0>;
             bindings
                 = <&out OUT_BLE>,
-                  <&bt BT_DISC 0>,
-                  <&bt BT_DISC 1>,
-                  <&bt BT_DISC 2>,
                   <&bt BT_SEL 3>;
         };
     };
