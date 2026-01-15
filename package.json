@@ -5,9 +5,9 @@
     "ergogen:build": "ergogen --clean -o ergogen/output ergogen",
     "ergogen:old_watch": "nodemon --ext .js,.yaml --watch ergogen/footprints --watch ergogen/*.yaml --exec npm run ergogen:build",
     "ergogen:watch": "nodemon --ext .js,.yaml --watch ergogen --exec npm run ergogen:build --verbose",
-    "zmk:update": "docker compose -f zmk/docker-compose.yml run --rm firmware-env zmk-update",
-    "zmk:build": "docker compose -f zmk/docker-compose.yml run --rm firmware-env zmk-build",
-    "zmk:down": "docker compose -f zmk/docker-compose.yml down"
+    "zmk:update": "docker compose -f docker/docker-compose.yml run --rm firmware /workspace/docker/update.sh",
+    "zmk:build": "docker compose -f docker/docker-compose.yml run --rm firmware /workspace/docker/build.sh",
+    "zmk:down": "docker compose -f docker/docker-compose.yml down"
   },
   "author": "Aditya",
   "license": "ISC",

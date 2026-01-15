@@ -159,3 +159,14 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# ---- ZMK Build ----
+# West workspace (created by west init/update)
+.west/
+zmk/
+zephyr/
+modules/
+tools/
+
+# Build output
+build/
+docker/output/*.uf2

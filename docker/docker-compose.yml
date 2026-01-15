@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  firmware:
+    image: zmkfirmware/zmk-build-arm:stable
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace
+      - zmk-modules:/workspace/modules
+      - zmk-zephyr:/workspace/zephyr
+      - zmk-tools:/workspace/tools
+      - zmk-zmk:/workspace/zmk
+    command: /workspace/docker/build.sh
+
+volumes:
+  zmk-modules:
+  zmk-zephyr:
+  zmk-tools:
+  zmk-zmk:
