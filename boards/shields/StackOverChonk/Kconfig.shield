@@ -1,5 +1,7 @@
 config SHIELD_STACKOVERCHONK_LEFT
     def_bool $(shields_list_contains,StackOverChonk_left)
+    select SHIELD_NICE_OLED
 
 config SHIELD_STACKOVERCHONK_RIGHT
     def_bool $(shields_list_contains,StackOverChonk_right)
+    select SHIELD_NICE_OLED
