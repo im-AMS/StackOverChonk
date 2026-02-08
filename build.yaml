@@ -20,13 +20,13 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: StackOverChonk_left nice_oled
+    shield: StackOverChonk_left # nice_oled
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
     # TODO: REMOVE THIS LATER-------------------------
     # shield: tester_pro_micro
     # snippet: zmk-usb-logging
   - board: nice_nano_v2
-    shield: StackOverChonk_right nice_oled
+    shield: StackOverChonk_right # nice_oled
   - board: nice_nano_v2
     shield: settings_reset
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
