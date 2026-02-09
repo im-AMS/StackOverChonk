@@ -7,10 +7,15 @@ BOARD="nice_nano_v2"
 CONFIG_DIR="/workspace/config"
 OUTPUT_DIR="/workspace/docker/output"
 
-# Define build targets
-SHIELDS=("StackOverChonk_left" "StackOverChonk_right" "settings_reset")
+# If a shield argument is passed, build only that; otherwise build all
+if [ -n "$1" ]; then
+    SHIELDS=("$1")
+else
+    SHIELDS=("StackOverChonk_left" "StackOverChonk_right" "settings_reset")
+fi
 
 echo "=== ZMK Firmware Build ==="
+mkdir -p "$OUTPUT_DIR"
 
 # Initialize west workspace if needed
 if [ ! -f ".west/config" ]; then

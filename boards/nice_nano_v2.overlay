@@ -1,5 +1,15 @@
 #include <dt-bindings/led/led.h>
 
+/* Disable UART0 — it uses P0.17/P0.20 by default, which conflicts with I2C0 (OLED) */
+&uart0 {
+    status = "disabled";
+};
+
+/* Disable SPI0 — it shares the same hardware peripheral as I2C0 (TWIM0) on nRF52840 */
+&spi0 {
+    status = "disabled";
+};
+
 &pinctrl {
 
     spi3_default: spi3_default {
@@ -40,8 +50,16 @@
     };
 };
 
+&usbd {
+    status = "okay";
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
 / {
     chosen {
         zmk,underglow = &led_strip;
+        zephyr,console = &cdc_acm_uart;
     };
 };

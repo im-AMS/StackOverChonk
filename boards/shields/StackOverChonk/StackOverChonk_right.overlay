@@ -18,12 +18,12 @@
 
 
 &i2c0 {
-    compatible = "nordic,nrf-twi";
+    compatible = "nordic,nrf-twim";
     status = "okay";
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
-    clock-frequency = <I2C_BITRATE_FAST>; 
+    clock-frequency = <I2C_BITRATE_STANDARD>;
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
